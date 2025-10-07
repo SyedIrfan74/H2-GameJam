@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
     {
         StateManager.instance.StartManager();
         DialogueManager.instance.StartManager();
-        //MinigameManager.instance.StartManager();
+        ScreenManager.instance.StartManager();
+        MinigameManager.instance.StartManager();
     }
     private void Update()
     {
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
         }
         else if (StateManager.instance.state == StateManager.GAMESTATE.GAME)
         {
-            //MinigameManager.instance.UpdateManager();
+            MinigameManager.instance.UpdateManager();
         }
     }
 }
