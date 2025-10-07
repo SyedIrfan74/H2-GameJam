@@ -17,8 +17,4 @@ public class Screen : MonoBehaviour
         
     }
 
-    virtual public void ActivateCanvas()
-    {
-        canvas.enabled = !canvas.enabled;
-    }
 }

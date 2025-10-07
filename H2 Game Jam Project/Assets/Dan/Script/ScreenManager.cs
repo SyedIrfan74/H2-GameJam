@@ -15,33 +15,23 @@ public class ScreenManager : MonoBehaviour
     #endregion
     public List<Screen> screenList = new List<Screen>();
     public List<Transform> screenTransforms = new List<Transform>();
-
+    public string currentScreen = "Main Menu";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartManager()
     {
        foreach(Screen screen in screenList) 
-        { 
+       { 
             screen.OnStart(); 
             screenTransforms.Add(screen.transform);
-        }
+       }
+
+       ChangeScreen(currentScreen);
     }
 
     // Update is called once per frame
     public void UpdateManager()
     {
 
-    }
-    
-    /// <summary>
-    /// Changes screen based on int n
-    /// </summary>
-    /// <param name="n">Index of screen in list</param>
-
-    public void ChangeScreen(int n)
-    {
-        Camera.main.transform.position = new Vector3(screenTransforms[n].position.x,
-                                                     screenTransforms[n].position.y,
-                                                     Camera.main.transform.position.z);
     }
 
     /// <summary>
@@ -52,13 +42,24 @@ public class ScreenManager : MonoBehaviour
     {
         for (int i = 0; i < screenList.Count; i++)
         {
-            if (screenList[i].name == str)
+            Debug.Log(screenList[i].name);
+            // found the right screen
+            if (screenList[i].name.Contains(str))
             {
+                Debug.Log("FUCKU");
                 Camera.main.transform.position = new Vector3(screenList[i].transform.position.x,
                                                              screenList[i].transform.position.y,
                                                              Camera.main.transform.position.z);
-                break;
+                screenList[i].canvas.gameObject.SetActive(true);
             }
-        }               
+            // everything else
+            else
+            {
+                Debug.Log("mannnnnn");
+                screenList[i].canvas.gameObject.SetActive(false);
+            }
+        }      
+        
+        currentScreen = str;
     }
 }

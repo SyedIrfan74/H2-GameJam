@@ -33,7 +33,7 @@ public class MinigameManager : MonoBehaviour
         switch (minigameName) 
         {
             case "Cha":
-                ScreenManager.instance.ChangeScreen(3);
+                ScreenManager.instance.ChangeScreen("Cha");
                 break;
             case "Chopsticks":
                 ScreenManager.instance.ChangeScreen("Chopsticks");

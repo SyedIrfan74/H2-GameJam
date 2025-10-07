@@ -21,22 +21,31 @@ public class DialogueManager : MonoBehaviour
     public string playerName;
     public int currentDialogue;
     public bool isFlagActivated;
+    public bool running;
 
     public void StartManager()
     {
         currentDialogue = 0;
         isFlagActivated = false;
+        running = false;
     }
 
     public void UpdateManager()
     {
-        if (Input.GetMouseButtonDown(0) && isFlagActivated != true)
-            StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+        if (running == false)
+        {
+            if (Input.GetMouseButtonDown(0) && isFlagActivated != true)
+                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+        }
+        else if (running == true)
+        {
+
+        }
 
         if (isFlagActivated)
         {
             if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE) StateManager.instance.ChangeState(dialogueSOs[currentDialogue - 1].nextState);
-            //else if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE)  
+            else if (dialogueSOs[currentDialogue - 1].nextScreen != "") ScreenManager.instance.ChangeScreen(dialogueSOs[currentDialogue - 1].nextScreen);
         }            
     }
 
@@ -44,21 +53,23 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("New Line");
 
+        running = true;
         int stringlen = so.dialogue.Length;
         int count = 0;
         dialogueText.text = "";
         if (so.characterName != "") nameText.text = so.characterName;
         else nameText.text = playerName;
 
-            while (count < stringlen)
-            {
-                dialogueText.text += so.dialogue[count];
-                count++;
+        while (count < stringlen)
+        {
+            dialogueText.text += so.dialogue[count];
+            count++;
 
-                yield return new WaitForSeconds(so.delay);
-            }
+            yield return new WaitForSeconds(so.delay);
+        }
 
         currentDialogue++;
+        running = false;
         Debug.Log("Line Completed");
 
         if (so.activateFlag) isFlagActivated = true; 

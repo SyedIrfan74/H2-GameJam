@@ -14,6 +14,7 @@ public class StateManager : MonoBehaviour
     [Serializable]
     public enum GAMESTATE
     {
+        START,
         CONVO,
         WANDER,
         GAME,
@@ -24,10 +25,14 @@ public class StateManager : MonoBehaviour
 
     public void StartManager()
     {
-        currState = GAMESTATE.CONVO;
+        currState = GAMESTATE.START;
     }
     public void ChangeState(GAMESTATE nextState)
     {
         currState = nextState;
+    }
+    public void ChangeState2(int nextState)
+    {
+        currState = (GAMESTATE)nextState;
     }
 }

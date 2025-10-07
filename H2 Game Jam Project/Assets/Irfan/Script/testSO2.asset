@@ -17,5 +17,5 @@ MonoBehaviour:
     the school!
   delay: 0.05
   activateFlag: 1
-  nextState: 0
-  nextScreen: 
+  nextState: 4
+  nextScreen: Canteen
