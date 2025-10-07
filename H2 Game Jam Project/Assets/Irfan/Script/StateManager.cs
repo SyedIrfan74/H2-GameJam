@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class StateManager : MonoBehaviour
@@ -9,16 +10,24 @@ public class StateManager : MonoBehaviour
         if (instance != null && instance != this) Destroy(instance);
         else instance = this;
     }
-    public void StartManager()
-    {
-        state = GAMESTATE.CONVO;
-    }
+
+    [Serializable]
     public enum GAMESTATE
     {
         CONVO,
         WANDER,
-        GAME
+        GAME,
+        NOSTATE
     }
 
-    public GAMESTATE state;
+    public GAMESTATE currState;
+
+    public void StartManager()
+    {
+        currState = GAMESTATE.CONVO;
+    }
+    public void ChangeState(GAMESTATE nextState)
+    {
+        currState = nextState;
+    }
 }

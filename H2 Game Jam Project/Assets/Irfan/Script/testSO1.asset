@@ -15,5 +15,7 @@ MonoBehaviour:
   characterName: Ms Tan
   dialogue: Good morning students! Today we have new students joining us! Let's introduce
     them!
-  delay: 0.1
-  stop: 0
+  delay: 0.05
+  activateFlag: 0
+  nextState: 0
+  nextScreen: 

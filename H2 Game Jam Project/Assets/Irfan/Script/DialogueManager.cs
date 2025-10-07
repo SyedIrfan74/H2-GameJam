@@ -20,16 +20,24 @@ public class DialogueManager : MonoBehaviour
 
     public string playerName;
     public int currentDialogue;
+    public bool isFlagActivated;
 
     public void StartManager()
     {
         currentDialogue = 0;
+        isFlagActivated = false;
     }
 
     public void UpdateManager()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && isFlagActivated != true)
             StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+
+        if (isFlagActivated)
+        {
+            if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE) StateManager.instance.ChangeState(dialogueSOs[currentDialogue - 1].nextState);
+            //else if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE)  
+        }            
     }
 
     private IEnumerator DisplayText(DialogueSO so)
@@ -52,6 +60,8 @@ public class DialogueManager : MonoBehaviour
 
         currentDialogue++;
         Debug.Log("Line Completed");
+
+        if (so.activateFlag) isFlagActivated = true; 
 
         yield return null;
     }

@@ -10,15 +10,15 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (StateManager.instance.state == StateManager.GAMESTATE.CONVO)
+        if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {
             DialogueManager.instance.UpdateManager();
         }
-        else if (StateManager.instance.state == StateManager.GAMESTATE.WANDER)
+        else if (StateManager.instance.currState == StateManager.GAMESTATE.WANDER)
         {
 
         }
-        else if (StateManager.instance.state == StateManager.GAMESTATE.GAME)
+        else if (StateManager.instance.currState == StateManager.GAMESTATE.GAME)
         {
             //MinigameManager.instance.UpdateManager();
         }

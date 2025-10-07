@@ -15,4 +15,7 @@ MonoBehaviour:
   characterName: Ms Tan
   dialogue: Alright! Nice to meet you all! Take this handbook as a welcome gift from
     the school!
-  delay: 0.1
+  delay: 0.05
+  activateFlag: 1
+  nextState: 0
+  nextScreen: 
