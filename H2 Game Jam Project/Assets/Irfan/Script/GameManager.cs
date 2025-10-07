@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// TODO: WANDERMANAGER
+/// </summary>
+
 public class GameManager : MonoBehaviour
 {
     private void Start()

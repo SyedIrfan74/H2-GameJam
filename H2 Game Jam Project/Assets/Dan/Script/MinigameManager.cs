@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,13 +15,11 @@ public class MinigameManager : MonoBehaviour
 
     public List<MinigameScreen> minigameList = new List<MinigameScreen>();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartManager()
     {
         
     }
 
-    // Update is called once per frame
     public void UpdateManager()
     {
         

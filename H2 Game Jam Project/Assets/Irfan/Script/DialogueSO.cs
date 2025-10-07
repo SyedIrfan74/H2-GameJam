@@ -10,6 +10,9 @@ public class DialogueSO : ScriptableObject
     public bool activateFlag;
     public StateManager.GAMESTATE nextState;
     public string nextScreen;
+
+    public bool starting;
+    public List<bool> bools;
     
 }
 
