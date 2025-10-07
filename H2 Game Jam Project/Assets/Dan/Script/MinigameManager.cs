@@ -36,7 +36,7 @@ public class MinigameManager : MonoBehaviour
                 ScreenManager.instance.ChangeScreen(3);
                 break;
             case "Chopsticks":
-                ScreenManager.instance.ChangeScreen(4);
+                ScreenManager.instance.ChangeScreen("Chopsticks");
                 break;
             default:
                 Debug.Log("Unknown game state.");

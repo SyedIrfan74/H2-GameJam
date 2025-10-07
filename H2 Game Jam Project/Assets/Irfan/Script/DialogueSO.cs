@@ -13,8 +13,3 @@ public class DialogueSO : ScriptableObject
     
 }
 
-public class Screen
-{
-    public Transform transform;
-    public string screenName;
-}

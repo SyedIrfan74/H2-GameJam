@@ -31,6 +31,11 @@ public class ScreenManager : MonoBehaviour
     {
 
     }
+    
+    /// <summary>
+    /// Changes screen based on int n
+    /// </summary>
+    /// <param name="n">Index of screen in list</param>
 
     public void ChangeScreen(int n)
     {
@@ -39,10 +44,21 @@ public class ScreenManager : MonoBehaviour
                                                      Camera.main.transform.position.z);
     }
 
-    //public void ChangeScreen(string str)
-    //{
-    //    Camera.main.transform.position = new Vector3(screenTransforms[n].position.x,
-    //                                                 screenTransforms[n].position.y,
-    //                                                 Camera.main.transform.position.z);
-    //}
+    /// <summary>
+    /// Changes screen based on string str
+    /// </summary>
+    /// <param name="str">Name of screen</param>
+    public void ChangeScreen(string str)
+    {
+        for (int i = 0; i < screenList.Count; i++)
+        {
+            if (screenList[i].name == str)
+            {
+                Camera.main.transform.position = new Vector3(screenList[i].transform.position.x,
+                                                             screenList[i].transform.position.y,
+                                                             Camera.main.transform.position.z);
+                break;
+            }
+        }               
+    }
 }
