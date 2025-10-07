@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class DialogueSO : MonoBehaviour
+[CreateAssetMenu(fileName = "DialogueSO")]
+public class DialogueSO : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string characterName;
+    public string dialogue;
+    public float delay;
+    //public bool activateFlag;
 }
