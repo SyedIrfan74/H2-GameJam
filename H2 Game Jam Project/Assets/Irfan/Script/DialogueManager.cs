@@ -34,18 +34,32 @@ public class DialogueManager : MonoBehaviour
     {
         if (running == false)
         {
-            if (Input.GetMouseButtonDown(0) && isFlagActivated != true)
-                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+            if (Input.GetMouseButtonDown(0) && isFlagActivated != true) StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
         }
         else if (running == true)
         {
+            if (!Input.GetMouseButtonDown(0)) return;
 
+            StopAllCoroutines();
+            dialogueText.text = dialogueSOs[currentDialogue].dialogue;
+            running = false;
+
+            if (dialogueSOs[currentDialogue].activateFlag) isFlagActivated = true;
+
+            currentDialogue++;
         }
 
         if (isFlagActivated)
         {
-            if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE) StateManager.instance.ChangeState(dialogueSOs[currentDialogue - 1].nextState);
-            else if (dialogueSOs[currentDialogue - 1].nextScreen != "") ScreenManager.instance.ChangeScreen(dialogueSOs[currentDialogue - 1].nextScreen);
+            if (!dialogueSOs[currentDialogue - 1].starting)
+            {
+                if (dialogueSOs[currentDialogue - 1].nextState != StateManager.GAMESTATE.NOSTATE) StateManager.instance.ChangeState(dialogueSOs[currentDialogue - 1].nextState);
+                else if (dialogueSOs[currentDialogue - 1].nextScreen != "") ScreenManager.instance.ChangeScreen(dialogueSOs[currentDialogue - 1].nextScreen);
+
+                return;
+            }
+            
+
         }            
     }
 

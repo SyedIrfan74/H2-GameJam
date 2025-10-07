@@ -1,6 +1,4 @@
-using NUnit.Framework;
 using System.Collections.Generic;
-using Unity.Cinemachine;
 using UnityEngine;
 
 public class ScreenManager : MonoBehaviour
@@ -16,7 +14,7 @@ public class ScreenManager : MonoBehaviour
     public List<Screen> screenList = new List<Screen>();
     public List<Transform> screenTransforms = new List<Transform>();
     public string currentScreen = "Main Menu";
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     public void StartManager()
     {
        foreach(Screen screen in screenList) 
@@ -28,7 +26,6 @@ public class ScreenManager : MonoBehaviour
        ChangeScreen(currentScreen);
     }
 
-    // Update is called once per frame
     public void UpdateManager()
     {
 
