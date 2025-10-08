@@ -35,8 +35,8 @@ public class DialogueManager : MonoBehaviour
         currentDialogue = 0;
         isFlagActivated = false;
         running = false;
-        characterSelection.SetActive(false);
-        nameInput.SetActive(false);
+        //characterSelection.SetActive(false);
+        //nameInput.SetActive(false);
     }
 
     public void UpdateManager()
