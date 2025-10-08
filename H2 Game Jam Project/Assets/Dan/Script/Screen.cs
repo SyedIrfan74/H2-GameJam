@@ -6,13 +6,13 @@ public class Screen : MonoBehaviour
     public string screenName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void OnStart()
+    virtual public void OnStart()
     {
         if(canvas == null)  canvas = GetComponentInChildren<Canvas>();
     }
 
     // Update is called once per frame
-    public void OnUpdate()
+    virtual public void OnUpdate()
     {
         
     }

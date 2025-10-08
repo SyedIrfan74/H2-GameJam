@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        ScreenManager.instance.UpdateManager();
+
         if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {
             DialogueManager.instance.UpdateManager();
