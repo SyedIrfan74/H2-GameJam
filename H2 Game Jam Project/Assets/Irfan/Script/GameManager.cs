@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        ScreenManager.instance.UpdateManager();
+        //ScreenManager.instance.UpdateManager();
 
         if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {
@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
         else if (StateManager.instance.currState == StateManager.GAMESTATE.GAME)
         {
             MinigameManager.instance.UpdateManager();
+        }
+        else if (StateManager.instance.currState == StateManager.GAMESTATE.TRANSITION)
+        {
+            ScreenManager.instance.UpdateManager();
         }
     }
 }
