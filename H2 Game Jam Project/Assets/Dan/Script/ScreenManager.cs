@@ -34,8 +34,7 @@ public class ScreenManager : MonoBehaviour
 
     public void UpdateManager()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
+
     }
 
     /// <summary>
@@ -50,7 +49,6 @@ public class ScreenManager : MonoBehaviour
             // found the right screen
             if (screenList[i].name.Contains(str))
             {
-                Debug.Log("FUCKU");
                 Camera.main.transform.position = new Vector3(screenList[i].transform.position.x,
                                                              screenList[i].transform.position.y,
                                                              Camera.main.transform.position.z);
@@ -59,7 +57,6 @@ public class ScreenManager : MonoBehaviour
             // everything else
             else
             {
-                Debug.Log("mannnnnn");
                 screenList[i].canvas.gameObject.SetActive(false);
             }
         }      

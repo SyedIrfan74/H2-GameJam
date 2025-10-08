@@ -26,7 +26,7 @@ public class StateManager : MonoBehaviour
 
     public void StartManager()
     {
-        currState = GAMESTATE.START;
+        currState = GAMESTATE.GAME;
     }
     public void ChangeState(GAMESTATE nextState)
     {
