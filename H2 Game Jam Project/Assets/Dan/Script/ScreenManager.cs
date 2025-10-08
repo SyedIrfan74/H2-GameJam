@@ -34,7 +34,8 @@ public class ScreenManager : MonoBehaviour
 
     public void UpdateManager()
     {
-
+        if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
+        if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
     }
 
     /// <summary>

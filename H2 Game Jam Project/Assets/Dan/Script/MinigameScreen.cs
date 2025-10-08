@@ -3,13 +3,13 @@ using UnityEngine;
 public class MinigameScreen : Screen
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void OnStart()
+    override public void OnStart()
     {
         
     }
 
     // Update is called once per frame
-    public void OnUpdate()
+    override public void OnUpdate()
     {
         
     }

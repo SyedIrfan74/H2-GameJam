@@ -15,6 +15,8 @@ public class MinigameManager : MonoBehaviour
 
     public List<MinigameScreen> minigameList = new List<MinigameScreen>();
 
+    public string currentMinigame = "None";
+
     public void StartManager()
     {
         
@@ -30,15 +32,17 @@ public class MinigameManager : MonoBehaviour
         switch (minigameName) 
         {
             case "Cha":
-                ScreenManager.instance.ChangeScreen("Cha");
+                currentMinigame = "Cha";
                 break;
             case "Chopsticks":
-                ScreenManager.instance.ChangeScreen("Chopsticks");
+                currentMinigame = "Chopsticks";
                 break;
             default:
-                Debug.Log("Unknown game state.");
+                Debug.Log("Jialat.");
                 break;
         }
+        ScreenManager.instance.ChangeScreen(currentMinigame);
+
     }
 
     public void LeaveManager()
