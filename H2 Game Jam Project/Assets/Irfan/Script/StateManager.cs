@@ -14,11 +14,12 @@ public class StateManager : MonoBehaviour
     [Serializable]
     public enum GAMESTATE
     {
-        START,
-        CONVO,
-        WANDER,
-        GAME,
-        NOSTATE
+        START,      //0
+        CONVO,      //1
+        WANDER,     //2
+        GAME,       //3
+        TRANSITION, //4
+        NOSTATE     //5
     }
 
     public GAMESTATE currState;
