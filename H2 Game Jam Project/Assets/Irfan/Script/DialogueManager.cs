@@ -103,9 +103,9 @@ public class DialogueManager : MonoBehaviour
             if (timer >= 2)
             {
                 timer = 0;
-                Debug.Log("Next Screen: " + dialogueSOs[currentDialogue - 1].nextScreen + " Next State: " + dialogueSOs[currentDialogue - 1].nextState);
                 dialogueText.text = "";
                 nameText.text = "";
+
                 StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                 ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
                 ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
@@ -130,6 +130,11 @@ public class DialogueManager : MonoBehaviour
         else if (dialogueSOs[currentDialogue - 1].flags.getJournal)
         {
             journal.SetActive(true);
+        }
+        else if (dialogueSOs[currentDialogue - 1].flags.scribbleJournal)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.journal = true;
         }
     }
 

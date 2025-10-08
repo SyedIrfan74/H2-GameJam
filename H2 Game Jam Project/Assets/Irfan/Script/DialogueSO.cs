@@ -31,4 +31,5 @@ public class Flags
     public bool inputName;
     public bool resetName;
     public bool getJournal;
+    public bool scribbleJournal;
 }
