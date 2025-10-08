@@ -8,7 +8,7 @@ public class Screen : MonoBehaviour
     //Edit by: Irfan
     public SpriteRenderer fadeBlack;
 
-    public void OnStart()
+    virtual public void OnStart()
     {
         if(canvas == null)  canvas = GetComponentInChildren<Canvas>();
 
@@ -16,7 +16,7 @@ public class Screen : MonoBehaviour
         if (fadeBlack == null) fadeBlack = GetComponentInChildren<SpriteRenderer>();
     }
 
-    public void OnUpdate()
+    virtual public void OnUpdate()
     {
         
     }
