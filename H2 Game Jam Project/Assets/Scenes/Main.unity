@@ -188,8 +188,8 @@ MonoBehaviour:
   playerClapGO: {fileID: 428823292}
   leftHandSprite: {fileID: 114438571}
   rightHandSprite: {fileID: 1854831616}
-  leftHandAnimator: {fileID: 0}
-  rightHandAnimator: {fileID: 0}
+  leftHandAnimator: {fileID: 114438573}
+  rightHandAnimator: {fileID: 1854831618}
   clapButton: {fileID: 299266079}
   isEnemyAttacking: 0
   enemySelectedHand: 0
@@ -200,8 +200,8 @@ MonoBehaviour:
   enemyClapGO: {fileID: 2129887428}
   enemyLeftHandSprite: {fileID: 1313963478}
   enemyRightHandSprite: {fileID: 1663985081}
-  enemyLeftHandAnimator: {fileID: 0}
-  enemyRightHandAnimator: {fileID: 0}
+  enemyLeftHandAnimator: {fileID: 1313963480}
+  enemyRightHandAnimator: {fileID: 1663985083}
   isEnemySelecting: 0
   chopsticksDebugText: {fileID: 1382245797}
 --- !u!1 &96434381
