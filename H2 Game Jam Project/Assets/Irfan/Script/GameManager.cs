@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1)) MinigameManager.instance.StartMinigame("Cha");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) MinigameManager.instance.StartMinigame("Chopsticks");
+        if (Input.GetKeyDown(KeyCode.Alpha2)) MinigameManager.instance.StartMinigame("Chopsticks1");
+        if (Input.GetKeyDown(KeyCode.Alpha3)) MinigameManager.instance.StartMinigame("Chopsticks2");
 
         if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {
