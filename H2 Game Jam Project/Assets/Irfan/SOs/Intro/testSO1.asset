@@ -16,9 +16,14 @@ MonoBehaviour:
   dialogue: Good morning students!
   delay: 0.05
   flags:
+    reset: 0
     changeScreen: 0
     changeState: 0
     selectCharacter: 0
+    resetCharacter: 0
     inputName: 0
+    resetName: 0
+    getJournal: 0
+    scribbleJournal: 1
   nextState: 0
   nextScreen: 

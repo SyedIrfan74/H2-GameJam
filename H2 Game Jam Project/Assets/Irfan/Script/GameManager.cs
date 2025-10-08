@@ -1,9 +1,5 @@
 using UnityEngine;
 
-/// <summary>
-/// 
-/// </summary>
-
 public class GameManager : MonoBehaviour
 {
     private void Start()
@@ -24,10 +20,6 @@ public class GameManager : MonoBehaviour
         {
             DialogueManager.instance.UpdateManager();
         }
-        else if (StateManager.instance.currState == StateManager.GAMESTATE.WANDER)
-        {
-
-        }
         else if (StateManager.instance.currState == StateManager.GAMESTATE.GAME)
         {
             MinigameManager.instance.UpdateManager();
@@ -35,6 +27,10 @@ public class GameManager : MonoBehaviour
         else if (StateManager.instance.currState == StateManager.GAMESTATE.TRANSITION)
         {
             ScreenManager.instance.UpdateManager();
+        }
+        else if (StateManager.instance.currState == StateManager.GAMESTATE.WANDER)
+        {
+            //UNUSED
         }
     }
 }

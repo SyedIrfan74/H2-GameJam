@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Device;
+using UnityEngine.UI;
 
 public class ScreenManager : MonoBehaviour
 {
@@ -21,12 +23,19 @@ public class ScreenManager : MonoBehaviour
     //Edits by: Irfan
     public Screen targetScreen;
     public Screen currScreen;
+    public StateManager.GAMESTATE nextState;
 
     public bool fadeOut;
     public bool fadeIn;
     public float a = 0;
     public float transitionPause = 2;
-    public float transitionSpeed = 2;
+    public float transition1Speed = 2;
+    public float transition2Speed = 2;
+    public bool journal;
+    public bool transitioning;
+    public Image bookClosed;
+    public Image bookOpened;
+    public Image bookWriting;
 
     //Edits by: Irfan
     public void StartManager()
@@ -44,6 +53,9 @@ public class ScreenManager : MonoBehaviour
         targetScreen = null;
         fadeOut = false;
         fadeIn = false;
+        journal = false;
+        transitioning = false;
+        nextState = StateManager.GAMESTATE.NOSTATE;
     }
 
     public void UpdateManager()
@@ -51,59 +63,15 @@ public class ScreenManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
         if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
 
-        currScreen.canvas.gameObject.SetActive(false);
+        if (currScreen != null) Debug.Log(currScreen.screenName);
+        if (targetScreen != null) Debug.Log(targetScreen.screenName);
 
-        if (currScreen.fadeBlack.color.a < 1 && fadeOut == false)
+        if (nextState != StateManager.GAMESTATE.NOSTATE) Scr2ScrTransition();
+
+        if (journal && !transitioning)
         {
-            a = Mathf.Lerp(a, 1, Time.deltaTime * transitionSpeed);
-            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-            
-            if (a > 0.99f)
-            {
-                a = 1;
-                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-            }
-
-            return;
+            StartCoroutine(RevealJournal());
         }
-
-
-        fadeOut = true;
-        if (targetScreen != null)
-        {
-            targetScreen.fadeBlack.color = new Color(targetScreen.fadeBlack.color.r, targetScreen.fadeBlack.color.g, targetScreen.fadeBlack.color.b, 1);
-            currScreen = targetScreen;
-            MoveCamera();
-        }
-            
-        targetScreen = null;
-        
-
-        if (transitionPause > 0)
-        {
-            transitionPause -= Time.deltaTime;
-            return;
-        }
-
-
-        if (currScreen.fadeBlack.color.a > 0 && fadeIn == false)
-        {
-            a = Mathf.Lerp(a, 0, Time.deltaTime * transitionSpeed);
-            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-
-            if (a < 0.1f)
-            {
-                a = 0;
-                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-            }
-
-            return;
-        }
-
-        fadeIn = true;
-        targetScreen = null;
-        currScreen.canvas.gameObject.SetActive(true);
-        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
     }
 
     /// <summary>
@@ -148,10 +116,100 @@ public class ScreenManager : MonoBehaviour
             return;
         }
     }
+    public void SetNextState(StateManager.GAMESTATE gameState)
+    {
+        nextState = gameState;
+    }
+
+    public void SetNextState2(int gameState)
+    {
+        nextState = (StateManager.GAMESTATE)gameState;
+    }
 
     public void MoveCamera()
     {
         Camera.main.transform.position = new Vector3(currScreen.transform.position.x, currScreen.transform.position.y, Camera.main.transform.position.z);
+    }
+    private IEnumerator RevealJournal()
+    {
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = bookClosed.color;
+        Color man = new Color(bookClosed.color.r, bookClosed.color.g, bookClosed.color.b, 1);
+        transitioning = true;
+
+        while (elapsed < duration)
+        {
+            Debug.Log("IUHAUVBEFCUGVTICAVGUACVUGJHK");
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookClosed.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield break;
+    }
+
+    private void Scr2ScrTransition()
+    {
+        currScreen.canvas.gameObject.SetActive(false);
+
+        if (currScreen.fadeBlack.color.a < 1 && fadeOut == false)
+        {
+            a = Mathf.Lerp(a, 1, Time.deltaTime * transition1Speed);
+            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+
+            if (a > 0.99f)
+            {
+                a = 1;
+                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+            }
+
+            return;
+        }
+
+        fadeOut = true;
+        if (targetScreen != null)
+        {
+            targetScreen.fadeBlack.color = new Color(targetScreen.fadeBlack.color.r, targetScreen.fadeBlack.color.g, targetScreen.fadeBlack.color.b, 1);
+            currScreen = targetScreen;
+            MoveCamera();
+        }
+
+        targetScreen = null;
+
+        if (transitionPause > 0)
+        {
+            transitionPause -= Time.deltaTime;
+            return;
+        }
+
+
+        if (currScreen.fadeBlack.color.a > 0 && fadeIn == false)
+        {
+            a = Mathf.Lerp(a, 0, Time.deltaTime * transition2Speed);
+            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+
+            if (a < 0.1f)
+            {
+                a = 0;
+                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+            }
+
+            return;
+        }
+
+        a = 0;
+        fadeIn = false;
+        fadeOut = false;
+        targetScreen = null;
+
+        currScreen.canvas.gameObject.SetActive(true);
+        StateManager.instance.ChangeState(nextState);
+        if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+        return;
     }
 
     //public void ChangeScene(string str)

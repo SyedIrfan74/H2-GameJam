@@ -41,6 +41,9 @@ public class DialogueManager : MonoBehaviour
     private bool pickingName;
     private bool running;
     private bool manualStart;
+    private float timer = 0;
+    private string dialogueWName;
+    private string MCNAME = "[MC Name]";
 
     public void StartManager()
     {
@@ -48,6 +51,8 @@ public class DialogueManager : MonoBehaviour
         pickingCharacter = false;
         pickingName = false;
         running = false;
+        dialogueWName = "";
+
         if (characterSelection != null) characterSelection.SetActive(false);
         if (nameInput != null) nameInput.SetActive(false);
         if (journal != null) journal.SetActive(false);
@@ -65,7 +70,12 @@ public class DialogueManager : MonoBehaviour
         //if running == true, dialogue is currently being written on the screen
         if (running == false)
         {
-            if (Input.GetMouseButtonDown(0) || manualStart) StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+            if (Input.GetMouseButtonDown(0) || manualStart)
+            {
+                if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+            }
+
             if (manualStart) manualStart = false;
         }
         else if (running == true)
@@ -74,9 +84,12 @@ public class DialogueManager : MonoBehaviour
             if (!Input.GetMouseButtonDown(0)) return;
 
             StopAllCoroutines();
-            dialogueText.text = dialogueSOs[currentDialogue].dialogue;
-            running = false;
+            if (dialogueWName == "") dialogueText.text = dialogueSOs[currentDialogue].dialogue;
+            else dialogueText.text = dialogueWName;
+            
 
+            dialogueWName = "";
+            running = false;
             currentDialogue++;
         }
 
@@ -84,8 +97,19 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogueSOs[currentDialogue - 1].flags.changeScreen)
         {
-            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
-            ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue].nextScreen);
+            if (running) return;
+            timer += Time.deltaTime;
+
+            if (timer >= 2)
+            {
+                timer = 0;
+                dialogueText.text = "";
+                nameText.text = "";
+
+                StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+                ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
+                ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
+            }
         }
         else if (dialogueSOs[currentDialogue - 1].flags.changeState)
         {
@@ -107,6 +131,11 @@ public class DialogueManager : MonoBehaviour
         {
             journal.SetActive(true);
         }
+        else if (dialogueSOs[currentDialogue - 1].flags.scribbleJournal)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.journal = true;
+        }
     }
 
     private IEnumerator DisplayText(DialogueSO so)
@@ -118,13 +147,9 @@ public class DialogueManager : MonoBehaviour
         if (so.characterName != "") nameText.text = so.characterName;
         else nameText.text = playerName;
 
-        if (so.dialogue.Contains("[MC Name]"))
+        if (so.dialogue.Contains(MCNAME))
         {
-            string temp = "[MC Name]";
-            int index = so.dialogue.IndexOf('[');
-            string b4 = so.dialogue.Substring(0, index - 1);
-            string aft = so.dialogue.Substring(index + temp.Length, so.dialogue.Length - temp.Length - b4.Length - 1);
-            newDialogue = b4 + " " + playerName + aft;
+            newDialogue = InsertName(so.dialogue);
         }
 
         int stringlen = 0;
@@ -184,4 +209,20 @@ public class DialogueManager : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    private string InsertName(string dialogue)
+    {
+        int index = dialogue.IndexOf('[');
+        string b4 = dialogue.Substring(0, index - 1);
+        string aft = dialogue.Substring(index + MCNAME.Length, dialogue.Length - MCNAME.Length - b4.Length - 1);
+        return b4 + " " + playerName + aft;
+    }
 }
+
+
+
+
+//string temp = "[MC Name]";
+//int index = so.dialogue.IndexOf('[');
+//string b4 = so.dialogue.Substring(0, index - 1);
+//string aft = so.dialogue.Substring(index + temp.Length, so.dialogue.Length - temp.Length - b4.Length - 1);
+//newDialogue = b4 + " " + playerName + aft;
