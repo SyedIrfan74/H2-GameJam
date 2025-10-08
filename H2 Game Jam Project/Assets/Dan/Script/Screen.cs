@@ -5,13 +5,17 @@ public class Screen : MonoBehaviour
     public Canvas canvas;
     public string screenName;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //Edit by: Irfan
+    public SpriteRenderer fadeBlack;
+
     public void OnStart()
     {
         if(canvas == null)  canvas = GetComponentInChildren<Canvas>();
+
+        //Edit by: Irfan
+        if (fadeBlack == null) fadeBlack = GetComponentInChildren<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     public void OnUpdate()
     {
         
