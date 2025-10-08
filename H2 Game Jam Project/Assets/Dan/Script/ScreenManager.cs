@@ -21,12 +21,14 @@ public class ScreenManager : MonoBehaviour
     //Edits by: Irfan
     public Screen targetScreen;
     public Screen currScreen;
+    public StateManager.GAMESTATE nextState;
 
     public bool fadeOut;
     public bool fadeIn;
     public float a = 0;
     public float transitionPause = 2;
-    public float transitionSpeed = 2;
+    public float transition1Speed = 2;
+    public float transition2Speed = 2;
 
     //Edits by: Irfan
     public void StartManager()
@@ -44,6 +46,7 @@ public class ScreenManager : MonoBehaviour
         targetScreen = null;
         fadeOut = false;
         fadeIn = false;
+        nextState = StateManager.GAMESTATE.NOSTATE;
     }
 
     public void UpdateManager()
@@ -51,11 +54,14 @@ public class ScreenManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
         if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
 
+        if (currScreen != null) Debug.Log(currScreen.screenName);
+        if (targetScreen != null) Debug.Log(targetScreen.screenName);
+
         currScreen.canvas.gameObject.SetActive(false);
 
         if (currScreen.fadeBlack.color.a < 1 && fadeOut == false)
         {
-            a = Mathf.Lerp(a, 1, Time.deltaTime * transitionSpeed);
+            a = Mathf.Lerp(a, 1, Time.deltaTime * transition1Speed);
             currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
             
             if (a > 0.99f)
@@ -67,7 +73,6 @@ public class ScreenManager : MonoBehaviour
             return;
         }
 
-
         fadeOut = true;
         if (targetScreen != null)
         {
@@ -78,7 +83,6 @@ public class ScreenManager : MonoBehaviour
             
         targetScreen = null;
         
-
         if (transitionPause > 0)
         {
             transitionPause -= Time.deltaTime;
@@ -88,7 +92,7 @@ public class ScreenManager : MonoBehaviour
 
         if (currScreen.fadeBlack.color.a > 0 && fadeIn == false)
         {
-            a = Mathf.Lerp(a, 0, Time.deltaTime * transitionSpeed);
+            a = Mathf.Lerp(a, 0, Time.deltaTime * transition2Speed);
             currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
 
             if (a < 0.1f)
@@ -100,10 +104,14 @@ public class ScreenManager : MonoBehaviour
             return;
         }
 
-        fadeIn = true;
+        a = 0;
+        fadeIn = false;
+        fadeOut = false;
         targetScreen = null;
         currScreen.canvas.gameObject.SetActive(true);
-        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        StateManager.instance.ChangeState(nextState);
+        if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
     }
 
     /// <summary>
@@ -147,6 +155,15 @@ public class ScreenManager : MonoBehaviour
             targetScreen = screenList[i];
             return;
         }
+    }
+    public void SetNextState(StateManager.GAMESTATE gameState)
+    {
+        nextState = gameState;
+    }
+
+    public void SetNextState2(int gameState)
+    {
+        nextState = (StateManager.GAMESTATE)gameState;
     }
 
     public void MoveCamera()

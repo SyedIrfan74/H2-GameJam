@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a366cedceb66f64ba33d4eb871de5cd, type: 3}
-  m_Name: testSO14
+  m_Name: Convo 1
   m_EditorClassIdentifier: 
-  characterName: 
-  dialogue: "Okay\u2026thanks!"
+  characterName: Bobby
+  dialogue: Oh, by the way, I have something for you.
   delay: 0.05
   flags:
     reset: 0
-    changeScreen: 1
+    changeScreen: 0
     changeState: 0
     selectCharacter: 0
     resetCharacter: 0
     inputName: 0
     resetName: 0
     getJournal: 0
-  nextState: 1
-  nextScreen: Canteen
+  nextState: 0
+  nextScreen: 
