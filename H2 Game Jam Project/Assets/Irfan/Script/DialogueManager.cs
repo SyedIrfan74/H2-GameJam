@@ -106,14 +106,18 @@ public class DialogueManager : MonoBehaviour
                 dialogueText.text = "";
                 nameText.text = "";
 
+                if (dialogueSOs[currentDialogue - 1].nextState == StateManager.GAMESTATE.GAME)
+                {
+                    MinigameManager.instance.StartMinigame(dialogueSOs[currentDialogue - 1].nextScreen);
+                    return;
+                }
+
                 StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                 ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
                 ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
+
+                
             }
-        }
-        else if (dialogueSOs[currentDialogue - 1].flags.changeState)
-        {
-            
         }
         else if (dialogueSOs[currentDialogue - 1].flags.selectCharacter && pickingCharacter == false)
         {
@@ -135,6 +139,14 @@ public class DialogueManager : MonoBehaviour
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
+            dialogueSOs[currentDialogue - 1].flags.scribbleJournal = false;
+        }
+
+
+
+        else if (dialogueSOs[currentDialogue - 1].flags.changeState)
+        {
+            //UNUSED
         }
     }
 
@@ -178,7 +190,6 @@ public class DialogueManager : MonoBehaviour
 
         yield return null;
     }
-
     public void SetCharacter(int index)
     {
         if (index == 0)
@@ -193,21 +204,15 @@ public class DialogueManager : MonoBehaviour
         characterSelection.SetActive(false);
         pickingCharacter = false;
     }
-
     public void SetName()
     {
         playerName = nameInputField.text;
         nameInput.SetActive(false);
         pickingName = false;
     }
-
     public void ManualStart()
     {
         manualStart = true;
-    }
-    public void test()
-    {
-        gameObject.SetActive(false);
     }
     private string InsertName(string dialogue)
     {

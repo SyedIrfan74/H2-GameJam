@@ -17,12 +17,13 @@ MonoBehaviour:
   delay: 0.05
   flags:
     reset: 0
-    changeScreen: 1
+    changeScreen: 0
     changeState: 0
     selectCharacter: 0
     resetCharacter: 0
     inputName: 0
     resetName: 0
     getJournal: 0
-  nextState: 1
-  nextScreen: Canteen
+    scribbleJournal: 0
+  nextState: 0
+  nextScreen: 

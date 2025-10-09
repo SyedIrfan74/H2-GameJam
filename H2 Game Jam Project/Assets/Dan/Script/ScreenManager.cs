@@ -60,18 +60,12 @@ public class ScreenManager : MonoBehaviour
 
     public void UpdateManager()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
-
         if (currScreen != null) Debug.Log(currScreen.screenName);
         if (targetScreen != null) Debug.Log(targetScreen.screenName);
 
-        if (nextState != StateManager.GAMESTATE.NOSTATE) Scr2ScrTransition();
+        if (nextState != StateManager.GAMESTATE.NOSTATE && !transitioning) StartCoroutine(ScreenTransition());
 
-        if (journal && !transitioning)
-        {
-            StartCoroutine(RevealJournal());
-        }
+        if (journal && !transitioning) StartCoroutine(RevealJournal());
     }
 
     /// <summary>
@@ -120,33 +114,158 @@ public class ScreenManager : MonoBehaviour
     {
         nextState = gameState;
     }
-
     public void SetNextState2(int gameState)
     {
         nextState = (StateManager.GAMESTATE)gameState;
     }
-
     public void MoveCamera()
     {
         Camera.main.transform.position = new Vector3(currScreen.transform.position.x, currScreen.transform.position.y, Camera.main.transform.position.z);
     }
+
     private IEnumerator RevealJournal()
     {
-        float elapsed = 0;
-        float duration = 2;
-        Color initial = bookClosed.color;
-        Color man = new Color(bookClosed.color.r, bookClosed.color.g, bookClosed.color.b, 1);
         transitioning = true;
 
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
         while (elapsed < duration)
         {
-            Debug.Log("IUHAUVBEFCUGVTICAVGUACVUGJHK");
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookClosed.color;
+        man = new Color(bookClosed.color.r, bookClosed.color.g, bookClosed.color.b, 1);
+
+        //closed cover fade in
+        while (elapsed < duration)
+        {
             float t = elapsed / duration;
             elapsed += Time.deltaTime;
             t = t * t;
             bookClosed.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        elapsed = 0;
+        initial = bookOpened.color;
+        man = new Color(bookOpened.color.r, bookOpened.color.g, bookOpened.color.b, 1);
+
+        Color initial2 = bookClosed.color;
+        Color man2 = new Color(bookClosed.color.r, bookClosed.color.g, bookClosed.color.b, 0);
+        
+        //Open fade in + Closed Fade Out
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookOpened.color = Color.Lerp(initial, man, t);
+            bookClosed.color = Color.Lerp(initial2, man2, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookWriting.color;
+        man = new Color(bookWriting.color.r, bookWriting.color.g, bookWriting.color.b, 1);
+
+        //Writing Fade In
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWriting.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookWriting.color;
+        man = new Color(bookWriting.color.r, bookWriting.color.g, bookWriting.color.b, 0);
+
+        initial2 = bookOpened.color;
+        man2 = new Color(bookOpened.color.r, bookOpened.color.g, bookOpened.color.b, 0);
+
+        Color initial3 = currScreen.fadeBlack.color;
+        Color man3 = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1.0f);
+
+        //Everything Fade Out
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWriting.color = Color.Lerp(initial, man, t);
+            bookOpened.color = Color.Lerp(initial2, man2, t);
+            currScreen.fadeBlack.color = Color.Lerp(initial3, man3, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        journal = false;
+        transitioning = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+
+        yield break;
+    }
+
+    private IEnumerator ScreenTransition()
+    {
+        transitioning = true;
+        currScreen.canvas.gameObject.SetActive(false);
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1);
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        targetScreen.fadeBlack.color = new Color(targetScreen.fadeBlack.color.r, targetScreen.fadeBlack.color.g, targetScreen.fadeBlack.color.b, 1);
+        currScreen = targetScreen;
+        MoveCamera();
+
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        transitioning = false;
+
+        targetScreen = null;
+
+        currScreen.canvas.gameObject.SetActive(true);
+        StateManager.instance.ChangeState(nextState);
+        if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
 
         yield break;
     }
@@ -253,5 +372,9 @@ public class ScreenManager : MonoBehaviour
 
     //    yield return null;
     //}
+
+    //if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
+    //if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
+
     //Edits by: Irfan
 }
