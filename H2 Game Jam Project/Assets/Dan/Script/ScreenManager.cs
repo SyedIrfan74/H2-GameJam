@@ -33,10 +33,13 @@ public class ScreenManager : MonoBehaviour
     public float transition2Speed = 2;
     public bool journal;
     public bool countryEraser;
+    public bool endDayOne;
     public bool transitioning;
     public Image bookClosed;
     public Image bookOpened;
     public Image bookWriting;
+    public Image bookWritingEndDayOne;
+    public Image bookEndDayOne;
     public Image countryEraserImage;
 
     //Edits by: Irfan
@@ -62,13 +65,14 @@ public class ScreenManager : MonoBehaviour
 
     public void UpdateManager()
     {
-        if (currScreen != null) Debug.Log(currScreen.screenName);
-        if (targetScreen != null) Debug.Log(targetScreen.screenName);
+        //if (currScreen != null) Debug.Log(currScreen.screenName);
+        //if (targetScreen != null) Debug.Log(targetScreen.screenName);
 
         if (nextState != StateManager.GAMESTATE.NOSTATE && !transitioning) StartCoroutine(ScreenTransition());
 
         if (journal && !transitioning) StartCoroutine(RevealJournal());
         if (countryEraser && !transitioning) StartCoroutine(RevealCountryEraser());
+        if (endDayOne && !transitioning) StartCoroutine(EndDayOne());
     }
 
     /// <summary>
@@ -130,6 +134,79 @@ public class ScreenManager : MonoBehaviour
         StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
         ScreenManager.instance.FindScreen("Canteen");
         ScreenManager.instance.SetNextState(StateManager.GAMESTATE.CONVO);
+    }
+    private IEnumerator EndDayOne()
+    {
+        transitioning = true;
+        //currScreen.canvas.gameObject.SetActive(false);
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookEndDayOne.color;
+        man = new Color(bookEndDayOne.color.r, bookEndDayOne.color.g, bookEndDayOne.color.b, 1);
+
+        //Reveal Book 
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookEndDayOne.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookWritingEndDayOne.color;
+        man = new Color(bookWritingEndDayOne.color.r, bookWritingEndDayOne.color.g, bookWritingEndDayOne.color.b, 1);
+
+        //Reveal writing
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayOne.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        elapsed = 0;
+        initial = bookWritingEndDayOne.color;
+        man = new Color(bookWritingEndDayOne.color.r, bookWritingEndDayOne.color.g, bookWritingEndDayOne.color.b, 0);
+
+        Color initial2 = bookEndDayOne.color;
+        Color man2 = new Color(bookEndDayOne.color.r, bookEndDayOne.color.g, bookEndDayOne.color.b, 0);
+
+        //Reveal writing      
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayOne.color = Color.Lerp(initial, man, t);
+            bookEndDayOne.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        endDayOne = false;
+        transitioning = false;
+
+        yield break;
     }
     private IEnumerator RevealJournal()
     {
@@ -270,8 +347,8 @@ public class ScreenManager : MonoBehaviour
         targetScreen = null;
 
         currScreen.canvas.gameObject.SetActive(true);
-        StateManager.instance.ChangeState(nextState);
         if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+        StateManager.instance.ChangeState(nextState);
         nextState = StateManager.GAMESTATE.NOSTATE;
 
         yield break;
