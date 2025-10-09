@@ -34,12 +34,15 @@ public class ScreenManager : MonoBehaviour
     public bool journal;
     public bool countryEraser;
     public bool endDayOne;
+    public bool endDayTwo;
     public bool transitioning;
     public Image bookClosed;
     public Image bookOpened;
     public Image bookWriting;
     public Image bookWritingEndDayOne;
     public Image bookEndDayOne;
+    public Image bookWritingEndDayTwo;
+    public Image bookEndDayTwo;
     public Image countryEraserImage;
 
     //Edits by: Irfan
@@ -73,6 +76,7 @@ public class ScreenManager : MonoBehaviour
         if (journal && !transitioning) StartCoroutine(RevealJournal());
         if (countryEraser && !transitioning) StartCoroutine(RevealCountryEraser());
         if (endDayOne && !transitioning) StartCoroutine(EndDayOne());
+        if (endDayTwo && !transitioning) StartCoroutine(EndDayTwo());
     }
 
     /// <summary>
@@ -138,7 +142,6 @@ public class ScreenManager : MonoBehaviour
     private IEnumerator EndDayOne()
     {
         transitioning = true;
-        //currScreen.canvas.gameObject.SetActive(false);
 
         float elapsed = 0;
         float duration = 2;
@@ -204,6 +207,79 @@ public class ScreenManager : MonoBehaviour
         }
 
         endDayOne = false;
+        transitioning = false;
+
+        yield break;
+    }
+
+    private IEnumerator EndDayTwo()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookEndDayTwo.color;
+        man = new Color(bookEndDayTwo.color.r, bookEndDayTwo.color.g, bookEndDayTwo.color.b, 1);
+
+        //Reveal Book 
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookEndDayTwo.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookWritingEndDayTwo.color;
+        man = new Color(bookWritingEndDayTwo.color.r, bookWritingEndDayTwo.color.g, bookWritingEndDayTwo.color.b, 1);
+
+        //Reveal writing
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayTwo.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        elapsed = 0;
+        initial = bookWritingEndDayTwo.color;
+        man = new Color(bookWritingEndDayTwo.color.r, bookWritingEndDayTwo.color.g, bookWritingEndDayTwo.color.b, 0);
+
+        Color initial2 = bookEndDayTwo.color;
+        Color man2 = new Color(bookEndDayTwo.color.r, bookEndDayTwo.color.g, bookEndDayTwo.color.b, 0);
+
+        //Reveal writing      
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayTwo.color = Color.Lerp(initial, man, t);
+            bookEndDayTwo.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        endDayTwo = false;
         transitioning = false;
 
         yield break;

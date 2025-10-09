@@ -20,6 +20,7 @@ public class DialogueSO : ScriptableObject
         if (flags.resetScribbleJournal) flags.scribbleJournal = true;
         if (flags.resetCountryEraser) flags.countryEraser = true;
         if (flags.resetEndDayOne) flags.endDayOne = true;
+        if (flags.resetEndDayTwo) flags.endDayTwo = true;
     }
 }
 
@@ -40,4 +41,6 @@ public class Flags
     public bool resetCountryEraser;
     public bool endDayOne;
     public bool resetEndDayOne;
+    public bool endDayTwo;
+    public bool resetEndDayTwo;
 }
