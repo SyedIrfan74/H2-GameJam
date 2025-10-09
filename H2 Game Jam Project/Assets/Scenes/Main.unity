@@ -1855,6 +1855,16 @@ MonoBehaviour:
   dialogueGO: {fileID: 2110045691}
   maleCharacterSprite: {fileID: 21300000, guid: 8bad318f3274df94db1a03142699fd84, type: 3}
   femaleCharacterSprite: {fileID: 21300000, guid: 8a4140b501e40fa4c9cbf37589bc8493, type: 3}
+  inputActionAsset: {fileID: -944628639613478452, guid: c036130acb47dc94bbc2610bd96686e8, type: 3}
+  clickAction:
+    m_Name: Click
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 66a8945d-7135-4e71-b655-722854698e50
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!1 &364891540
 GameObject:
   m_ObjectHideFlags: 0
@@ -6870,12 +6880,15 @@ MonoBehaviour:
   journal: 0
   countryEraser: 0
   endDayOne: 0
+  endDayTwo: 0
   transitioning: 0
   bookClosed: {fileID: 492933150}
   bookOpened: {fileID: 1930869644}
   bookWriting: {fileID: 1067006477}
   bookWritingEndDayOne: {fileID: 743434428}
   bookEndDayOne: {fileID: 591319462}
+  bookWritingEndDayTwo: {fileID: 0}
+  bookEndDayTwo: {fileID: 0}
   countryEraserImage: {fileID: 1562782571}
 --- !u!1 &1338030770
 GameObject:

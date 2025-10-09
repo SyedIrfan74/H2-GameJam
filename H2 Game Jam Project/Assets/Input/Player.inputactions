@@ -8,12 +8,12 @@
             "actions": [
                 {
                     "name": "Touch",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "ef44c962-22aa-4ff5-a91d-752ab68d9660",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: cheebai 26
   m_EditorClassIdentifier: 
   characterName: 
-  dialogue: Recess Bell Rings
+  dialogue: You end the day
   delay: 0.05
   flags:
-    reset: 0
+    reset: 1
     changeScreen: 0
     changeState: 0
     selectCharacter: 0
@@ -30,5 +30,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 1
+    resetEndDayTwo: 1
   nextState: 0
   nextScreen: 
