@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 80f4582c597eb25448c803a8316100a9
+guid: 7f00eabc9bce3c2489382bd0e515e6cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3636525851206154153
-    second: MC_Chopstick_hands_0
+      213: 7376891639322864447
+    second: MC_ZHA_hands_0
   - first:
-      213: 6982241922935694829
-    second: MC_Chopstick_hands_1
+      213: 1400871557619842417
+    second: MC_ZHA_hands_1
   - first:
-      213: -6286357665102198231
-    second: MC_Chopstick_hands_2
-  - first:
-      213: -8222657767057191984
-    second: MC_Chopstick_hands_3
+      213: -6310439732078842543
+    second: MC_ZHA_hands_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,93 +115,84 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Chopstick_hands_0
+      name: MC_ZHA_hands_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 6
         y: 0
-        width: 377
-        height: 839
+        width: 440
+        height: 980
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75805566107788dc0800000000000000
-      internalID: -3636525851206154153
+      spriteID: f3b636c8cdbff5660800000000000000
+      internalID: 7376891639322864447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Chopstick_hands_1
+      name: MC_ZHA_hands_1
       rect:
         serializedVersion: 2
-        x: 489
+        x: 539
         y: 0
-        width: 377
-        height: 874
+        width: 443
+        height: 980
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de52c601908e5e060800000000000000
-      internalID: 6982241922935694829
+      spriteID: 17df0ef6245e07310800000000000000
+      internalID: 1400871557619842417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Chopstick_hands_2
+      name: MC_ZHA_hands_2
       rect:
         serializedVersion: 2
-        x: 989
+        x: 1025
         y: 0
-        width: 377
-        height: 874
+        width: 591
+        height: 980
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92a8788920f52c8a0800000000000000
-      internalID: -6286357665102198231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Chopstick_hands_3
-      rect:
-        serializedVersion: 2
-        x: 1432
-        y: 0
-        width: 419
-        height: 874
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0db03fc835043ed80800000000000000
-      internalID: -8222657767057191984
+      spriteID: 15dede07f70dc68a0800000000000000
+      internalID: -6310439732078842543
       vertices: []
       indices: 
       edges: []
@@ -213,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dc6d482f2fa660648a8280d0c9cb97c0
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MC_Chopstick_hands_0: -3636525851206154153
-      MC_Chopstick_hands_1: 6982241922935694829
-      MC_Chopstick_hands_2: -6286357665102198231
-      MC_Chopstick_hands_3: -8222657767057191984
+      MC_ZHA_hands_0: 7376891639322864447
+      MC_ZHA_hands_1: 1400871557619842417
+      MC_ZHA_hands_2: -6310439732078842543
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
