@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 7
   m_EditorClassIdentifier: 
   characterName: Bobby
+  characterSprite: {fileID: 21300000, guid: 2207a97f5ee554848b968f79f4c7afbb, type: 3}
   dialogue: Simple, right? To me, this game is like rock paper scissors but using
     different hand signs.
   delay: 0.05
@@ -31,5 +32,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 

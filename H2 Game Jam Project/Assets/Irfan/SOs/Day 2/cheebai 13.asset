@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 13
   m_EditorClassIdentifier: 
   characterName: Priyanka
+  characterSprite: {fileID: 21300000, guid: 5f0e0b458c88cf94087378c9f8c79d57, type: 3}
   dialogue: "...haha! Let\u2019s play again next time. By the way..."
   delay: 0.05
   flags:
@@ -30,5 +31,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 
