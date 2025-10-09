@@ -153,6 +153,8 @@ public class MinigameManager : MonoBehaviour
 
     public Image enemyHumanSprite; // the enemy sprite in the middle
     public List<Sprite> enemyHumanSprites = new List<Sprite>();
+    public List<Sprite> bobbyHandSprites = new List<Sprite>();
+    public List<Sprite> priyaHandSprites = new List<Sprite>();
 
     public bool isEnemySelectingCha;
     #endregion
@@ -162,13 +164,13 @@ public class MinigameManager : MonoBehaviour
         chaDifficulty = i;
 
         enemyHumanSprite.sprite = enemyHumanSprites[i - 1];
-
+        ChaHandSprites();
         ResetCha();
     }
 
     void UpdateCha()
     {
-
+        if (Input.GetKeyDown(KeyCode.P)) { ChaHandSprites(); }
     }
 
     /// <summary>
@@ -199,9 +201,9 @@ public class MinigameManager : MonoBehaviour
                 }
                 playerHands[i] = (ChaHandStates)rightHandIndex;
             }
-        }
 
-        ChaHandSprites();
+            ChaHandSprites();
+        }
     }
 
     public void ChaConfirm()
@@ -238,7 +240,7 @@ public class MinigameManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f);
 
             ChaHandSprites();
-            ChaAttackPhase();
+            StartCoroutine(ChaAttackPhase());
 
             Debug.Log("IMDONEPICKING");
             isEnemySelectingCha = false;
@@ -246,9 +248,10 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
-    void ChaAttackPhase()
+    IEnumerator ChaAttackPhase()
     {
-        Debug.Log("IMATTACKINg");
+        Debug.Log("IMATTACKING");
+        ChaHandSprites();
 
         for (int i = 0; i < enemyHands.Count; i++)
         {
@@ -268,7 +271,9 @@ public class MinigameManager : MonoBehaviour
         }
 
         currChaState = ChaGameStates.Selecting;
-        ChaHandSprites();
+
+        yield return new WaitForSecondsRealtime(1f);
+
         ChaWinStates();
     }
 
@@ -281,18 +286,48 @@ public class MinigameManager : MonoBehaviour
                 break;
             case ChaHandStates.Person:
                 if (enemy == ChaHandStates.Person || enemy == ChaHandStates.Dead) break;
-                if (enemy == ChaHandStates.Gun) didPlayerWin = 0;
-                if (enemy == ChaHandStates.Rock)didPlayerWin = 1;
+                if (enemy == ChaHandStates.Gun)
+                {
+                    Debug.Log("Player lose");
+
+                    return didPlayerWin = 0;
+                }
+                if (enemy == ChaHandStates.Rock)
+                {
+                    Debug.Log("Player win");
+
+                    return didPlayerWin = 1;
+                }
                 break;
             case ChaHandStates.Gun:
                 if (enemy == ChaHandStates.Gun || enemy == ChaHandStates.Dead) break;
-                if (enemy == ChaHandStates.Rock) didPlayerWin = 0;
-                if (enemy == ChaHandStates.Person) didPlayerWin = 1;
+                if (enemy == ChaHandStates.Rock)
+                {
+                    Debug.Log("Player lose");
+
+                    return didPlayerWin = 0;
+                }
+                if (enemy == ChaHandStates.Person)
+                {
+                    Debug.Log("Player win");
+
+                    return didPlayerWin = 1;
+                }
                 break;
             case ChaHandStates.Rock:
                 if (enemy == ChaHandStates.Rock || enemy == ChaHandStates.Dead) break;
-                if (enemy == ChaHandStates.Person) didPlayerWin = 0;
-                if (enemy == ChaHandStates.Gun) didPlayerWin = 1;
+                if (enemy == ChaHandStates.Person)
+                {
+                    Debug.Log("Player lose");
+
+                    return didPlayerWin = 0;
+                }
+                if (enemy == ChaHandStates.Gun)
+                {
+                    Debug.Log("Player win");
+
+                    return didPlayerWin = 1;
+                }
                 break;
         }
 
@@ -301,11 +336,14 @@ public class MinigameManager : MonoBehaviour
 
     void ChaHandSprites()
     {
-        for(int i = 0; i < enemyHandSprites.Count; i++)
+        enemyHumanSprite.sprite = enemyHumanSprites[chaDifficulty - 1];
+
+        for (int i = 0; i < enemyHandSprites.Count; i++)
         {
             if (enemyHands[i] != ChaHandStates.Dead)
             {
-                enemyHandSprites[i].sprite = chaHandSprites[(int)enemyHands[i]]; 
+                enemyHandSprites[i].sprite = chaDifficulty == 1 ? bobbyHandSprites[(int)enemyHands[i]] : priyaHandSprites[(int)enemyHands[i]]; 
+                //enemyHandSprites[i].sprite = chaHandSprites[(int)enemyHands[i]];
                 enemyHandSprites[i].enabled = true;
             }
             else enemyHandSprites[i].enabled = false;
@@ -357,11 +395,11 @@ public class MinigameManager : MonoBehaviour
             chaWinText.text = "You Lose!";
             chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
         }
-        else 
+        else
+        {
             chaWinText.gameObject.transform.parent.gameObject.SetActive(false);
-
+        }
     }
-
     #endregion
 
     #region Chopsticks
