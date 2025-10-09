@@ -67,6 +67,38 @@ public class MinigameManager : MonoBehaviour
 
     }
 
+    public void StartMinigame2(string minigameName)
+    {
+        switch (minigameName)
+        {
+            case "Cha":
+                currentMinigame = "Cha";
+                //StartCha();
+                break;
+            case "Chopsticks1":
+                currentMinigame = "Chopsticks";
+                StartChopsticks(1);
+                break;
+            case "Chopsticks2":
+                currentMinigame = "Chopsticks";
+                StartChopsticks(2);
+                break;
+            case "Chapteh":
+                currentMinigame = "Chapteh";
+                //StartChapteh();
+                break;
+            case "Bubble Blowing":
+                currentMinigame = "Bubble Blowing";
+                //StartBB();
+                break;
+            default:
+                Debug.Log("Jialat.");
+                break;
+        }
+        //ScreenManager.instance.ChangeScreen(currentMinigame);
+
+    }
+
     #region Cha
     #region Cha Variables
     [Header("Cha General")]

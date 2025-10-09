@@ -24,6 +24,6 @@ MonoBehaviour:
     inputName: 0
     resetName: 0
     getJournal: 0
-    scribbleJournal: 1
+    scribbleJournal: 0
   nextState: 0
   nextScreen: 

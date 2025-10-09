@@ -32,4 +32,5 @@ public class Flags
     public bool resetName;
     public bool getJournal;
     public bool scribbleJournal;
+    public bool resetScribbleJournal;
 }
