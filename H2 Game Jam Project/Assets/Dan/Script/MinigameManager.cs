@@ -31,6 +31,7 @@ public class MinigameManager : MonoBehaviour
     public void UpdateManager()
     {
         if (currentMinigame == "Chopsticks") UpdateChopsticks();
+        if (currentMinigame == "Cha") UpdateCha();
     }
 
     public void StartMinigame(string minigameName)
@@ -39,7 +40,7 @@ public class MinigameManager : MonoBehaviour
         {
             case "Cha":
                 currentMinigame = "Cha";
-                //StartCha();
+                StartCha();
                 break;
             case "Chopsticks1":
                 currentMinigame = "Chopsticks";
@@ -61,11 +62,267 @@ public class MinigameManager : MonoBehaviour
                 Debug.Log("Jialat.");
                 break;
         }
+
         ScreenManager.instance.ChangeScreen(currentMinigame);
 
     }
 
     #region Cha
+    #region Cha Variables
+    [Header("Cha General")]
+
+    public ChaGameStates currChaState;
+
+    public enum ChaGameStates
+    {
+        Selecting,
+        Attacking,
+        PlayerWin,
+        PlayerLose,
+        None
+    }
+
+    public enum ChaHandStates
+    {
+        Person,
+        Gun,
+        Rock,
+        Dead
+    }
+
+    public List<Sprite> chaHandSprites = new List<Sprite>();
+
+    public int chaDifficulty;
+
+    public TMP_Text chaWinText;
+
+    [Header("Cha Player")]
+
+    public List<ChaHandStates> playerHands = new List<ChaHandStates>(2);
+
+    public int leftHandIndex;
+    public int rightHandIndex;
+
+    public List<Image> playerSprites = new List<Image>(2);
+
+    [Header("Cha Enemy")]
+
+    public List<ChaHandStates> enemyHands = new List<ChaHandStates>(2);
+
+    public List<Image> enemySprites = new List<Image>(2);
+
+    public bool isEnemySelectingCha;
+    #endregion
+
+    void StartCha()
+    {
+        ResetCha();
+    }
+
+    void UpdateCha()
+    {
+        if (currChaState == ChaGameStates.Attacking)
+        {
+            ChaAttackPhase();
+        }
+    }
+
+    /// <summary>
+    /// Attached to a button and on click, itll change the hand type 
+    /// </summary>
+    /// <param name="i">The hand being changed, 0 being left, 1 being right</param>
+    public void ChaPlayerChangeHand(int i)
+    {
+        if (currChaState == ChaGameStates.Selecting)
+        {
+            if (i == 0) 
+            {
+                leftHandIndex++;
+                if (leftHandIndex > 2)
+                {
+                    playerHands[i] = ChaHandStates.Person;
+                    leftHandIndex = 0;
+                }
+                playerHands[i] = (ChaHandStates)leftHandIndex; 
+            }
+            if (i == 1)
+            {
+                rightHandIndex++;
+                if (rightHandIndex > 2)
+                {
+                    playerHands[i] = ChaHandStates.Person;
+                    rightHandIndex = 0;
+                }
+                playerHands[i] = (ChaHandStates)rightHandIndex;
+            }
+        }
+
+        ChaHandSprites();
+    }
+
+    public void ChaConfirm()
+    {
+        if(currChaState == ChaGameStates.Selecting)
+            Debug.Log("PENISSS");
+
+        currChaState = ChaGameStates.None;
+        isEnemySelectingCha = true;
+
+        StartCoroutine(ChaEnemyTurn());
+    }
+
+    IEnumerator ChaEnemyTurn()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+
+        while (isEnemySelectingCha == true) 
+        { 
+            for (int x = 0; x < enemyHands.Count; x++)
+            {
+                if (enemyHands[x] == ChaHandStates.Dead)
+                {
+                    Debug.Log(x + "hand is dead");
+                    continue;
+                }
+
+                int i = UnityEngine.Random.Range(0, 2);
+                enemyHands[x] = (ChaHandStates)i;
+                Debug.Log("IMPICKING" + i.ToString());
+
+            }
+
+            yield return new WaitForSecondsRealtime(1f);
+
+            ChaHandSprites();
+            currChaState = ChaGameStates.Attacking;
+
+            Debug.Log("IMDONEPICKING");
+            isEnemySelectingCha = false;
+            yield break;
+        }
+    }
+
+    void ChaAttackPhase()
+    {
+        Debug.Log("IMATTACKINg");
+
+        for (int i = 0; i < enemyHands.Count; i++)
+        {
+            //comparing the hands
+            int enemyIndex = i == 0 ? 1 : 0;
+
+            if (DidPlayerWin(playerHands[i], enemyHands[enemyIndex]) == 1)
+            {
+                enemyHands[enemyIndex] = ChaHandStates.Dead;
+            }
+            else if (DidPlayerWin(playerHands[i], enemyHands[enemyIndex]) == 0)
+            {
+                enemyHands[enemyIndex] = ChaHandStates.Dead;
+            }
+            
+            Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[enemyIndex]).ToString());
+        }
+
+        currChaState = ChaGameStates.Selecting;
+        ChaHandSprites();
+        ChaWinStates();
+    }
+
+    int DidPlayerWin(ChaHandStates player, ChaHandStates enemy)
+    {
+        int didPlayerWin = 2;
+        switch (player)
+        {
+            case ChaHandStates.Dead:
+                break;
+            case ChaHandStates.Person:
+                if (enemy == ChaHandStates.Person || enemy == ChaHandStates.Dead) break;
+                if (enemy == ChaHandStates.Gun) didPlayerWin = 0;
+                if (enemy == ChaHandStates.Rock)didPlayerWin = 1;
+                break;
+            case ChaHandStates.Gun:
+                if (enemy == ChaHandStates.Gun || enemy == ChaHandStates.Dead) break;
+                if (enemy == ChaHandStates.Rock) didPlayerWin = 0;
+                if (enemy == ChaHandStates.Person) didPlayerWin = 1;
+                break;
+            case ChaHandStates.Rock:
+                if (enemy == ChaHandStates.Rock || enemy == ChaHandStates.Dead) break;
+                if (enemy == ChaHandStates.Person) didPlayerWin = 0;
+                if (enemy == ChaHandStates.Gun) didPlayerWin = 1;
+                break;
+        }
+
+        return didPlayerWin;
+    }
+
+    void ChaHandSprites()
+    {
+        for(int i = 0; i < enemySprites.Count; i++)
+        {
+            if (enemyHands[i] != ChaHandStates.Dead)
+            {
+                enemySprites[i].sprite = chaHandSprites[(int)enemyHands[i]]; 
+                enemySprites[i].enabled = true;
+            }
+            else enemySprites[i].enabled = false;
+
+            if (playerHands[i] != ChaHandStates.Dead)
+            {
+                playerSprites[i].sprite = chaHandSprites[(int)playerHands[i]];
+                playerSprites[i].enabled = true;
+            }
+            else playerSprites[i].enabled = false;
+        }
+
+        //enemySprites[0].sprite = enemyHands[0] != ChaHandStates.Dead ? chaHandSprites[(int)enemyHands[0]] : null;
+        //enemySprites[1].sprite = enemyHands[1] != ChaHandStates.Dead ? chaHandSprites[(int)enemyHands[1]] : null;
+        //playerSprites[0].sprite = playerHands[0] != ChaHandStates.Dead ? chaHandSprites[(int)playerHands[0]] : null;
+        //playerSprites[1].sprite = playerHands[1] != ChaHandStates.Dead ? chaHandSprites[(int)playerHands[1]] : null;
+    }
+
+    public void ResetCha()
+    {
+        currChaState = ChaGameStates.Selecting;
+
+        for(int i = 0; i < enemyHands.Count; i++)
+        {
+            playerHands[i] = ChaHandStates.Person;
+            enemyHands[i] = ChaHandStates.Person;
+        }
+
+        foreach (Image sprite in playerSprites)
+        {
+            sprite.enabled  = true;
+        }
+        foreach (Image sprite in enemySprites)
+        {
+            sprite.enabled  = true;
+        }
+
+        ChaHandSprites();
+        ChaWinStates();
+    }
+
+    void ChaWinStates()
+    {
+        if (enemyHands[0] == ChaHandStates.Dead && enemyHands[1] == ChaHandStates.Dead) currChaState = ChaGameStates.PlayerWin;
+        else if (playerHands[0] == ChaHandStates.Dead && playerHands[1] == ChaHandStates.Dead) currChaState = ChaGameStates.PlayerLose;
+
+        if (currChaState == ChaGameStates.PlayerWin)
+        {
+            chaWinText.text = "You Win!";
+            chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+        }
+        else if (currChaState == ChaGameStates.PlayerLose)
+        {
+            chaWinText.text = "You Lose!";
+            chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+        }
+        else 
+            chaWinText.gameObject.transform.parent.gameObject.SetActive(false);
+
+    }
+
     #endregion
 
     #region Chopsticks
