@@ -68,17 +68,7 @@ public class DialogueManager : MonoBehaviour
         if (pickingCharacter || pickingName) return;
 
         //if running == true, dialogue is currently being written on the screen
-        if (running == false)
-        {
-            if (Input.GetMouseButtonDown(0) || manualStart)
-            {
-                if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
-                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
-            }
-
-            if (manualStart) manualStart = false;
-        }
-        else if (running == true)
+        if (running)
         {
             //Interrupts dialogue writing to skip
             if (!Input.GetMouseButtonDown(0)) return;
@@ -86,16 +76,26 @@ public class DialogueManager : MonoBehaviour
             StopAllCoroutines();
             if (dialogueWName == "") dialogueText.text = dialogueSOs[currentDialogue].dialogue;
             else dialogueText.text = dialogueWName;
-            
 
             dialogueWName = "";
             running = false;
             currentDialogue++;
+            return;
         }
 
-        if (currentDialogue == 0) return;
+        //Starts next Dialogue to be shown
+        if (!running)
+        {
+            if ((Input.GetMouseButtonDown(0) || manualStart) && currentDialogue < dialogueSOs.Count)
+            {
+                if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+            }
 
-        if (dialogueSOs[currentDialogue - 1].flags.changeScreen)
+            if (manualStart) manualStart = false;
+        }
+        
+        if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeScreen)
         {
             if (running) return;
             timer += Time.deltaTime;
@@ -108,45 +108,45 @@ public class DialogueManager : MonoBehaviour
 
                 if (dialogueSOs[currentDialogue - 1].nextState == StateManager.GAMESTATE.GAME)
                 {
-                    MinigameManager.instance.StartMinigame(dialogueSOs[currentDialogue - 1].nextScreen);
+                    MinigameManager.instance.StartMinigame2(dialogueSOs[currentDialogue - 1].nextScreen);
+                    StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+                    ScreenManager.instance.FindScreen(MinigameManager.instance.currentMinigame);
+                    ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
                     return;
                 }
 
                 StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                 ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
                 ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
-
-                
             }
         }
-        else if (dialogueSOs[currentDialogue - 1].flags.selectCharacter && pickingCharacter == false)
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter && pickingCharacter == false)
         {
             characterSelection.SetActive(true);
             pickingCharacter = true;
             dialogueSOs[currentDialogue - 1].flags.selectCharacter = false;
         }
-        else if (dialogueSOs[currentDialogue - 1].flags.inputName && pickingName == false)
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName && pickingName == false)
         {
             nameInput.SetActive(true);
             pickingName = true;
             dialogueSOs[currentDialogue - 1].flags.inputName = false;
         }
-        else if (dialogueSOs[currentDialogue - 1].flags.getJournal)
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.getJournal)
         {
             journal.SetActive(true);
         }
-        else if (dialogueSOs[currentDialogue - 1].flags.scribbleJournal)
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
             dialogueSOs[currentDialogue - 1].flags.scribbleJournal = false;
         }
-
-
-
-        else if (dialogueSOs[currentDialogue - 1].flags.changeState)
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser)
         {
-            //UNUSED
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.countryEraser = true;
+            dialogueSOs[currentDialogue - 1].flags.countryEraser = false;
         }
     }
 
@@ -156,13 +156,11 @@ public class DialogueManager : MonoBehaviour
         int count = 0;
         string newDialogue = "";
         dialogueText.text = "";
-        if (so.characterName != "") nameText.text = so.characterName;
-        else nameText.text = playerName;
+        if (so.characterName == MCNAME) nameText.text = playerName;
+        else if (so.characterName == "") nameText.text = "";
+        else nameText.text = so.characterName;
 
-        if (so.dialogue.Contains(MCNAME))
-        {
-            newDialogue = InsertName(so.dialogue);
-        }
+        if (so.dialogue.Contains(MCNAME)) newDialogue = InsertName(so.dialogue);
 
         int stringlen = 0;
 
@@ -226,8 +224,37 @@ public class DialogueManager : MonoBehaviour
 
 
 
+
+
+
+//else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeState)
+//{
+//    //UNUSED
+//}
+
+
 //string temp = "[MC Name]";
 //int index = so.dialogue.IndexOf('[');
 //string b4 = so.dialogue.Substring(0, index - 1);
 //string aft = so.dialogue.Substring(index + temp.Length, so.dialogue.Length - temp.Length - b4.Length - 1);
 //newDialogue = b4 + " " + playerName + aft;
+
+
+//else if (running == true)
+//{
+//    //Interrupts dialogue writing to skip
+//    if (!Input.GetMouseButtonDown(0)) return;
+
+//    StopAllCoroutines();
+//    if (dialogueWName == "") dialogueText.text = dialogueSOs[currentDialogue].dialogue;
+//    else dialogueText.text = dialogueWName;
+
+
+//    dialogueWName = "";
+//    running = false;
+//    currentDialogue++;
+//}
+
+
+//if (currentDialogue == 0) return;
+

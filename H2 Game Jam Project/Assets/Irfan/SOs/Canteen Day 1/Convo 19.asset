@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a366cedceb66f64ba33d4eb871de5cd, type: 3}
-  m_Name: testSO15
+  m_Name: Convo 19
   m_EditorClassIdentifier: 
-  characterName: 
-  dialogue: Let's write something inside!
+  characterName: '[MC Name]'
+  dialogue: "Oh, they look like they\u2019re already playing something. Uhm\u2026should
+    we wait?"
   delay: 0.05
   flags:
-    reset: 1
+    reset: 0
     changeScreen: 0
     changeState: 0
     selectCharacter: 0
@@ -25,6 +26,8 @@ MonoBehaviour:
     resetName: 0
     getJournal: 0
     scribbleJournal: 0
-    resetScribbleJournal: 1
+    resetScribbleJournal: 0
+    countryEraser: 0
+    resetCountryEraser: 0
   nextState: 0
   nextScreen: 

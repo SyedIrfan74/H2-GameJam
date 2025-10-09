@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a366cedceb66f64ba33d4eb871de5cd, type: 3}
   m_Name: testSO5
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: '[MC Name]'
   dialogue: "Uhm hi\u2026I\u2019m [MC Name]. I\u2019m new to Singapore. Nice to meet
     everyone\u2026"
   delay: 0.05
@@ -26,5 +26,8 @@ MonoBehaviour:
     resetName: 0
     getJournal: 0
     scribbleJournal: 0
+    resetScribbleJournal: 0
+    countryEraser: 0
+    resetCountryEraser: 0
   nextState: 0
   nextScreen: 
