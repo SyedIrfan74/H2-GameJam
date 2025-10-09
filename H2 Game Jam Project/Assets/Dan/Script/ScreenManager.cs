@@ -209,6 +209,9 @@ public class ScreenManager : MonoBehaviour
         endDayOne = false;
         transitioning = false;
 
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+        nextState = StateManager.GAMESTATE.CONVO;
+        ScreenManager.instance.FindScreen("Canteen");
         yield break;
     }
 
@@ -281,6 +284,10 @@ public class ScreenManager : MonoBehaviour
 
         endDayTwo = false;
         transitioning = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
 
         yield break;
     }

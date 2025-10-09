@@ -142,6 +142,7 @@ public class DialogueManager : MonoBehaviour
                     StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                     ScreenManager.instance.FindScreen(MinigameManager.instance.currentMinigame);
                     ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
+                    dialogueGO.SetActive(false);
                     return;
                 }
 
@@ -149,6 +150,7 @@ public class DialogueManager : MonoBehaviour
                 StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                 ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
                 ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
+                dialogueGO.SetActive(false);
             }
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter && pickingCharacter == false)
@@ -156,12 +158,14 @@ public class DialogueManager : MonoBehaviour
             characterSelection.SetActive(true);
             pickingCharacter = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
+            dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName && pickingName == false)
         {
             nameInput.SetActive(true);
             pickingName = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName = false;
+            dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.getJournal)
         {
@@ -172,6 +176,7 @@ public class DialogueManager : MonoBehaviour
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal = false;
+            dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser)
         {
@@ -184,12 +189,14 @@ public class DialogueManager : MonoBehaviour
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayOne = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne = false;
+            dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayTwo = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo = false;
+            dialogueGO.SetActive(false);
         }
     }
 

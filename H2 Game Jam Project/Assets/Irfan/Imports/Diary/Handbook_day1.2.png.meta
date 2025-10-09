@@ -1,0 +1,4784 @@
+fileFormatVersion: 2
+guid: 96e7ff5b4652f7040a8da7408315d7da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5939559807064663911
+    second: Handbook_day1.2_0
+  - first:
+      213: -4086677581968548173
+    second: Handbook_day1.2_1
+  - first:
+      213: -2749699379524365804
+    second: Handbook_day1.2_2
+  - first:
+      213: -1547776008183213430
+    second: Handbook_day1.2_3
+  - first:
+      213: 3247157357198520466
+    second: Handbook_day1.2_4
+  - first:
+      213: -7013577618928244504
+    second: Handbook_day1.2_5
+  - first:
+      213: -8187205100723692116
+    second: Handbook_day1.2_6
+  - first:
+      213: 5975094468431202178
+    second: Handbook_day1.2_7
+  - first:
+      213: 3116448753267666382
+    second: Handbook_day1.2_8
+  - first:
+      213: -7482078944515047291
+    second: Handbook_day1.2_9
+  - first:
+      213: -5021286665884149377
+    second: Handbook_day1.2_10
+  - first:
+      213: 5569795976076245582
+    second: Handbook_day1.2_11
+  - first:
+      213: 4532142162159935204
+    second: Handbook_day1.2_12
+  - first:
+      213: 1215694966579629309
+    second: Handbook_day1.2_13
+  - first:
+      213: -8002647605969136992
+    second: Handbook_day1.2_14
+  - first:
+      213: -758022891596938249
+    second: Handbook_day1.2_15
+  - first:
+      213: 921397077057524430
+    second: Handbook_day1.2_16
+  - first:
+      213: 6564275517762285723
+    second: Handbook_day1.2_17
+  - first:
+      213: 8829186469803626463
+    second: Handbook_day1.2_18
+  - first:
+      213: -8973292796609376168
+    second: Handbook_day1.2_19
+  - first:
+      213: -2486529673108266174
+    second: Handbook_day1.2_20
+  - first:
+      213: 7127755352966824961
+    second: Handbook_day1.2_21
+  - first:
+      213: -8835766262438965718
+    second: Handbook_day1.2_22
+  - first:
+      213: -1517485472325608620
+    second: Handbook_day1.2_23
+  - first:
+      213: 948850974860524253
+    second: Handbook_day1.2_24
+  - first:
+      213: 5546914830096397709
+    second: Handbook_day1.2_25
+  - first:
+      213: 7460228229551643039
+    second: Handbook_day1.2_26
+  - first:
+      213: -2073177057208854393
+    second: Handbook_day1.2_27
+  - first:
+      213: -4858326112998457510
+    second: Handbook_day1.2_28
+  - first:
+      213: -1024368552913135411
+    second: Handbook_day1.2_29
+  - first:
+      213: 1830018115952592798
+    second: Handbook_day1.2_30
+  - first:
+      213: 4102865282078178324
+    second: Handbook_day1.2_31
+  - first:
+      213: -4976320625787131535
+    second: Handbook_day1.2_32
+  - first:
+      213: -7488211966259639289
+    second: Handbook_day1.2_33
+  - first:
+      213: -3761375672912457757
+    second: Handbook_day1.2_34
+  - first:
+      213: 5251222140726358534
+    second: Handbook_day1.2_35
+  - first:
+      213: -4847066149451035483
+    second: Handbook_day1.2_36
+  - first:
+      213: 8212220609541539557
+    second: Handbook_day1.2_37
+  - first:
+      213: 4868084467532141647
+    second: Handbook_day1.2_38
+  - first:
+      213: 5815311595172570640
+    second: Handbook_day1.2_39
+  - first:
+      213: 7803933689921138971
+    second: Handbook_day1.2_40
+  - first:
+      213: 3270552809578285065
+    second: Handbook_day1.2_41
+  - first:
+      213: -7152352015702902156
+    second: Handbook_day1.2_42
+  - first:
+      213: 3055123266068810339
+    second: Handbook_day1.2_43
+  - first:
+      213: 1874304319120453183
+    second: Handbook_day1.2_44
+  - first:
+      213: -1712130763176934901
+    second: Handbook_day1.2_45
+  - first:
+      213: -2331931359568838389
+    second: Handbook_day1.2_46
+  - first:
+      213: -6026920366353570937
+    second: Handbook_day1.2_47
+  - first:
+      213: 53882644397527193
+    second: Handbook_day1.2_48
+  - first:
+      213: -376937849523386787
+    second: Handbook_day1.2_49
+  - first:
+      213: 6773589141422966344
+    second: Handbook_day1.2_50
+  - first:
+      213: 8868290005804359389
+    second: Handbook_day1.2_51
+  - first:
+      213: -3114638858829657362
+    second: Handbook_day1.2_52
+  - first:
+      213: 308968761904601733
+    second: Handbook_day1.2_53
+  - first:
+      213: -1828301667464682218
+    second: Handbook_day1.2_54
+  - first:
+      213: 8413210192497992132
+    second: Handbook_day1.2_55
+  - first:
+      213: -3753603580935573054
+    second: Handbook_day1.2_56
+  - first:
+      213: -9213119828755757466
+    second: Handbook_day1.2_57
+  - first:
+      213: 8153390599608349067
+    second: Handbook_day1.2_58
+  - first:
+      213: -6548992838887708450
+    second: Handbook_day1.2_59
+  - first:
+      213: -6526986506171649639
+    second: Handbook_day1.2_60
+  - first:
+      213: -2769872840175217801
+    second: Handbook_day1.2_61
+  - first:
+      213: 181474279226951671
+    second: Handbook_day1.2_62
+  - first:
+      213: 1191831855514182999
+    second: Handbook_day1.2_63
+  - first:
+      213: -3595458924756765513
+    second: Handbook_day1.2_64
+  - first:
+      213: 3635750692758085105
+    second: Handbook_day1.2_65
+  - first:
+      213: 7402490344640585763
+    second: Handbook_day1.2_66
+  - first:
+      213: -951946822537281862
+    second: Handbook_day1.2_67
+  - first:
+      213: 5428361562451798127
+    second: Handbook_day1.2_68
+  - first:
+      213: -2150703765624285355
+    second: Handbook_day1.2_69
+  - first:
+      213: -6146642312746235584
+    second: Handbook_day1.2_70
+  - first:
+      213: 4255932465492511990
+    second: Handbook_day1.2_71
+  - first:
+      213: 1283522774784435660
+    second: Handbook_day1.2_72
+  - first:
+      213: 2300626256062727085
+    second: Handbook_day1.2_73
+  - first:
+      213: -6583464293168614550
+    second: Handbook_day1.2_74
+  - first:
+      213: 20695333898288393
+    second: Handbook_day1.2_75
+  - first:
+      213: -3999694956576101482
+    second: Handbook_day1.2_76
+  - first:
+      213: 7308074530943664195
+    second: Handbook_day1.2_77
+  - first:
+      213: -9219835453040775441
+    second: Handbook_day1.2_78
+  - first:
+      213: -8414382909484191307
+    second: Handbook_day1.2_79
+  - first:
+      213: -4576146524801168150
+    second: Handbook_day1.2_80
+  - first:
+      213: -3009510250563100678
+    second: Handbook_day1.2_81
+  - first:
+      213: -2393483603881257355
+    second: Handbook_day1.2_82
+  - first:
+      213: 7117249328991213700
+    second: Handbook_day1.2_83
+  - first:
+      213: -8185102810711299358
+    second: Handbook_day1.2_84
+  - first:
+      213: -1245937901099021307
+    second: Handbook_day1.2_85
+  - first:
+      213: 2707117323326756926
+    second: Handbook_day1.2_86
+  - first:
+      213: -8221565800510546877
+    second: Handbook_day1.2_87
+  - first:
+      213: -756315487279609229
+    second: Handbook_day1.2_88
+  - first:
+      213: 5316855714039953120
+    second: Handbook_day1.2_89
+  - first:
+      213: -2598674807153021169
+    second: Handbook_day1.2_90
+  - first:
+      213: 4042184413079284538
+    second: Handbook_day1.2_91
+  - first:
+      213: 8608267409125767679
+    second: Handbook_day1.2_92
+  - first:
+      213: -1532687262258898756
+    second: Handbook_day1.2_93
+  - first:
+      213: -4731403091129083702
+    second: Handbook_day1.2_94
+  - first:
+      213: -1303290462045268309
+    second: Handbook_day1.2_95
+  - first:
+      213: -6287917836631380262
+    second: Handbook_day1.2_96
+  - first:
+      213: 4746845740211868328
+    second: Handbook_day1.2_97
+  - first:
+      213: -282291407397670404
+    second: Handbook_day1.2_98
+  - first:
+      213: -2751021006978864363
+    second: Handbook_day1.2_99
+  - first:
+      213: 3284311755331019087
+    second: Handbook_day1.2_100
+  - first:
+      213: 8765601541998987109
+    second: Handbook_day1.2_101
+  - first:
+      213: -2529554641337144455
+    second: Handbook_day1.2_102
+  - first:
+      213: -7385119224079811627
+    second: Handbook_day1.2_103
+  - first:
+      213: 7702648912191559793
+    second: Handbook_day1.2_104
+  - first:
+      213: -200491022802516032
+    second: Handbook_day1.2_105
+  - first:
+      213: -6256707113815420978
+    second: Handbook_day1.2_106
+  - first:
+      213: -8368537944639520051
+    second: Handbook_day1.2_107
+  - first:
+      213: 463969120824955273
+    second: Handbook_day1.2_108
+  - first:
+      213: -2776335497679268501
+    second: Handbook_day1.2_109
+  - first:
+      213: -2469997501452096408
+    second: Handbook_day1.2_110
+  - first:
+      213: -3725495847318871031
+    second: Handbook_day1.2_111
+  - first:
+      213: -4576592190816312481
+    second: Handbook_day1.2_112
+  - first:
+      213: 7052064980158946061
+    second: Handbook_day1.2_113
+  - first:
+      213: 2193874296151044135
+    second: Handbook_day1.2_114
+  - first:
+      213: 2606240444931629051
+    second: Handbook_day1.2_115
+  - first:
+      213: 5106403267860209993
+    second: Handbook_day1.2_116
+  - first:
+      213: -4304670089090617746
+    second: Handbook_day1.2_117
+  - first:
+      213: -2444255369000150431
+    second: Handbook_day1.2_118
+  - first:
+      213: -3151558869150659032
+    second: Handbook_day1.2_119
+  - first:
+      213: 6223316412696915306
+    second: Handbook_day1.2_120
+  - first:
+      213: -8519079840421983716
+    second: Handbook_day1.2_121
+  - first:
+      213: 3947314095387496909
+    second: Handbook_day1.2_122
+  - first:
+      213: 2264581054070436799
+    second: Handbook_day1.2_123
+  - first:
+      213: -1890180124539834829
+    second: Handbook_day1.2_124
+  - first:
+      213: 5830342527941804197
+    second: Handbook_day1.2_125
+  - first:
+      213: 7231112302830668888
+    second: Handbook_day1.2_126
+  - first:
+      213: -1240638646562275215
+    second: Handbook_day1.2_127
+  - first:
+      213: 6041080981965220494
+    second: Handbook_day1.2_128
+  - first:
+      213: 9112741490832512786
+    second: Handbook_day1.2_129
+  - first:
+      213: 336814037315276038
+    second: Handbook_day1.2_130
+  - first:
+      213: 8614554849503435767
+    second: Handbook_day1.2_131
+  - first:
+      213: -679163164504227074
+    second: Handbook_day1.2_132
+  - first:
+      213: 3888576768400457763
+    second: Handbook_day1.2_133
+  - first:
+      213: 1245949589847949935
+    second: Handbook_day1.2_134
+  - first:
+      213: -4374741259315830180
+    second: Handbook_day1.2_135
+  - first:
+      213: 2137932112065475676
+    second: Handbook_day1.2_136
+  - first:
+      213: 5980674649593644762
+    second: Handbook_day1.2_137
+  - first:
+      213: -8117049940712173940
+    second: Handbook_day1.2_138
+  - first:
+      213: -4833864712824859246
+    second: Handbook_day1.2_139
+  - first:
+      213: 6217601256996040939
+    second: Handbook_day1.2_140
+  - first:
+      213: -3800657970127491615
+    second: Handbook_day1.2_141
+  - first:
+      213: -3722111603535317166
+    second: Handbook_day1.2_142
+  - first:
+      213: -3997494398866350078
+    second: Handbook_day1.2_143
+  - first:
+      213: 1597233389291436763
+    second: Handbook_day1.2_144
+  - first:
+      213: 164401849378830100
+    second: Handbook_day1.2_145
+  - first:
+      213: 5642627259346720276
+    second: Handbook_day1.2_146
+  - first:
+      213: 7631921382152596709
+    second: Handbook_day1.2_147
+  - first:
+      213: -9072900146487449642
+    second: Handbook_day1.2_148
+  - first:
+      213: -3373858639648499176
+    second: Handbook_day1.2_149
+  - first:
+      213: -5615243417785258002
+    second: Handbook_day1.2_150
+  - first:
+      213: 7048515086169675580
+    second: Handbook_day1.2_151
+  - first:
+      213: 5748208292630327172
+    second: Handbook_day1.2_152
+  - first:
+      213: -3486135598158525798
+    second: Handbook_day1.2_153
+  - first:
+      213: 722254848670416343
+    second: Handbook_day1.2_154
+  - first:
+      213: 2451072793247575231
+    second: Handbook_day1.2_155
+  - first:
+      213: -6201375045237182055
+    second: Handbook_day1.2_156
+  - first:
+      213: 8339479151100463337
+    second: Handbook_day1.2_157
+  - first:
+      213: 2712764302142569394
+    second: Handbook_day1.2_158
+  - first:
+      213: -6107849626997370732
+    second: Handbook_day1.2_159
+  - first:
+      213: -6430395739671411599
+    second: Handbook_day1.2_160
+  - first:
+      213: 1298452329212494040
+    second: Handbook_day1.2_161
+  - first:
+      213: -7082012573586681118
+    second: Handbook_day1.2_162
+  - first:
+      213: -5730146784431412032
+    second: Handbook_day1.2_163
+  - first:
+      213: -923258079487071581
+    second: Handbook_day1.2_164
+  - first:
+      213: -6576894009182590534
+    second: Handbook_day1.2_165
+  - first:
+      213: -3989346128372863710
+    second: Handbook_day1.2_166
+  - first:
+      213: 8589505185319588838
+    second: Handbook_day1.2_167
+  - first:
+      213: 3988541550583826674
+    second: Handbook_day1.2_168
+  - first:
+      213: 6848216742920328096
+    second: Handbook_day1.2_169
+  - first:
+      213: -1826997521034499222
+    second: Handbook_day1.2_170
+  - first:
+      213: -4419574320905134049
+    second: Handbook_day1.2_171
+  - first:
+      213: 1527980536331206509
+    second: Handbook_day1.2_172
+  - first:
+      213: -8227779380672913668
+    second: Handbook_day1.2_173
+  - first:
+      213: -8032112541725858838
+    second: Handbook_day1.2_174
+  - first:
+      213: -5502927302595973658
+    second: Handbook_day1.2_175
+  - first:
+      213: 2250144729927123269
+    second: Handbook_day1.2_176
+  - first:
+      213: 7291568968558639341
+    second: Handbook_day1.2_177
+  - first:
+      213: 6764805913049719634
+    second: Handbook_day1.2_178
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Handbook_day1.2_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 674
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99819b913d1729da0800000000000000
+      internalID: -5939559807064663911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 607
+        width: 82
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be563f24643947c0800000000000000
+      internalID: -4086677581968548173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 669
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412965c9bfa17d9d0800000000000000
+      internalID: -2749699379524365804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 670
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a821e58cbe1358ae0800000000000000
+      internalID: -1547776008183213430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 668
+        width: 80
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2903d958968301d20800000000000000
+      internalID: 3247157357198520466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 670
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8e62ba054caae90800000000000000
+      internalID: -7013577618928244504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_6
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 670
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad191ca654316e80800000000000000
+      internalID: -8187205100723692116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_7
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 657
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2874e3af2cccbe250800000000000000
+      internalID: 5975094468431202178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_8
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 513
+        width: 293
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd6a3321a9df3b20800000000000000
+      internalID: 3116448753267666382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_9
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 687
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58040ca77d05a2890800000000000000
+      internalID: -7482078944515047291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_10
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 662
+        width: 82
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79d19c916ec05ab0800000000000000
+      internalID: -5021286665884149377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_11
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 694
+        width: 65
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4abc612ee3eb4d40800000000000000
+      internalID: 5569795976076245582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_12
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 677
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee1d1fb84765ee30800000000000000
+      internalID: 4532142162159935204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 671
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc853e81240fd010800000000000000
+      internalID: 1215694966579629309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_14
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 667
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a25497f662e0f090800000000000000
+      internalID: -8002647605969136992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 646
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f300ce3236fa75f0800000000000000
+      internalID: -758022891596938249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_16
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 636
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2d81382c579cc00800000000000000
+      internalID: 921397077057524430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 620
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90b30cedcdf81b50800000000000000
+      internalID: 6564275517762285723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 612
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf8454b052978a70800000000000000
+      internalID: 8829186469803626463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 616
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850d6887eb5787380800000000000000
+      internalID: -8973292796609376168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_20
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 612
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243e9eebf621e7dd0800000000000000
+      internalID: -2486529673108266174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_21
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 618
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1040a73aabfdae260800000000000000
+      internalID: 7127755352966824961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 618
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2ec1f0f56d016580800000000000000
+      internalID: -8835766262438965718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_23
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 594
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b573eb00fc0fae0800000000000000
+      internalID: -1517485472325608620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_24
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 620
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda38553feefa2d00800000000000000
+      internalID: 948850974860524253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_25
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 615
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85fd3f26a99afc40800000000000000
+      internalID: 5546914830096397709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 614
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9954cd7c0e088760800000000000000
+      internalID: 7460228229551643039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_27
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 622
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788939c53789a33e0800000000000000
+      internalID: -2073177057208854393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_28
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 618
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ff8b70422c39cb0800000000000000
+      internalID: -4858326112998457510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_29
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 595
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8188c7a36b8c1f0800000000000000
+      internalID: -1024368552913135411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_30
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 620
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9742e5d7c7856910800000000000000
+      internalID: 1830018115952592798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_31
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 628
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c7d837c3e40f830800000000000000
+      internalID: 4102865282078178324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_32
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 582
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179228ba1ce80fab0800000000000000
+      internalID: -4976320625787131535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 589
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cc34414e6841890800000000000000
+      internalID: -7488211966259639289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_34
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 608
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efc14d01c8eccbc0800000000000000
+      internalID: -3761375672912457757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_35
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 561
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60239aef6b610e840800000000000000
+      internalID: 5251222140726358534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_36
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 563
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac86279403cbbcb0800000000000000
+      internalID: -4847066149451035483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_37
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 559
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e68dd8522ba7f170800000000000000
+      internalID: 8212220609541539557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_38
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 543
+        width: 62
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4499dfe709ee8340800000000000000
+      internalID: 4868084467532141647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_39
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 584
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016a870c51324b050800000000000000
+      internalID: 5815311595172570640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_40
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 557
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11f37e08542d4c60800000000000000
+      internalID: 7803933689921138971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_41
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 588
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908c112c376536d20800000000000000
+      internalID: 3270552809578285065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_42
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 563
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47aba7b8cbdbdbc90800000000000000
+      internalID: -7152352015702902156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_43
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 559
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a001b7c6af56a20800000000000000
+      internalID: 3055123266068810339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_44
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 582
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ea72609ddd20a10800000000000000
+      internalID: 1874304319120453183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_45
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 560
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0202d3642a4d38e0800000000000000
+      internalID: -1712130763176934901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_46
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 561
+        width: 95
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b014e4898c053afd0800000000000000
+      internalID: -2331931359568838389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_47
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 561
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783ade9dbd31c5ca0800000000000000
+      internalID: -6026920366353570937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_48
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 562
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9909fd6cafd6fb000800000000000000
+      internalID: 53882644397527193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_49
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 519
+        width: 71
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5642c0e509d4caf0800000000000000
+      internalID: -376937849523386787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_50
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 506
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84685f4af6f900e50800000000000000
+      internalID: 6773589141422966344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 508
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde9d1926ce721b70800000000000000
+      internalID: 8868290005804359389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_52
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 507
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea84dfb57496c4d0800000000000000
+      internalID: -3114638858829657362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_53
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 506
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a1404b37da94400800000000000000
+      internalID: 308968761904601733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_54
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 506
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6156388f15190a6e0800000000000000
+      internalID: -1828301667464682218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_55
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 507
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1e980581ab1c470800000000000000
+      internalID: 8413210192497992132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_56
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 506
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c173ba3e6588ebc0800000000000000
+      internalID: -3753603580935573054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_57
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 511
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666c7e5345c642080800000000000000
+      internalID: -9213119828755757466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_58
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 506
+        width: 62
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b813aa44d89a62170800000000000000
+      internalID: 8153390599608349067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_59
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 507
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8658906bd4d15a0800000000000000
+      internalID: -6548992838887708450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_60
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 507
+        width: 93
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991fed5aa5c7b65a0800000000000000
+      internalID: -6526986506171649639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_61
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 473
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7739a58c35f6f89d0800000000000000
+      internalID: -2769872840175217801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_62
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 444
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7413d35e9b48200800000000000000
+      internalID: 181474279226951671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_63
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 446
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755eaeb02cc3a8010800000000000000
+      internalID: 1191831855514182999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_64
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 445
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b47d51582d5a1ec0800000000000000
+      internalID: -3595458924756765513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_65
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 438
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdd9b5fdf7c47230800000000000000
+      internalID: 3635750692758085105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 441
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 320af859fbdeab660800000000000000
+      internalID: 7402490344640585763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_67
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 464
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe7a9598610ac2f0800000000000000
+      internalID: -951946822537281862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_68
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 441
+        width: 74
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68e252941a655b40800000000000000
+      internalID: 5428361562451798127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_69
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 442
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5579ed0f15a2722e0800000000000000
+      internalID: -2150703765624285355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_70
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 453
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0490063026db2baa0800000000000000
+      internalID: -6146642312746235584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_71
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 445
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fccbb9470c101b30800000000000000
+      internalID: 4255932465492511990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_72
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 443
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5662cc92dffc110800000000000000
+      internalID: 1283522774784435660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_73
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 444
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da34e8104677def10800000000000000
+      internalID: 2300626256062727085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_74
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 443
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6377362b16d2a4a0800000000000000
+      internalID: -6583464293168614550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_75
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 442
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90df389eb46894000800000000000000
+      internalID: 20695333898288393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_76
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 443
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b2c57d0aa3e78c0800000000000000
+      internalID: -3999694956576101482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_77
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 400
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3400af8e01f7b6560800000000000000
+      internalID: 7308074530943664195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_78
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 375
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feea3f511809c0080800000000000000
+      internalID: -9219835453040775441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_79
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 383
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1b31c335b1a3b80800000000000000
+      internalID: -8414382909484191307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_80
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 381
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec861d2bf24e70c0800000000000000
+      internalID: -4576146524801168150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_81
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 383
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff1a474f521c36d0800000000000000
+      internalID: -3009510250563100678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_82
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 386
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5769feee753a8ced0800000000000000
+      internalID: -2393483603881257355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_83
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 386
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48898605e8c85c260800000000000000
+      internalID: 7117249328991213700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_84
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 383
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea60853c5ca86e80800000000000000
+      internalID: -8185102810711299358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_85
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 374
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c0cc8841a85bee0800000000000000
+      internalID: -1245937901099021307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_86
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 378
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e389236dcdc919520800000000000000
+      internalID: 2707117323326756926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_87
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 409
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c9113d67127ed80800000000000000
+      internalID: -8221565800510546877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_88
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 382
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a829a42170185f0800000000000000
+      internalID: -756315487279609229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_89
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 378
+        width: 49
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e67b5d1a1449c940800000000000000
+      internalID: 5316855714039953120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_90
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 376
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f23e00807afebd0800000000000000
+      internalID: -2598674807153021169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_91
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 377
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b263aae49b81830800000000000000
+      internalID: 4042184413079284538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_92
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 378
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9738c9995b67770800000000000000
+      internalID: 8608267409125767679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_93
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 376
+        width: 62
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8da453e0dcabae0800000000000000
+      internalID: -1532687262258898756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_94
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 383
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8d018e4fda65eb0800000000000000
+      internalID: -4731403091129083702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_95
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 381
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba613aada38c9ede0800000000000000
+      internalID: -1303290462045268309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_96
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 360
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade6ebada04dcb8a0800000000000000
+      internalID: -6287917836631380262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_97
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 384
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a297e40d0f20e140800000000000000
+      internalID: 4746845740211868328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_98
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 381
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1baeae579151cf0800000000000000
+      internalID: -282291407397670404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_99
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 377
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b236d38f862d9d0800000000000000
+      internalID: -2751021006978864363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_100
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 118
+        width: 271
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f412524f328349d20800000000000000
+      internalID: 3284311755331019087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_101
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 320
+        width: 72
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5674779092ca5a970800000000000000
+      internalID: 8765601541998987109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_102
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 323
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ba823b47735ecd0800000000000000
+      internalID: -2529554641337144455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_103
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 324
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db70d89139c28990800000000000000
+      internalID: -7385119224079811627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_104
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 323
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1781ab0106e45ea60800000000000000
+      internalID: 7702648912191559793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_105
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 323
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7833d1a76b73df0800000000000000
+      internalID: -200491022802516032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_106
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 346
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf4f598706bb29a0800000000000000
+      internalID: -6256707113815420978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_107
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 324
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc24268e31bfcdb80800000000000000
+      internalID: -8368537944639520051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_108
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 322
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98195890579507600800000000000000
+      internalID: 463969120824955273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_109
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 322
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65158313997879d0800000000000000
+      internalID: -2776335497679268501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_110
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 323
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c68d9eb5ec8bdd0800000000000000
+      internalID: -2469997501452096408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_111
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 347
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904ad50f3416c4cc0800000000000000
+      internalID: -3725495847318871031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_112
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 308
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53219876adac70c0800000000000000
+      internalID: -4576592190816312481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_113
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 328
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b985b6cb7fdd160800000000000000
+      internalID: 7052064980158946061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_114
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 321
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72071f77c05327e10800000000000000
+      internalID: 2193874296151044135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_115
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 323
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffd76f40e93b2420800000000000000
+      internalID: 2606240444931629051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_116
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 324
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941a3bc97b69dd640800000000000000
+      internalID: 5106403267860209993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_117
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 321
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e21807c5db244c0800000000000000
+      internalID: -4304670089090617746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_118
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 298
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a976e21b2441ed0800000000000000
+      internalID: -2444255369000150431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_119
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 322
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e0b8bf7e96344d0800000000000000
+      internalID: -3151558869150659032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_120
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 324
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d68a70e49ad5650800000000000000
+      internalID: 6223316412696915306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_121
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 325
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ac47a650626c980800000000000000
+      internalID: -8519079840421983716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_122
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 325
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1d678814da7c630800000000000000
+      internalID: 3947314095387496909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_123
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 263
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3b2fc68786d6f10800000000000000
+      internalID: 2264581054070436799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_124
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 266
+        width: 108
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33eac4bf03bb4c5e0800000000000000
+      internalID: -1890180124539834829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_125
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 238
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a003d083a989e050800000000000000
+      internalID: 5830342527941804197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_126
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 265
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ccd2dc3521a5460800000000000000
+      internalID: 7231112302830668888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_127
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 265
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 170c80169bd58cee0800000000000000
+      internalID: -1240638646562275215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_128
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 264
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8aa765652b36d350800000000000000
+      internalID: 6041080981965220494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_129
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 266
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2171903ca16f67e70800000000000000
+      internalID: 9112741490832512786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_130
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 239
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dca89159a9ca400800000000000000
+      internalID: 336814037315276038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_131
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 266
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb55c66efb0d8770800000000000000
+      internalID: 8614554849503435767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_132
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 269
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2023343b02396f0800000000000000
+      internalID: -679163164504227074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_133
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 202
+        width: 71
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3208852e7fff6f530800000000000000
+      internalID: 3888576768400457763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_134
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 202
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f624ee6fc808a4110800000000000000
+      internalID: 1245949589847949935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_135
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 209
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c522c36c00cc943c0800000000000000
+      internalID: -4374741259315830180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_136
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 208
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54309dbde57bad10800000000000000
+      internalID: 2137932112065475676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_137
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 210
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6863628ef9ff250800000000000000
+      internalID: 5980674649593644762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 220
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ecebbb5127a5f80800000000000000
+      internalID: -8117049940712173940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_139
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 205
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29557c397a9aaecb0800000000000000
+      internalID: -4833864712824859246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_140
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 207
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be07546a66b594650800000000000000
+      internalID: 6217601256996040939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_141
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 205
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed2bc186b9514bc0800000000000000
+      internalID: -3800657970127491615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_142
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 200
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257fae89737685cc0800000000000000
+      internalID: -3722111603535317166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_143
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 203
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20025fb160c0688c0800000000000000
+      internalID: -3997494398866350078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_144
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 202
+        width: 84
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdafb181e438a2610800000000000000
+      internalID: 1597233389291436763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_145
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 227
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41774a86c92184200800000000000000
+      internalID: 164401849378830100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_146
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 202
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4161c41b893ae4e40800000000000000
+      internalID: 5642627259346720276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_147
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 204
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ece9e8bf080ae960800000000000000
+      internalID: 7631921382152596709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_148
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 203
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7a6061365961280800000000000000
+      internalID: -9072900146487449642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_149
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 204
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a5e555175ad21d0800000000000000
+      internalID: -3373858639648499176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_150
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 205
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef2f83ccd5a212b0800000000000000
+      internalID: -5615243417785258002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_151
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 205
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c371021502b51d160800000000000000
+      internalID: 7048515086169675580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_152
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 209
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f6f21acfcb5cf40800000000000000
+      internalID: 5748208292630327172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_153
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 173
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9acae0d422ce9fc0800000000000000
+      internalID: -3486135598158525798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_154
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 202
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddbd4c45f6f50a00800000000000000
+      internalID: 722254848670416343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_155
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 176
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc652818b5f30220800000000000000
+      internalID: 2451072793247575231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_156
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 204
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9917aada04a40f9a0800000000000000
+      internalID: -6201375045237182055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_157
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 200
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e88e1d7a18cbb370800000000000000
+      internalID: 8339479151100463337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_158
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 185
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb719c82cca5a520800000000000000
+      internalID: 2712764302142569394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_159
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 144
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490d151002f8c3ba0800000000000000
+      internalID: -6107849626997370732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_160
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 145
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17443bbf425a2c6a0800000000000000
+      internalID: -6430395739671411599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_161
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 168
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d04d709387050210800000000000000
+      internalID: 1298452329212494040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_162
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 146
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e214802613a7bd90800000000000000
+      internalID: -7082012573586681118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_163
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 145
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc6e13fbdd6a70b0800000000000000
+      internalID: -5730146784431412032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_164
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 143
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aae9281badef23f0800000000000000
+      internalID: -923258079487071581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_165
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 141
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9e6499ebd2ab4a0800000000000000
+      internalID: -6576894009182590534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_166
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 125
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d614c25def2a8c0800000000000000
+      internalID: -3989346128372863710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_167
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 141
+        width: 71
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e39957f47d043770800000000000000
+      internalID: 8589505185319588838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_168
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 142
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f84f6678652a5730800000000000000
+      internalID: 3988541550583826674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_169
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 167
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a316a228d0c90f50800000000000000
+      internalID: 6848216742920328096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_170
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 142
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b28393f6335a6e0800000000000000
+      internalID: -1826997521034499222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_171
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 144
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10e20032948aa2c0800000000000000
+      internalID: -4419574320905134049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_172
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 150
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f7bb3c33a743510800000000000000
+      internalID: 1527980536331206509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_173
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 144
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe15b4fe3e01dd80800000000000000
+      internalID: -8227779380672913668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_174
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 140
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae368720334388090800000000000000
+      internalID: -8032112541725858838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_175
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 140
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ede7f726cca1a3b0800000000000000
+      internalID: -5502927302595973658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_176
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 118
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5410688c5be1a3f10800000000000000
+      internalID: 2250144729927123269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_177
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 150
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8f232385bd03560800000000000000
+      internalID: 7291568968558639341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_day1.2_178
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 54
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2536acde22b61ed50800000000000000
+      internalID: 6764805913049719634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Handbook_day1.2_0: -5939559807064663911
+      Handbook_day1.2_1: -4086677581968548173
+      Handbook_day1.2_10: -5021286665884149377
+      Handbook_day1.2_100: 3284311755331019087
+      Handbook_day1.2_101: 8765601541998987109
+      Handbook_day1.2_102: -2529554641337144455
+      Handbook_day1.2_103: -7385119224079811627
+      Handbook_day1.2_104: 7702648912191559793
+      Handbook_day1.2_105: -200491022802516032
+      Handbook_day1.2_106: -6256707113815420978
+      Handbook_day1.2_107: -8368537944639520051
+      Handbook_day1.2_108: 463969120824955273
+      Handbook_day1.2_109: -2776335497679268501
+      Handbook_day1.2_11: 5569795976076245582
+      Handbook_day1.2_110: -2469997501452096408
+      Handbook_day1.2_111: -3725495847318871031
+      Handbook_day1.2_112: -4576592190816312481
+      Handbook_day1.2_113: 7052064980158946061
+      Handbook_day1.2_114: 2193874296151044135
+      Handbook_day1.2_115: 2606240444931629051
+      Handbook_day1.2_116: 5106403267860209993
+      Handbook_day1.2_117: -4304670089090617746
+      Handbook_day1.2_118: -2444255369000150431
+      Handbook_day1.2_119: -3151558869150659032
+      Handbook_day1.2_12: 4532142162159935204
+      Handbook_day1.2_120: 6223316412696915306
+      Handbook_day1.2_121: -8519079840421983716
+      Handbook_day1.2_122: 3947314095387496909
+      Handbook_day1.2_123: 2264581054070436799
+      Handbook_day1.2_124: -1890180124539834829
+      Handbook_day1.2_125: 5830342527941804197
+      Handbook_day1.2_126: 7231112302830668888
+      Handbook_day1.2_127: -1240638646562275215
+      Handbook_day1.2_128: 6041080981965220494
+      Handbook_day1.2_129: 9112741490832512786
+      Handbook_day1.2_13: 1215694966579629309
+      Handbook_day1.2_130: 336814037315276038
+      Handbook_day1.2_131: 8614554849503435767
+      Handbook_day1.2_132: -679163164504227074
+      Handbook_day1.2_133: 3888576768400457763
+      Handbook_day1.2_134: 1245949589847949935
+      Handbook_day1.2_135: -4374741259315830180
+      Handbook_day1.2_136: 2137932112065475676
+      Handbook_day1.2_137: 5980674649593644762
+      Handbook_day1.2_138: -8117049940712173940
+      Handbook_day1.2_139: -4833864712824859246
+      Handbook_day1.2_14: -8002647605969136992
+      Handbook_day1.2_140: 6217601256996040939
+      Handbook_day1.2_141: -3800657970127491615
+      Handbook_day1.2_142: -3722111603535317166
+      Handbook_day1.2_143: -3997494398866350078
+      Handbook_day1.2_144: 1597233389291436763
+      Handbook_day1.2_145: 164401849378830100
+      Handbook_day1.2_146: 5642627259346720276
+      Handbook_day1.2_147: 7631921382152596709
+      Handbook_day1.2_148: -9072900146487449642
+      Handbook_day1.2_149: -3373858639648499176
+      Handbook_day1.2_15: -758022891596938249
+      Handbook_day1.2_150: -5615243417785258002
+      Handbook_day1.2_151: 7048515086169675580
+      Handbook_day1.2_152: 5748208292630327172
+      Handbook_day1.2_153: -3486135598158525798
+      Handbook_day1.2_154: 722254848670416343
+      Handbook_day1.2_155: 2451072793247575231
+      Handbook_day1.2_156: -6201375045237182055
+      Handbook_day1.2_157: 8339479151100463337
+      Handbook_day1.2_158: 2712764302142569394
+      Handbook_day1.2_159: -6107849626997370732
+      Handbook_day1.2_16: 921397077057524430
+      Handbook_day1.2_160: -6430395739671411599
+      Handbook_day1.2_161: 1298452329212494040
+      Handbook_day1.2_162: -7082012573586681118
+      Handbook_day1.2_163: -5730146784431412032
+      Handbook_day1.2_164: -923258079487071581
+      Handbook_day1.2_165: -6576894009182590534
+      Handbook_day1.2_166: -3989346128372863710
+      Handbook_day1.2_167: 8589505185319588838
+      Handbook_day1.2_168: 3988541550583826674
+      Handbook_day1.2_169: 6848216742920328096
+      Handbook_day1.2_17: 6564275517762285723
+      Handbook_day1.2_170: -1826997521034499222
+      Handbook_day1.2_171: -4419574320905134049
+      Handbook_day1.2_172: 1527980536331206509
+      Handbook_day1.2_173: -8227779380672913668
+      Handbook_day1.2_174: -8032112541725858838
+      Handbook_day1.2_175: -5502927302595973658
+      Handbook_day1.2_176: 2250144729927123269
+      Handbook_day1.2_177: 7291568968558639341
+      Handbook_day1.2_178: 6764805913049719634
+      Handbook_day1.2_18: 8829186469803626463
+      Handbook_day1.2_19: -8973292796609376168
+      Handbook_day1.2_2: -2749699379524365804
+      Handbook_day1.2_20: -2486529673108266174
+      Handbook_day1.2_21: 7127755352966824961
+      Handbook_day1.2_22: -8835766262438965718
+      Handbook_day1.2_23: -1517485472325608620
+      Handbook_day1.2_24: 948850974860524253
+      Handbook_day1.2_25: 5546914830096397709
+      Handbook_day1.2_26: 7460228229551643039
+      Handbook_day1.2_27: -2073177057208854393
+      Handbook_day1.2_28: -4858326112998457510
+      Handbook_day1.2_29: -1024368552913135411
+      Handbook_day1.2_3: -1547776008183213430
+      Handbook_day1.2_30: 1830018115952592798
+      Handbook_day1.2_31: 4102865282078178324
+      Handbook_day1.2_32: -4976320625787131535
+      Handbook_day1.2_33: -7488211966259639289
+      Handbook_day1.2_34: -3761375672912457757
+      Handbook_day1.2_35: 5251222140726358534
+      Handbook_day1.2_36: -4847066149451035483
+      Handbook_day1.2_37: 8212220609541539557
+      Handbook_day1.2_38: 4868084467532141647
+      Handbook_day1.2_39: 5815311595172570640
+      Handbook_day1.2_4: 3247157357198520466
+      Handbook_day1.2_40: 7803933689921138971
+      Handbook_day1.2_41: 3270552809578285065
+      Handbook_day1.2_42: -7152352015702902156
+      Handbook_day1.2_43: 3055123266068810339
+      Handbook_day1.2_44: 1874304319120453183
+      Handbook_day1.2_45: -1712130763176934901
+      Handbook_day1.2_46: -2331931359568838389
+      Handbook_day1.2_47: -6026920366353570937
+      Handbook_day1.2_48: 53882644397527193
+      Handbook_day1.2_49: -376937849523386787
+      Handbook_day1.2_5: -7013577618928244504
+      Handbook_day1.2_50: 6773589141422966344
+      Handbook_day1.2_51: 8868290005804359389
+      Handbook_day1.2_52: -3114638858829657362
+      Handbook_day1.2_53: 308968761904601733
+      Handbook_day1.2_54: -1828301667464682218
+      Handbook_day1.2_55: 8413210192497992132
+      Handbook_day1.2_56: -3753603580935573054
+      Handbook_day1.2_57: -9213119828755757466
+      Handbook_day1.2_58: 8153390599608349067
+      Handbook_day1.2_59: -6548992838887708450
+      Handbook_day1.2_6: -8187205100723692116
+      Handbook_day1.2_60: -6526986506171649639
+      Handbook_day1.2_61: -2769872840175217801
+      Handbook_day1.2_62: 181474279226951671
+      Handbook_day1.2_63: 1191831855514182999
+      Handbook_day1.2_64: -3595458924756765513
+      Handbook_day1.2_65: 3635750692758085105
+      Handbook_day1.2_66: 7402490344640585763
+      Handbook_day1.2_67: -951946822537281862
+      Handbook_day1.2_68: 5428361562451798127
+      Handbook_day1.2_69: -2150703765624285355
+      Handbook_day1.2_7: 5975094468431202178
+      Handbook_day1.2_70: -6146642312746235584
+      Handbook_day1.2_71: 4255932465492511990
+      Handbook_day1.2_72: 1283522774784435660
+      Handbook_day1.2_73: 2300626256062727085
+      Handbook_day1.2_74: -6583464293168614550
+      Handbook_day1.2_75: 20695333898288393
+      Handbook_day1.2_76: -3999694956576101482
+      Handbook_day1.2_77: 7308074530943664195
+      Handbook_day1.2_78: -9219835453040775441
+      Handbook_day1.2_79: -8414382909484191307
+      Handbook_day1.2_8: 3116448753267666382
+      Handbook_day1.2_80: -4576146524801168150
+      Handbook_day1.2_81: -3009510250563100678
+      Handbook_day1.2_82: -2393483603881257355
+      Handbook_day1.2_83: 7117249328991213700
+      Handbook_day1.2_84: -8185102810711299358
+      Handbook_day1.2_85: -1245937901099021307
+      Handbook_day1.2_86: 2707117323326756926
+      Handbook_day1.2_87: -8221565800510546877
+      Handbook_day1.2_88: -756315487279609229
+      Handbook_day1.2_89: 5316855714039953120
+      Handbook_day1.2_9: -7482078944515047291
+      Handbook_day1.2_90: -2598674807153021169
+      Handbook_day1.2_91: 4042184413079284538
+      Handbook_day1.2_92: 8608267409125767679
+      Handbook_day1.2_93: -1532687262258898756
+      Handbook_day1.2_94: -4731403091129083702
+      Handbook_day1.2_95: -1303290462045268309
+      Handbook_day1.2_96: -6287917836631380262
+      Handbook_day1.2_97: 4746845740211868328
+      Handbook_day1.2_98: -282291407397670404
+      Handbook_day1.2_99: -2751021006978864363
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

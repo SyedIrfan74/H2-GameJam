@@ -78,9 +78,13 @@ public class MinigameManager : MonoBehaviour
     {
         switch (minigameName)
         {
-            case "Cha":
+            case "Cha1":
                 currentMinigame = "Cha";
-                //StartCha();
+                StartCha(1);
+                break;
+            case "Cha2":
+                currentMinigame = "Cha";
+                StartCha(2);
                 break;
             case "Chopsticks1":
                 currentMinigame = "Chopsticks";
@@ -102,8 +106,6 @@ public class MinigameManager : MonoBehaviour
                 Debug.Log("Jialat.");
                 break;
         }
-        //ScreenManager.instance.ChangeScreen(currentMinigame);
-
     }
 
     #region Cha

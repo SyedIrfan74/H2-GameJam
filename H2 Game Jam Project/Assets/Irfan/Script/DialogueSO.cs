@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "DialogueSO")]
 public class DialogueSO : ScriptableObject
 {
     public string characterName;
+    public Image characterSprite;   
     public string dialogue;
     public float delay;
 
