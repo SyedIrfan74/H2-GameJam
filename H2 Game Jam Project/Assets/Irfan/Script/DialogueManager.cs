@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
     public List<DialogueSO> dialogueSOs = new List<DialogueSO>();
     public TMP_Text dialogueText;
     public TMP_Text nameText;
+    public GameObject dialogueGO;
 
     [Header("Character Sprites")]
     public Sprite maleCharacterSprite;
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
     private float timer = 0;
     private string dialogueWName;
     private string MCNAME = "[MC Name]";
+    private bool waiting;
 
     public void StartManager()
     {
@@ -52,6 +54,8 @@ public class DialogueManager : MonoBehaviour
         pickingName = false;
         running = false;
         dialogueWName = "";
+        waiting = false;
+        dialogueGO.SetActive(false);
 
         if (characterSelection != null) characterSelection.SetActive(false);
         if (nameInput != null) nameInput.SetActive(false);
@@ -66,6 +70,8 @@ public class DialogueManager : MonoBehaviour
     public void UpdateManager()
     {
         if (pickingCharacter || pickingName) return;
+
+        dialogueGO.SetActive(true);
 
         //if running == true, dialogue is currently being written on the screen
         if (running)
@@ -84,19 +90,22 @@ public class DialogueManager : MonoBehaviour
         }
 
         //Starts next Dialogue to be shown
-        if (!running)
+        if (!running && !waiting)
         {
             if ((Input.GetMouseButtonDown(0) || manualStart) && currentDialogue < dialogueSOs.Count)
             {
                 if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
                 StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+                return;
             }
-
-            if (manualStart) manualStart = false;
         }
-        
-        if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeScreen)
+
+        Debug.Log(Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count));
+
+        if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeScreen && ScreenManager.instance.currScreen.screenName != dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].nextScreen)
         {
+            waiting = true;
+
             if (running) return;
             timer += Time.deltaTime;
 
@@ -108,6 +117,7 @@ public class DialogueManager : MonoBehaviour
 
                 if (dialogueSOs[currentDialogue - 1].nextState == StateManager.GAMESTATE.GAME)
                 {
+                    waiting = false;
                     MinigameManager.instance.StartMinigame2(dialogueSOs[currentDialogue - 1].nextScreen);
                     StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                     ScreenManager.instance.FindScreen(MinigameManager.instance.currentMinigame);
@@ -115,6 +125,7 @@ public class DialogueManager : MonoBehaviour
                     return;
                 }
 
+                waiting = false;
                 StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                 ScreenManager.instance.FindScreen(dialogueSOs[currentDialogue - 1].nextScreen);
                 ScreenManager.instance.SetNextState(dialogueSOs[currentDialogue - 1].nextState);
@@ -124,13 +135,13 @@ public class DialogueManager : MonoBehaviour
         {
             characterSelection.SetActive(true);
             pickingCharacter = true;
-            dialogueSOs[currentDialogue - 1].flags.selectCharacter = false;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName && pickingName == false)
         {
             nameInput.SetActive(true);
             pickingName = true;
-            dialogueSOs[currentDialogue - 1].flags.inputName = false;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName = false;
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.getJournal)
         {
@@ -140,18 +151,25 @@ public class DialogueManager : MonoBehaviour
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
-            dialogueSOs[currentDialogue - 1].flags.scribbleJournal = false;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal = false;
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.countryEraser = true;
-            dialogueSOs[currentDialogue - 1].flags.countryEraser = false;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser = false;
+        }
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.endDayOne = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne = false;
         }
     }
 
     private IEnumerator DisplayText(DialogueSO so)
     {
+        if (manualStart) manualStart = false;
         running = true;
         int count = 0;
         string newDialogue = "";
