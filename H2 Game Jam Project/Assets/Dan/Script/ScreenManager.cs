@@ -32,10 +32,12 @@ public class ScreenManager : MonoBehaviour
     public float transition1Speed = 2;
     public float transition2Speed = 2;
     public bool journal;
+    public bool countryEraser;
     public bool transitioning;
     public Image bookClosed;
     public Image bookOpened;
     public Image bookWriting;
+    public Image countryEraserImage;
 
     //Edits by: Irfan
     public void StartManager()
@@ -66,6 +68,7 @@ public class ScreenManager : MonoBehaviour
         if (nextState != StateManager.GAMESTATE.NOSTATE && !transitioning) StartCoroutine(ScreenTransition());
 
         if (journal && !transitioning) StartCoroutine(RevealJournal());
+        if (countryEraser && !transitioning) StartCoroutine(RevealCountryEraser());
     }
 
     /// <summary>
@@ -122,7 +125,12 @@ public class ScreenManager : MonoBehaviour
     {
         Camera.main.transform.position = new Vector3(currScreen.transform.position.x, currScreen.transform.position.y, Camera.main.transform.position.z);
     }
-
+    public void FinishBobbyChopsticks()
+    {
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+        ScreenManager.instance.FindScreen("Canteen");
+        ScreenManager.instance.SetNextState(StateManager.GAMESTATE.CONVO);
+    }
     private IEnumerator RevealJournal()
     {
         transitioning = true;
@@ -221,7 +229,6 @@ public class ScreenManager : MonoBehaviour
 
         yield break;
     }
-
     private IEnumerator ScreenTransition()
     {
         transitioning = true;
@@ -269,112 +276,190 @@ public class ScreenManager : MonoBehaviour
 
         yield break;
     }
-
-    private void Scr2ScrTransition()
+    private IEnumerator RevealCountryEraser()
     {
-        currScreen.canvas.gameObject.SetActive(false);
+        transitioning = true;
 
-        if (currScreen.fadeBlack.color.a < 1 && fadeOut == false)
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
+        while (elapsed < duration)
         {
-            a = Mathf.Lerp(a, 1, Time.deltaTime * transition1Speed);
-            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-
-            if (a > 0.99f)
-            {
-                a = 1;
-                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-            }
-
-            return;
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
         }
 
-        fadeOut = true;
-        if (targetScreen != null)
+        elapsed = 0;
+        initial = countryEraserImage.color;
+        man = new Color(countryEraserImage.color.r, countryEraserImage.color.g, countryEraserImage.color.b, 1);
+
+        //Reveal Country Eraser
+        while (elapsed < duration)
         {
-            targetScreen.fadeBlack.color = new Color(targetScreen.fadeBlack.color.r, targetScreen.fadeBlack.color.g, targetScreen.fadeBlack.color.b, 1);
-            currScreen = targetScreen;
-            MoveCamera();
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            countryEraserImage.color = Color.Lerp(initial, man, t);
+            yield return null;
         }
 
-        targetScreen = null;
+        elapsed = 0;
+        initial = countryEraserImage.color;
+        man = new Color(countryEraserImage.color.r, countryEraserImage.color.g, countryEraserImage.color.b, 0);
 
-        if (transitionPause > 0)
+        //Hide Country Eraser
+        while (elapsed < duration)
         {
-            transitionPause -= Time.deltaTime;
-            return;
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            countryEraserImage.color = Color.Lerp(initial, man, t);
+            yield return null;
         }
 
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
 
-        if (currScreen.fadeBlack.color.a > 0 && fadeIn == false)
+        //Brighten Background
+        while (elapsed < duration)
         {
-            a = Mathf.Lerp(a, 0, Time.deltaTime * transition2Speed);
-            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-
-            if (a < 0.1f)
-            {
-                a = 0;
-                currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
-            }
-
-            return;
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
         }
 
-        a = 0;
-        fadeIn = false;
-        fadeOut = false;
-        targetScreen = null;
+        transitioning = false;
+        countryEraser = false;
 
-        currScreen.canvas.gameObject.SetActive(true);
-        StateManager.instance.ChangeState(nextState);
-        if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
         nextState = StateManager.GAMESTATE.NOSTATE;
-        return;
+
+        yield break;
     }
-
-    //public void ChangeScene(string str)
-    //{
-    //    //If no screen found, exit early
-    //    if (!FindScreen(str))
-    //    {
-    //        Debug.Log("No Screen Found!");
-    //        return;
-    //    }
-
-    //    Debug.Log("Screen Found");
-    //    StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
-
-    //    //StartCoroutine(FadeToBlack(currScreen));
-    //    currScreen = targetScreen;
-    //    Camera.main.transform.position = new Vector3(currScreen.transform.position.x, currScreen.transform.position.y, Camera.main.transform.position.z);
-    //    //StartCoroutine(FadeOutBlack(currScreen));
-    //}
-
-    //private IEnumerator FadeToBlack(Screen screen)
-    //{
-    //    float a = 0;
-    //    while (screen.fadeBlack.color.a != 1)
-    //    {
-    //        a = Mathf.Lerp(a, 1, Time.deltaTime);
-    //        screen.fadeBlack.color = new Color(screen.fadeBlack.color.r, screen.fadeBlack.color.g, screen.fadeBlack.color.b, a);
-    //    }
-
-    //    yield return null;
-    //}
-
-    //private IEnumerator FadeOutBlack(Screen screen)
-    //{
-    //    float a = 1;
-    //    while (screen.fadeBlack.color.a != 0)
-    //    {
-    //        a = Mathf.Lerp(a, 0, Time.deltaTime);
-    //        screen.fadeBlack.color = new Color(screen.fadeBlack.color.r, screen.fadeBlack.color.g, screen.fadeBlack.color.b, a);
-    //    }
-
-    //    yield return null;
-    //}
-
-    //if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
-    //if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
-
     //Edits by: Irfan
 }
+
+
+
+
+
+
+
+
+
+//public void ChangeScene(string str)
+//{
+//    //If no screen found, exit early
+//    if (!FindScreen(str))
+//    {
+//        Debug.Log("No Screen Found!");
+//        return;
+//    }
+
+//    Debug.Log("Screen Found");
+//    StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+
+//    //StartCoroutine(FadeToBlack(currScreen));
+//    currScreen = targetScreen;
+//    Camera.main.transform.position = new Vector3(currScreen.transform.position.x, currScreen.transform.position.y, Camera.main.transform.position.z);
+//    //StartCoroutine(FadeOutBlack(currScreen));
+//}
+
+//private IEnumerator FadeToBlack(Screen screen)
+//{
+//    float a = 0;
+//    while (screen.fadeBlack.color.a != 1)
+//    {
+//        a = Mathf.Lerp(a, 1, Time.deltaTime);
+//        screen.fadeBlack.color = new Color(screen.fadeBlack.color.r, screen.fadeBlack.color.g, screen.fadeBlack.color.b, a);
+//    }
+
+//    yield return null;
+//}
+
+//private IEnumerator FadeOutBlack(Screen screen)
+//{
+//    float a = 1;
+//    while (screen.fadeBlack.color.a != 0)
+//    {
+//        a = Mathf.Lerp(a, 0, Time.deltaTime);
+//        screen.fadeBlack.color = new Color(screen.fadeBlack.color.r, screen.fadeBlack.color.g, screen.fadeBlack.color.b, a);
+//    }
+
+//    yield return null;
+//}
+
+//if (Input.GetKeyDown(KeyCode.Alpha1)) ChangeScreen("Cha");
+//if (Input.GetKeyDown(KeyCode.Alpha2)) ChangeScreen("Chopsticks");
+
+
+//private void Scr2ScrTransition()
+//{
+//    currScreen.canvas.gameObject.SetActive(false);
+
+//    if (currScreen.fadeBlack.color.a < 1 && fadeOut == false)
+//    {
+//        a = Mathf.Lerp(a, 1, Time.deltaTime * transition1Speed);
+//        currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+
+//        if (a > 0.99f)
+//        {
+//            a = 1;
+//            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+//        }
+
+//        return;
+//    }
+
+//    fadeOut = true;
+//    if (targetScreen != null)
+//    {
+//        targetScreen.fadeBlack.color = new Color(targetScreen.fadeBlack.color.r, targetScreen.fadeBlack.color.g, targetScreen.fadeBlack.color.b, 1);
+//        currScreen = targetScreen;
+//        MoveCamera();
+//    }
+
+//    targetScreen = null;
+
+//    if (transitionPause > 0)
+//    {
+//        transitionPause -= Time.deltaTime;
+//        return;
+//    }
+
+
+//    if (currScreen.fadeBlack.color.a > 0 && fadeIn == false)
+//    {
+//        a = Mathf.Lerp(a, 0, Time.deltaTime * transition2Speed);
+//        currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+
+//        if (a < 0.1f)
+//        {
+//            a = 0;
+//            currScreen.fadeBlack.color = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, a);
+//        }
+
+//        return;
+//    }
+
+//    a = 0;
+//    fadeIn = false;
+//    fadeOut = false;
+//    targetScreen = null;
+
+//    currScreen.canvas.gameObject.SetActive(true);
+//    StateManager.instance.ChangeState(nextState);
+//    if (nextState == StateManager.GAMESTATE.CONVO) DialogueManager.instance.ManualStart();
+//    nextState = StateManager.GAMESTATE.NOSTATE;
+//    return;
+//}

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Convo 1
   m_EditorClassIdentifier: 
   characterName: Bobby
-  dialogue: startminigame
+  dialogue: Oh, by the way, I have something for you.
   delay: 0.05
   flags:
-    reset: 0
-    changeScreen: 1
+    reset: 1
+    changeScreen: 0
     changeState: 0
     selectCharacter: 0
     resetCharacter: 0
@@ -26,5 +26,7 @@ MonoBehaviour:
     getJournal: 0
     scribbleJournal: 0
     resetScribbleJournal: 0
-  nextState: 3
-  nextScreen: Chopsticks1
+    countryEraser: 1
+    resetCountryEraser: 1
+  nextState: 0
+  nextScreen: 

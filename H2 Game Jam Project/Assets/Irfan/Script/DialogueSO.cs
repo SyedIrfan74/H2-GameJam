@@ -17,6 +17,9 @@ public class DialogueSO : ScriptableObject
     {
         if (flags.resetCharacter) flags.selectCharacter = true;
         if (flags.resetName) flags.inputName = true;
+        if (flags.resetScribbleJournal) flags.scribbleJournal = true;
+        if (flags.resetCountryEraser) flags.countryEraser = true;
+        if (flags.resetEndDayOne) flags.endDayOne = true;
     }
 }
 
@@ -33,4 +36,8 @@ public class Flags
     public bool getJournal;
     public bool scribbleJournal;
     public bool resetScribbleJournal;
+    public bool countryEraser;
+    public bool resetCountryEraser;
+    public bool endDayOne;
+    public bool resetEndDayOne;
 }
