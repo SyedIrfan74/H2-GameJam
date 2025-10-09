@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: sfxRockCha
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: aaa6f2ca7761c9a44a0286043c213b39, type: 3}
-  mixergroup: {fileID: 0}
+  mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
   volume: 1
   pitch: 1
   loop: 0

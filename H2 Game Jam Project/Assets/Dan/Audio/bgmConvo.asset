@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: bgmConvo
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: d741401cdf154914490d198b2f7d33a1, type: 3}
-  mixergroup: {fileID: 0}
+  mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
   volume: 1
   pitch: 1
   loop: 0

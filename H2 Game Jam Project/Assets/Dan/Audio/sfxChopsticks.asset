@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: sfxChopsticks
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 433ee8378f711d04a9c94fe54be4ea76, type: 3}
-  mixergroup: {fileID: 0}
+  mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
   volume: 1
   pitch: 1
   loop: 0
