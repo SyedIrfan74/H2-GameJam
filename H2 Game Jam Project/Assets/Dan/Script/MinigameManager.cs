@@ -58,7 +58,7 @@ public class MinigameManager : MonoBehaviour
                 break;
             case "Chapteh":
                 currentMinigame = "Chapteh";
-                //StartChapteh();
+                StartChapteh();
                 break;
             case "Bubble Blowing":
                 currentMinigame = "Bubble Blowing";
@@ -96,7 +96,7 @@ public class MinigameManager : MonoBehaviour
                 break;
             case "Chapteh":
                 currentMinigame = "Chapteh";
-                //StartChapteh();
+                StartChapteh();
                 break;
             case "Bubble Blowing":
                 currentMinigame = "Bubble Blowing";
@@ -107,6 +107,18 @@ public class MinigameManager : MonoBehaviour
                 break;
         }
     }
+
+    #region Chapteh
+    [Header("Chapteh")]
+
+    public Chapteh chapteh;
+
+    void StartChapteh()
+    {
+
+    }
+
+    #endregion
 
     #region Cha
     #region Cha Variables
@@ -931,9 +943,6 @@ public class MinigameManager : MonoBehaviour
         ChopsticksEndOfTurn();
     }
 
-    #endregion
-
-    #region Chapteh
     #endregion
 
     #region Bubble Blowing
