@@ -23,6 +23,8 @@ public class MinigameManager : MonoBehaviour
 
     public string currentMinigame = "None";
 
+    public AudioData bgmAudio;
+
     public void StartManager()
     {
         
@@ -68,6 +70,7 @@ public class MinigameManager : MonoBehaviour
         }
 
         ScreenManager.instance.ChangeScreen(currentMinigame);
+        AudioManager.instance.PlayAudio(bgmAudio);
 
     }
 
@@ -275,6 +278,7 @@ public class MinigameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
 
         ChaWinStates();
+        ChaHandSprites();
     }
 
     int DidPlayerWin(ChaHandStates player, ChaHandStates enemy)
@@ -389,11 +393,13 @@ public class MinigameManager : MonoBehaviour
         {
             chaWinText.text = "You Win!";
             chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+            AudioManager.instance.StopAudio(bgmAudio);
         }
         else if (currChaState == ChaGameStates.PlayerLose)
         {
             chaWinText.text = "You Lose!";
             chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+            AudioManager.instance.StopAudio(bgmAudio);
         }
         else
         {
@@ -470,8 +476,7 @@ public class MinigameManager : MonoBehaviour
 
     public bool isEnemySelecting;
 
-    // debug text on screen
-    public TMP_Text chopsticksDebugText;
+
     #endregion
 
     void StartChopsticks(int d)
@@ -889,6 +894,7 @@ public class MinigameManager : MonoBehaviour
             winStateText.text = "YOU LOSE!";
             winStateText.gameObject.transform.parent.gameObject.SetActive(true);
             StopCoroutine(ChopsticksEnemyTurn());
+            AudioManager.instance.StopAudio(bgmAudio);
 
             return;
         }
@@ -899,6 +905,7 @@ public class MinigameManager : MonoBehaviour
             winStateText.text = "YOU WIN!";
             winStateText.gameObject.transform.parent.gameObject.SetActive(true);
             StopCoroutine(ChopsticksEnemyTurn());
+            AudioManager.instance.StopAudio(bgmAudio);
 
             return;
         }
