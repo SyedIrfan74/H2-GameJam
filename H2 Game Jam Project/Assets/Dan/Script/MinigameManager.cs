@@ -38,9 +38,13 @@ public class MinigameManager : MonoBehaviour
     {
         switch (minigameName) 
         {
-            case "Cha":
+            case "Cha1":
                 currentMinigame = "Cha";
-                StartCha();
+                StartCha(1);
+                break;
+            case "Cha2":
+                currentMinigame = "Cha";
+                StartCha(2);
                 break;
             case "Chopsticks1":
                 currentMinigame = "Chopsticks";
@@ -128,6 +132,10 @@ public class MinigameManager : MonoBehaviour
 
     public TMP_Text chaWinText;
 
+    public AudioData chaPersonAudio;
+    public AudioData chaGunAudio;
+    public AudioData chaRockAudio;
+
     [Header("Cha Player")]
 
     public List<ChaHandStates> playerHands = new List<ChaHandStates>(2);
@@ -141,22 +149,26 @@ public class MinigameManager : MonoBehaviour
 
     public List<ChaHandStates> enemyHands = new List<ChaHandStates>(2);
 
-    public List<Image> enemySprites = new List<Image>(2);
+    public List<Image> enemyHandSprites = new List<Image>(2);
+
+    public Image enemyHumanSprite; // the enemy sprite in the middle
+    public List<Sprite> enemyHumanSprites = new List<Sprite>();
 
     public bool isEnemySelectingCha;
     #endregion
 
-    void StartCha()
+    void StartCha(int i)
     {
+        chaDifficulty = i;
+
+        enemyHumanSprite.sprite = enemyHumanSprites[i - 1];
+
         ResetCha();
     }
 
     void UpdateCha()
     {
-        if (currChaState == ChaGameStates.Attacking)
-        {
-            ChaAttackPhase();
-        }
+
     }
 
     /// <summary>
@@ -226,7 +238,7 @@ public class MinigameManager : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f);
 
             ChaHandSprites();
-            currChaState = ChaGameStates.Attacking;
+            ChaAttackPhase();
 
             Debug.Log("IMDONEPICKING");
             isEnemySelectingCha = false;
@@ -289,14 +301,14 @@ public class MinigameManager : MonoBehaviour
 
     void ChaHandSprites()
     {
-        for(int i = 0; i < enemySprites.Count; i++)
+        for(int i = 0; i < enemyHandSprites.Count; i++)
         {
             if (enemyHands[i] != ChaHandStates.Dead)
             {
-                enemySprites[i].sprite = chaHandSprites[(int)enemyHands[i]]; 
-                enemySprites[i].enabled = true;
+                enemyHandSprites[i].sprite = chaHandSprites[(int)enemyHands[i]]; 
+                enemyHandSprites[i].enabled = true;
             }
-            else enemySprites[i].enabled = false;
+            else enemyHandSprites[i].enabled = false;
 
             if (playerHands[i] != ChaHandStates.Dead)
             {
@@ -305,11 +317,6 @@ public class MinigameManager : MonoBehaviour
             }
             else playerSprites[i].enabled = false;
         }
-
-        //enemySprites[0].sprite = enemyHands[0] != ChaHandStates.Dead ? chaHandSprites[(int)enemyHands[0]] : null;
-        //enemySprites[1].sprite = enemyHands[1] != ChaHandStates.Dead ? chaHandSprites[(int)enemyHands[1]] : null;
-        //playerSprites[0].sprite = playerHands[0] != ChaHandStates.Dead ? chaHandSprites[(int)playerHands[0]] : null;
-        //playerSprites[1].sprite = playerHands[1] != ChaHandStates.Dead ? chaHandSprites[(int)playerHands[1]] : null;
     }
 
     public void ResetCha()
@@ -326,7 +333,7 @@ public class MinigameManager : MonoBehaviour
         {
             sprite.enabled  = true;
         }
-        foreach (Image sprite in enemySprites)
+        foreach (Image sprite in enemyHandSprites)
         {
             sprite.enabled  = true;
         }
@@ -379,6 +386,8 @@ public class MinigameManager : MonoBehaviour
     public TMP_Text turnCounterText;
 
     public int difficulty = 1;
+
+    public AudioData chopstickAudio;
 
     [Header("Chopsticks Player")]
     public bool isAttacking;
@@ -831,7 +840,7 @@ public class MinigameManager : MonoBehaviour
         rightHandSprite.enabled = rightHand < 5;
 
         // clap button activates when one hand is dead
-        clapButton.SetActive(rightHand >= 5 || leftHand >= 5);
+        clapButton.SetActive((1 < leftHand && rightHand >= 5) || ( 1 < rightHand && leftHand >= 5));
     }
 
     void ChopsticksWinStates()

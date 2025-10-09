@@ -12,9 +12,11 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) MinigameManager.instance.StartMinigame("Cha");
-        if (Input.GetKeyDown(KeyCode.Alpha2)) MinigameManager.instance.StartMinigame("Chopsticks1");
-        if (Input.GetKeyDown(KeyCode.Alpha3)) MinigameManager.instance.StartMinigame("Chopsticks2");
+        if (Input.GetKeyDown(KeyCode.Alpha1)) MinigameManager.instance.StartMinigame("Cha1");
+        if (Input.GetKeyDown(KeyCode.Alpha2)) MinigameManager.instance.StartMinigame("Cha2");
+        if (Input.GetKeyDown(KeyCode.Alpha3)) MinigameManager.instance.StartMinigame("Chopsticks1");
+        if (Input.GetKeyDown(KeyCode.Alpha4)) MinigameManager.instance.StartMinigame("Chopsticks2");
+        if (Input.GetKeyDown(KeyCode.Q)) StateManager.instance.ChangeState(StateManager.GAMESTATE.GAME);
 
         if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {
