@@ -100,6 +100,7 @@ public class ScreenManager : MonoBehaviour
 
         if (endDayOne && !transitioning) StartCoroutine(EndDayOne());
         if (endDayTwo && !transitioning) StartCoroutine(EndDayTwo());
+        if (endDayThree && !transitioning) StartCoroutine(EndDayThree());
 
         if (chopsticksTutorial && !transitioning) StartCoroutine(RevealChopsticks());
         if (chaTutorial && !transitioning) StartCoroutine(RevealCha());
