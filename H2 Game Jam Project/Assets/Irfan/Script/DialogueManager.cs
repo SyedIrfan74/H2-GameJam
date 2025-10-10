@@ -89,15 +89,20 @@ public class DialogueManager : MonoBehaviour
 
         dialogueGO.SetActive(true);
         clickAmt = clickAction.ReadValue<float>();
-        Debug.Log(clickAmt);
+        //Debug.Log(clickAmt);
 
         //if running == true, dialogue is currently being written on the screen
         if (running)
         {
             //Interrupts dialogue writing to skip
-            //if (!Input.GetMouseButtonDown(0)) return;
-            //if (!clickAction.WasPressedThisFrame() || !touchAction.WasPressedThisFrame()) return;
-            if (!touchAction.WasPressedThisFrame()) return;
+            if (Application.isMobilePlatform)
+            {
+                if (!touchAction.WasPressedThisFrame()) return;
+            }
+            else if (!Application.isMobilePlatform)
+            {
+                if (!clickAction.WasPressedThisFrame()) return;
+            }
 
             StopAllCoroutines();
             if (dialogueWName == "") dialogueText.text = dialogueSOs[currentDialogue].dialogue;
@@ -112,27 +117,29 @@ public class DialogueManager : MonoBehaviour
         //Starts next Dialogue to be shown
         if (!running && !waiting)
         {
-            //if ((Input.GetMouseButtonDown(0) || manualStart) && currentDialogue < dialogueSOs.Count)
-            //{
-            //    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
-            //    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
-            //    return;
-            //}
-            //if ((clickAction.WasPressedThisFrame() || touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
-            //{
-            //    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
-            //    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
-            //    return;
-            //}
-            if ((touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+            if (Application.isMobilePlatform)
             {
-                if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
-                StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
-                return;
+                if ((touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+                {
+                    Debug.Log("MOBILE LAH FUCK");
+                    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+                    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+                    return;
+                }
+            }
+            else if (!Application.isMobilePlatform)
+            {
+                if ((clickAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+                {
+                    Debug.Log("NOT MOBILE");
+                    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+                    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+                    return;
+                }
             }
         }
 
-        Debug.Log(Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count));
+        //Debug.Log(Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count));
 
         if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeScreen && ScreenManager.instance.currScreen.screenName != dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].nextScreen)
         {
@@ -178,27 +185,27 @@ public class DialogueManager : MonoBehaviour
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal = false;
-            dialogueGO.SetActive(false);
+            //dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.countryEraser = true;
-            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser = false;
+            //dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser = false;
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayOne = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne = false;
-            dialogueGO.SetActive(false);
+            //dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayTwo = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo = false;
-            dialogueGO.SetActive(false);
+            //dialogueGO.SetActive(false);
         }
     }
 
@@ -379,9 +386,21 @@ public class DialogueManager : MonoBehaviour
 }
 
 
+//if (!Input.GetMouseButtonDown(0)) return;
+//if (!clickAction.WasPressedThisFrame() || !touchAction.WasPressedThisFrame()) return;
 
-
-
+//if ((Input.GetMouseButtonDown(0) || manualStart) && currentDialogue < dialogueSOs.Count)
+//{
+//    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+//    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+//    return;
+//}
+//if ((clickAction.WasPressedThisFrame() || touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+//{
+//    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+//    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+//    return;
+//}
 
 //yield return new WaitForSeconds(1);
 //dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
