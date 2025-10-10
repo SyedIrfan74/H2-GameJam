@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogueSO : ScriptableObject
 {
     public string characterName;
-    public Image characterSprite;   
+    public Sprite characterSprite;   
     public string dialogue;
     public float delay;
 

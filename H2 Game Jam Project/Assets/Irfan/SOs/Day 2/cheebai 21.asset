@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 21
   m_EditorClassIdentifier: 
   characterName: Priyanka
+  characterSprite: {fileID: 21300000, guid: 5f0e0b458c88cf94087378c9f8c79d57, type: 3}
   dialogue: "*Sigh*... \u201CAw, I was sure I\u2019d win that game. Oh, well\u2026there
     goes my sticker."
   delay: 0.05
@@ -31,5 +32,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 

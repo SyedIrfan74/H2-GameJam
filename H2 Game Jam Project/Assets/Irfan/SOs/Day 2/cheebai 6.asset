@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 6
   m_EditorClassIdentifier: 
   characterName: Bobby
+  characterSprite: {fileID: 21300000, guid: 2207a97f5ee554848b968f79f4c7afbb, type: 3}
   dialogue: "Eh sure! I\u2019ll teach you first."
   delay: 0.05
   flags:
@@ -30,5 +31,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 3
   nextScreen: Cha1

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Convo 43
   m_EditorClassIdentifier: 
   characterName: Yi Zhen
+  characterSprite: {fileID: 21300000, guid: eea27682555830a42a870b8c8498756e, type: 3}
   dialogue: "Haha, it\u2019s pronounced Zhen. But it\u2019s ok, since you don\u2019t
     speak Chinese. Just call me YZ."
   delay: 0.05
@@ -29,5 +30,9 @@ MonoBehaviour:
     resetScribbleJournal: 0
     countryEraser: 0
     resetCountryEraser: 0
+    endDayOne: 0
+    resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 

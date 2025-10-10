@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     public TMP_Text nameText;
     public GameObject dialogueGO;
+    public Image characterImage;
 
     [Header("Character Sprites")]
     public Sprite maleCharacterSprite;
@@ -155,21 +157,11 @@ public class DialogueManager : MonoBehaviour
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter && pickingCharacter == false)
         {
-            characterSelection.SetActive(true);
-            pickingCharacter = true;
-            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
-            dialogueGO.SetActive(false);
+            StartCoroutine(PickCharacter());
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName && pickingName == false)
         {
-            nameInput.SetActive(true);
-            pickingName = true;
-            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName = false;
-            dialogueGO.SetActive(false);
-        }
-        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.getJournal)
-        {
-            journal.SetActive(true);
+            StartCoroutine(PickName());
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal)
         {
@@ -200,6 +192,100 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private IEnumerator PickCharacter()
+    {
+        pickingCharacter = true;
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = ScreenManager.instance.currScreen.fadeBlack.color;
+        Color man = new Color(ScreenManager.instance.currScreen.fadeBlack.color.r, ScreenManager.instance.currScreen.fadeBlack.color.g, ScreenManager.instance.currScreen.fadeBlack.color.b, 0.8f);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            ScreenManager.instance.currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        dialogueGO.SetActive(false);
+        characterSelection.SetActive(true);
+        dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
+    }
+    public void PickCharAfter()
+    {
+        StartCoroutine(PickCharacterAfter());
+    }
+    private IEnumerator PickCharacterAfter()
+    {
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = ScreenManager.instance.currScreen.fadeBlack.color;
+        Color man = new Color(ScreenManager.instance.currScreen.fadeBlack.color.r, ScreenManager.instance.currScreen.fadeBlack.color.g, ScreenManager.instance.currScreen.fadeBlack.color.b, 0f);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            ScreenManager.instance.currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        dialogueGO.SetActive(true);
+        characterSelection.SetActive(false);
+        pickingCharacter = false;
+    }
+    private IEnumerator PickName()
+    {
+        pickingName = true;
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = ScreenManager.instance.currScreen.fadeBlack.color;
+        Color man = new Color(ScreenManager.instance.currScreen.fadeBlack.color.r, ScreenManager.instance.currScreen.fadeBlack.color.g, ScreenManager.instance.currScreen.fadeBlack.color.b, 0.8f);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            ScreenManager.instance.currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        dialogueGO.SetActive(false);
+        nameInput.SetActive(true);
+        dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName = false;
+    }
+    public void PickNameAfter()
+    {
+        StartCoroutine(PickNameAft());
+    }
+    private IEnumerator PickNameAft()
+    {
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = ScreenManager.instance.currScreen.fadeBlack.color;
+        Color man = new Color(ScreenManager.instance.currScreen.fadeBlack.color.r, ScreenManager.instance.currScreen.fadeBlack.color.g, ScreenManager.instance.currScreen.fadeBlack.color.b, 0f);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            ScreenManager.instance.currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        dialogueGO.SetActive(true);
+        nameInput.SetActive(false);
+        pickingName = false;
+    }
     private IEnumerator DisplayText(DialogueSO so)
     {
         if (manualStart) manualStart = false;
@@ -210,6 +296,25 @@ public class DialogueManager : MonoBehaviour
         if (so.characterName == MCNAME) nameText.text = playerName;
         else if (so.characterName == "") nameText.text = "";
         else nameText.text = so.characterName;
+
+        if (so.characterSprite != null)
+        {
+            if (so.characterName != "") characterImage.sprite = so.characterSprite;
+            characterImage.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            if (so.characterName == MCNAME)
+            {
+                characterImage.sprite = characterSprite;
+                characterImage.color = new Color(1, 1, 1, 1);
+            }
+            else
+            {
+                characterImage.sprite = null;
+                characterImage.color = new Color(1, 1, 1, 0);
+            }
+        }
 
         if (so.dialogue.Contains(MCNAME)) newDialogue = InsertName(so.dialogue);
 
@@ -241,17 +346,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void SetCharacter(int index)
     {
-        if (index == 0)
-        {
-            characterSprite = maleCharacterSprite;
-        }
-        else
-        {
-            characterSprite = femaleCharacterSprite;
-        }
-
-        characterSelection.SetActive(false);
-        pickingCharacter = false;
+        if (index == 0) characterSprite = maleCharacterSprite;
+        else characterSprite = femaleCharacterSprite;
     }
     public void SetName()
     {
@@ -277,6 +373,24 @@ public class DialogueManager : MonoBehaviour
 
 
 
+//yield return new WaitForSeconds(1);
+//dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
+
+
+//nameInput.SetActive(true);
+//pickingName = true;
+//dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.inputName = false;
+////dialogueGO.SetActive(false);
+
+//characterSelection.SetActive(true);
+//pickingCharacter = true;
+//dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.selectCharacter = false;
+////dialogueGO.SetActive(false);
+
+//else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.getJournal)
+//{
+//    journal.SetActive(true);
+//}
 
 //else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.changeState)
 //{

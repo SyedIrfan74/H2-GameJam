@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 16
   m_EditorClassIdentifier: 
   characterName: Priyanka
+  characterSprite: {fileID: 21300000, guid: 5f0e0b458c88cf94087378c9f8c79d57, type: 3}
   dialogue: "I\u2019ve been winning a lot of Cha games lately, lol! Wait, aren\u2019t
     you the new transfer student in class? What\u2019s up! I\u2019m Priyanka."
   delay: 0.05
@@ -31,5 +32,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 

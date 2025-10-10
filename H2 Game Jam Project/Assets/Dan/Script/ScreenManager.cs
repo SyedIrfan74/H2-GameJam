@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.Device;
 using UnityEngine.UI;
 
 public class ScreenManager : MonoBehaviour
@@ -44,6 +42,7 @@ public class ScreenManager : MonoBehaviour
     public Image bookWritingEndDayTwo;
     public Image bookEndDayTwo;
     public Image countryEraserImage;
+    public GameObject dialogueGO;
 
     //Edits by: Irfan
     public void StartManager()
@@ -214,7 +213,6 @@ public class ScreenManager : MonoBehaviour
         ScreenManager.instance.FindScreen("Canteen");
         yield break;
     }
-
     private IEnumerator EndDayTwo()
     {
         transitioning = true;
@@ -309,6 +307,8 @@ public class ScreenManager : MonoBehaviour
             currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        dialogueGO.SetActive(false);
 
         elapsed = 0;
         initial = bookClosed.color;

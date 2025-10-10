@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: cheebai 22
   m_EditorClassIdentifier: 
   characterName: Priyanka
+  characterSprite: {fileID: 21300000, guid: 5f0e0b458c88cf94087378c9f8c79d57, type: 3}
   dialogue: "I really hope you enjoyed playing with me, though. It\u2019s been quite
     a while since someone beat me at Cha."
   delay: 0.05
@@ -31,5 +32,7 @@ MonoBehaviour:
     resetCountryEraser: 0
     endDayOne: 0
     resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
   nextState: 0
   nextScreen: 
