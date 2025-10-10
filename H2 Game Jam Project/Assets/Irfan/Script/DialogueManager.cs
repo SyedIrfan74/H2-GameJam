@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour
     public GameObject characterSelection;
     public GameObject nameInput;
     public TMP_InputField nameInputField;
-    public GameObject journal;
 
     [Header("Dialogue Parts")]
     public List<DialogueSO> dialogueSOs = new List<DialogueSO>();
@@ -75,7 +74,7 @@ public class DialogueManager : MonoBehaviour
 
         if (characterSelection != null) characterSelection.SetActive(false);
         if (nameInput != null) nameInput.SetActive(false);
-        if (journal != null) journal.SetActive(false);
+        //if (journal != null) journal.SetActive(false);
 
         foreach (DialogueSO SO in dialogueSOs)
         {
@@ -316,7 +315,7 @@ public class DialogueManager : MonoBehaviour
         Color initial = ScreenManager.instance.currScreen.fadeBlack.color;
         Color man = new Color(ScreenManager.instance.currScreen.fadeBlack.color.r, ScreenManager.instance.currScreen.fadeBlack.color.g, ScreenManager.instance.currScreen.fadeBlack.color.b, 0f);
 
-        //Darken BG
+        //Lighten BG
         while (elapsed < duration)
         {
             float t = elapsed / duration;

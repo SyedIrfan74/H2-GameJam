@@ -390,7 +390,7 @@ public class ScreenManager : MonoBehaviour
         man2 = new Color(bookOpened.color.r, bookOpened.color.g, bookOpened.color.b, 0);
 
         Color initial3 = currScreen.fadeBlack.color;
-        Color man3 = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1.0f);
+        Color man3 = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0.0f);
 
         //Everything Fade Out
         while (elapsed < duration)
@@ -409,6 +409,7 @@ public class ScreenManager : MonoBehaviour
         journal = false;
         transitioning = false;
 
+        dialogueGO.SetActive(true);
         StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
         DialogueManager.instance.ManualStart();
         nextState = StateManager.GAMESTATE.NOSTATE;
