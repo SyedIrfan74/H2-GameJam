@@ -157,6 +157,8 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
+        dialogueGO.SetActive(false);
+
         elapsed = 0;
         initial = bookEndDayOne.color;
         man = new Color(bookEndDayOne.color.r, bookEndDayOne.color.g, bookEndDayOne.color.b, 1);
@@ -231,6 +233,8 @@ public class ScreenManager : MonoBehaviour
             currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        dialogueGO.SetActive(false);
 
         elapsed = 0;
         initial = bookEndDayTwo.color;
