@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Afiq
   characterSprite: {fileID: 21300000, guid: de3de92637e055345bd0d9dab3655a24, type: 3}
-  dialogue: Great. Let's see if you can beat my record of 13 kicks. Think you can
+  dialogue: Great. Let's see if you can beat my record of 20 kicks. Think you can
     do it?
   delay: 0.05
   flags:
@@ -46,3 +46,4 @@ MonoBehaviour:
     resetEndDayThree: 0
   nextState: 0
   nextScreen: 
+  audio: {fileID: 0}

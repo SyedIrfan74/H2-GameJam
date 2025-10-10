@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Image playBar;
 
     public AudioData audioIntro;
+    public Screen mainMenu;
 
     private void Start()
     {
@@ -94,5 +95,7 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Start();
+        Camera.main.transform.position = new Vector3(-100, 0, -10);
+        mainMenu.fadeBlack.color = new Color(mainMenu.fadeBlack.color.r, mainMenu.fadeBlack.color.g, mainMenu.fadeBlack.color.b, 1);
     }
 }

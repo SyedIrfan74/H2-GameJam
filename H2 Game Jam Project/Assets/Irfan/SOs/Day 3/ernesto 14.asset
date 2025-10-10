@@ -45,3 +45,4 @@ MonoBehaviour:
     resetEndDayThree: 0
   nextState: 0
   nextScreen: 
+  audio: {fileID: 11400000, guid: cfa21a8078c1d60449e8bfc63271ba93, type: 2}

@@ -41,5 +41,8 @@ MonoBehaviour:
     resetEndDayOne: 0
     endDayTwo: 0
     resetEndDayTwo: 0
+    endDayThree: 0
+    resetEndDayThree: 0
   nextState: 3
   nextScreen: Chapteh2
+  audio: {fileID: 0}

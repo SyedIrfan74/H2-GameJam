@@ -57,8 +57,9 @@ public class ScreenManager : MonoBehaviour
     public Image bookEndDayThree;
 
     public Image bookWritingLast;
-    public Image fireworks;
-    public Image absoluteMajula;
+    public SpriteRenderer fireworks;
+    public SpriteRenderer absoluteMajula;
+    public SpriteRenderer creditsSprite;
 
     public Transform creditsEnd;
     public Transform credits;
@@ -95,9 +96,6 @@ public class ScreenManager : MonoBehaviour
 
     public void UpdateManager()
     {
-        //if (currScreen != null) Debug.Log(currScreen.screenName);
-        //if (targetScreen != null) Debug.Log(targetScreen.screenName);
-
         if (nextState != StateManager.GAMESTATE.NOSTATE && !transitioning) StartCoroutine(ScreenTransition());
 
         if (journal && !transitioning) StartCoroutine(RevealJournal());
@@ -222,7 +220,7 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(5);
 
         elapsed = 0;
         initial = bookWritingEndDayOne.color;
@@ -299,7 +297,7 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(5);
 
         elapsed = 0;
         initial = bookWritingEndDayTwo.color;
@@ -330,13 +328,14 @@ public class ScreenManager : MonoBehaviour
     private IEnumerator EndDayThree()
     {
         transitioning = true;
+        dialogueGO.SetActive(false);
 
         float elapsed = 0;
         float duration = 2;
         Color initial = currScreen.fadeBlack.color;
         Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1);
 
-        //Darken BG
+        //curr screen fade to black
         while (elapsed < duration)
         {
             float t = elapsed / duration;
@@ -345,8 +344,6 @@ public class ScreenManager : MonoBehaviour
             currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
             yield return null;
         }
-
-        dialogueGO.SetActive(false);
 
         elapsed = 0;
         initial = bookEndDayThree.color;
@@ -376,31 +373,89 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(5);
 
         elapsed = 0;
         initial = bookWritingEndDayThree.color;
         man = new Color(bookWritingEndDayThree.color.r, bookWritingEndDayThree.color.g, bookWritingEndDayThree.color.b, 0);
 
-        Color initial2 = bookEndDayThree.color;
-        Color man2 = new Color(bookEndDayThree.color.r, bookEndDayThree.color.g, bookEndDayThree.color.b, 0);
-
-        //Reveal writing      
+        //hide writing      
         while (elapsed < duration)
         {
             float t = elapsed / duration;
             elapsed += Time.deltaTime;
             t = t * t;
             bookWritingEndDayThree.color = Color.Lerp(initial, man, t);
-            bookEndDayThree.color = Color.Lerp(initial, man, t);
             yield return null;
         }
 
-        endDayThree = false;
-        //transitioning = false;
+        elapsed = 0;
+        initial = bookWritingLast.color;
+        man = new Color(bookWritingLast.color.r, bookWritingLast.color.g, bookWritingLast.color.b, 1);
 
-        StartCoroutine(Ending());
-        yield break;
+        //reveal last page
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingLast.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(5);
+
+        elapsed = 0;
+        initial = bookWritingLast.color;
+        man = new Color(bookWritingLast.color.r, bookWritingLast.color.g, bookWritingLast.color.b, 0);
+
+        Color initial2 = bookEndDayThree.color;
+        Color man2 = new Color(bookEndDayThree.color.r, bookEndDayThree.color.g, bookEndDayThree.color.b, 0);
+
+        //hide book and writing
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingLast.color = Color.Lerp(initial, man, t);
+            bookEndDayThree.color = Color.Lerp(initial2, man2, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = fireworks.color;
+        man = new Color(fireworks.color.r, fireworks.color.g, fireworks.color.b, 1);
+
+        //reveal fireworks
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            fireworks.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(5);
+
+        elapsed = 0;
+        initial = creditsSprite.color;
+        man = new Color(creditsSprite.color.r, creditsSprite.color.g, creditsSprite.color.b, 1);
+
+        //reveal fireworks
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            creditsSprite.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+
+        StartCoroutine(Credits());
+        yield return null;
     }
     private IEnumerator Ending()
     {
@@ -449,6 +504,19 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
+        initial = creditsSprite.color;
+        man = new Color(creditsSprite.color.r, creditsSprite.color.g, creditsSprite.color.b, 1);
+
+        //reveal fireworks
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            creditsSprite.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
 
         StartCoroutine(Credits());
         yield break;
@@ -456,7 +524,7 @@ public class ScreenManager : MonoBehaviour
     private IEnumerator Credits()
     {
         float elapsed = 0;
-        float duration = 2;
+        float duration = 250;
         Transform initial = credits;
         Transform man = creditsEnd;
 
@@ -466,9 +534,19 @@ public class ScreenManager : MonoBehaviour
             elapsed += Time.deltaTime;
             t = t * t;
             credits.position = Vector3.Lerp(initial.position, man.position, t);
+
+            if (credits.position.y > 31)
+            {
+                elapsed = duration;
+            }
+
             yield return null;
         }
 
+        yield return new WaitForSeconds(5);
+
+        elapsed = 0;
+        duration = 2;
         Color initial2 = fireworks.color;
         Color man2 = new Color(fireworks.color.r, fireworks.color.g, fireworks.color.b, 0);
 
@@ -482,6 +560,7 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
+        elapsed = 0;
         initial2 = absoluteMajula.color;
         man2 = new Color(absoluteMajula.color.r, absoluteMajula.color.g, absoluteMajula.color.b, 1);
 
@@ -495,6 +574,9 @@ public class ScreenManager : MonoBehaviour
             yield return null;
         }
 
+        yield return new WaitForSeconds(2);
+
+        elapsed = 0;
         initial2 = absoluteMajula.color;
         man2 = new Color(absoluteMajula.color.r, absoluteMajula.color.g, absoluteMajula.color.b, 0);
 
@@ -578,6 +660,8 @@ public class ScreenManager : MonoBehaviour
             bookWriting.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        yield return new WaitForSeconds(2);
 
         elapsed = 0;
         initial = bookWriting.color;
@@ -872,7 +956,6 @@ public class ScreenManager : MonoBehaviour
     }
     private IEnumerator RevealChopsticks()
     {
-        Debug.Log("Chopsticks COROUTINE");
         transitioning = true;
 
         float elapsed = 0;
@@ -903,6 +986,8 @@ public class ScreenManager : MonoBehaviour
             chopsticksTutorialImage.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        yield return new WaitForSeconds(5);
 
         elapsed = 0;
         initial = chopsticksTutorialImage.color;
@@ -943,7 +1028,6 @@ public class ScreenManager : MonoBehaviour
     }
     private IEnumerator RevealCha()
     {
-        Debug.Log("Cha COROUTINE");
         transitioning = true;
 
         float elapsed = 0;
@@ -974,6 +1058,8 @@ public class ScreenManager : MonoBehaviour
             chaTutorialImage.color = Color.Lerp(initial, man, t);
             yield return null;
         }
+
+        yield return new WaitForSeconds(5);
 
         elapsed = 0;
         initial = chaTutorialImage.color;

@@ -1,0 +1,4225 @@
+fileFormatVersion: 2
+guid: 765f78e7b41a42b45b43007991eef9e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4350477572181277511
+    second: Handbook_ending_0
+  - first:
+      213: 5591460947583950262
+    second: Handbook_ending_1
+  - first:
+      213: -3665681169589771563
+    second: Handbook_ending_2
+  - first:
+      213: 5235039769328546525
+    second: Handbook_ending_3
+  - first:
+      213: -3160616275943633392
+    second: Handbook_ending_4
+  - first:
+      213: 2131462241279564001
+    second: Handbook_ending_5
+  - first:
+      213: -7742032213090732581
+    second: Handbook_ending_6
+  - first:
+      213: -602312801012019912
+    second: Handbook_ending_7
+  - first:
+      213: -6938303030071479776
+    second: Handbook_ending_8
+  - first:
+      213: -1331310899104531481
+    second: Handbook_ending_9
+  - first:
+      213: -4860286361679748946
+    second: Handbook_ending_10
+  - first:
+      213: -796814970422894611
+    second: Handbook_ending_11
+  - first:
+      213: -293386887113106574
+    second: Handbook_ending_12
+  - first:
+      213: -20103391253521845
+    second: Handbook_ending_13
+  - first:
+      213: -5584408567595360542
+    second: Handbook_ending_14
+  - first:
+      213: 8018129903028151928
+    second: Handbook_ending_15
+  - first:
+      213: 3280355662265499501
+    second: Handbook_ending_16
+  - first:
+      213: 4383435506468820857
+    second: Handbook_ending_17
+  - first:
+      213: 4213409164923269419
+    second: Handbook_ending_18
+  - first:
+      213: -4190963730856828370
+    second: Handbook_ending_19
+  - first:
+      213: 6748231282333314137
+    second: Handbook_ending_20
+  - first:
+      213: 5523439178045823502
+    second: Handbook_ending_21
+  - first:
+      213: 7082519983214985002
+    second: Handbook_ending_22
+  - first:
+      213: -4434118868276180493
+    second: Handbook_ending_23
+  - first:
+      213: 2991084993587789617
+    second: Handbook_ending_24
+  - first:
+      213: -4482746696621115588
+    second: Handbook_ending_25
+  - first:
+      213: 1715190545512988129
+    second: Handbook_ending_26
+  - first:
+      213: 5524169465749951611
+    second: Handbook_ending_27
+  - first:
+      213: -7328607360400490297
+    second: Handbook_ending_28
+  - first:
+      213: 1835804278110429997
+    second: Handbook_ending_29
+  - first:
+      213: -1550189783423297420
+    second: Handbook_ending_30
+  - first:
+      213: -6264681238365795370
+    second: Handbook_ending_31
+  - first:
+      213: -7235394828194526515
+    second: Handbook_ending_32
+  - first:
+      213: -6319308425852518004
+    second: Handbook_ending_33
+  - first:
+      213: -8205864698572479512
+    second: Handbook_ending_34
+  - first:
+      213: -6503275041090996233
+    second: Handbook_ending_35
+  - first:
+      213: 6230431799110537920
+    second: Handbook_ending_36
+  - first:
+      213: 4119626789424923150
+    second: Handbook_ending_37
+  - first:
+      213: 3666845567042990970
+    second: Handbook_ending_38
+  - first:
+      213: 1878254027417030495
+    second: Handbook_ending_39
+  - first:
+      213: 1020115447936198700
+    second: Handbook_ending_40
+  - first:
+      213: 899654517781579561
+    second: Handbook_ending_41
+  - first:
+      213: 3577950644506005006
+    second: Handbook_ending_42
+  - first:
+      213: 7717319086893576100
+    second: Handbook_ending_43
+  - first:
+      213: -3659467713412743575
+    second: Handbook_ending_44
+  - first:
+      213: 5874624559768304611
+    second: Handbook_ending_45
+  - first:
+      213: 6493062942255292471
+    second: Handbook_ending_46
+  - first:
+      213: 1290466539913761570
+    second: Handbook_ending_47
+  - first:
+      213: 2033730761919607024
+    second: Handbook_ending_48
+  - first:
+      213: 2473971485090544582
+    second: Handbook_ending_49
+  - first:
+      213: 6788765332453789940
+    second: Handbook_ending_50
+  - first:
+      213: -6653388896833253702
+    second: Handbook_ending_51
+  - first:
+      213: 6271560170519510838
+    second: Handbook_ending_52
+  - first:
+      213: 7631197427759095086
+    second: Handbook_ending_53
+  - first:
+      213: -7775742236415669760
+    second: Handbook_ending_54
+  - first:
+      213: 2816048363421518535
+    second: Handbook_ending_55
+  - first:
+      213: -3105279621306909205
+    second: Handbook_ending_56
+  - first:
+      213: 8997496556697137443
+    second: Handbook_ending_57
+  - first:
+      213: -3287433596611042503
+    second: Handbook_ending_58
+  - first:
+      213: 5875443323387453794
+    second: Handbook_ending_59
+  - first:
+      213: -7292764585961822181
+    second: Handbook_ending_60
+  - first:
+      213: -8784191850791337383
+    second: Handbook_ending_61
+  - first:
+      213: -7215324160718558323
+    second: Handbook_ending_62
+  - first:
+      213: 7379762407411032898
+    second: Handbook_ending_63
+  - first:
+      213: 978323949917999069
+    second: Handbook_ending_64
+  - first:
+      213: 2596545078940919055
+    second: Handbook_ending_65
+  - first:
+      213: 4820381077502519969
+    second: Handbook_ending_66
+  - first:
+      213: 1778363044136046935
+    second: Handbook_ending_67
+  - first:
+      213: -6261958453835467048
+    second: Handbook_ending_68
+  - first:
+      213: -3120077055361543699
+    second: Handbook_ending_69
+  - first:
+      213: -245714766638676824
+    second: Handbook_ending_70
+  - first:
+      213: 7050331285028492158
+    second: Handbook_ending_71
+  - first:
+      213: -3104967817913421303
+    second: Handbook_ending_72
+  - first:
+      213: -82119936329362621
+    second: Handbook_ending_73
+  - first:
+      213: -4936063461655665805
+    second: Handbook_ending_74
+  - first:
+      213: -7189069959839111319
+    second: Handbook_ending_75
+  - first:
+      213: 8427071848546163534
+    second: Handbook_ending_76
+  - first:
+      213: 8901652939176515026
+    second: Handbook_ending_77
+  - first:
+      213: -6093421590141686870
+    second: Handbook_ending_78
+  - first:
+      213: -4252417577016089012
+    second: Handbook_ending_79
+  - first:
+      213: -4188565603179953860
+    second: Handbook_ending_80
+  - first:
+      213: 665606954430812986
+    second: Handbook_ending_81
+  - first:
+      213: -2474852094945911843
+    second: Handbook_ending_82
+  - first:
+      213: -4305442274303705856
+    second: Handbook_ending_83
+  - first:
+      213: -9130899265370235299
+    second: Handbook_ending_84
+  - first:
+      213: -7832312295077460070
+    second: Handbook_ending_85
+  - first:
+      213: -8318054992689700366
+    second: Handbook_ending_86
+  - first:
+      213: 5195456798873324810
+    second: Handbook_ending_87
+  - first:
+      213: 3193052661572148581
+    second: Handbook_ending_88
+  - first:
+      213: -635715538376747270
+    second: Handbook_ending_89
+  - first:
+      213: 6741651780451107884
+    second: Handbook_ending_90
+  - first:
+      213: 7884776967650328850
+    second: Handbook_ending_91
+  - first:
+      213: 488734625571689417
+    second: Handbook_ending_92
+  - first:
+      213: -4275737751322535002
+    second: Handbook_ending_93
+  - first:
+      213: 4222359340191890723
+    second: Handbook_ending_94
+  - first:
+      213: -4302858697668555115
+    second: Handbook_ending_95
+  - first:
+      213: -6494004970533653495
+    second: Handbook_ending_96
+  - first:
+      213: 56345877894591695
+    second: Handbook_ending_97
+  - first:
+      213: 135861206921162245
+    second: Handbook_ending_98
+  - first:
+      213: -3569567677273809554
+    second: Handbook_ending_99
+  - first:
+      213: 6865140113314130403
+    second: Handbook_ending_100
+  - first:
+      213: -7713214048500719089
+    second: Handbook_ending_101
+  - first:
+      213: 1345154844705695749
+    second: Handbook_ending_102
+  - first:
+      213: -8166908694477244170
+    second: Handbook_ending_103
+  - first:
+      213: -490666288856155295
+    second: Handbook_ending_104
+  - first:
+      213: 7308149077746888324
+    second: Handbook_ending_105
+  - first:
+      213: -106478790934894127
+    second: Handbook_ending_106
+  - first:
+      213: -4488236898858549528
+    second: Handbook_ending_107
+  - first:
+      213: -7051780247353548399
+    second: Handbook_ending_108
+  - first:
+      213: -7118482385839242474
+    second: Handbook_ending_109
+  - first:
+      213: 7741721484127264426
+    second: Handbook_ending_110
+  - first:
+      213: 8887107619975942809
+    second: Handbook_ending_111
+  - first:
+      213: 6223329496630603250
+    second: Handbook_ending_112
+  - first:
+      213: -2662613744404989662
+    second: Handbook_ending_113
+  - first:
+      213: -9198247897277282211
+    second: Handbook_ending_114
+  - first:
+      213: -715817579114516145
+    second: Handbook_ending_115
+  - first:
+      213: -612805320302393584
+    second: Handbook_ending_116
+  - first:
+      213: -1848460927151838310
+    second: Handbook_ending_117
+  - first:
+      213: 1368191055101235155
+    second: Handbook_ending_118
+  - first:
+      213: 7215571363553414175
+    second: Handbook_ending_119
+  - first:
+      213: -8764159613168515296
+    second: Handbook_ending_120
+  - first:
+      213: 6056624835572060536
+    second: Handbook_ending_121
+  - first:
+      213: -2814556995191695904
+    second: Handbook_ending_122
+  - first:
+      213: 2813436437752375248
+    second: Handbook_ending_123
+  - first:
+      213: -5948526362510672136
+    second: Handbook_ending_124
+  - first:
+      213: -2225363418738562064
+    second: Handbook_ending_125
+  - first:
+      213: -4140255740140108513
+    second: Handbook_ending_126
+  - first:
+      213: -4230471466899913757
+    second: Handbook_ending_127
+  - first:
+      213: -2513733444204692884
+    second: Handbook_ending_128
+  - first:
+      213: -813792373209699880
+    second: Handbook_ending_129
+  - first:
+      213: -3364335772376724321
+    second: Handbook_ending_130
+  - first:
+      213: -583485641383268191
+    second: Handbook_ending_131
+  - first:
+      213: 2181658903557208964
+    second: Handbook_ending_132
+  - first:
+      213: 1845981569652691000
+    second: Handbook_ending_133
+  - first:
+      213: 2437557723166123748
+    second: Handbook_ending_134
+  - first:
+      213: 8102666600199566997
+    second: Handbook_ending_135
+  - first:
+      213: 1158203788724243783
+    second: Handbook_ending_136
+  - first:
+      213: 8582288626955226996
+    second: Handbook_ending_137
+  - first:
+      213: -8134262340255027451
+    second: Handbook_ending_138
+  - first:
+      213: 7446201278298076147
+    second: Handbook_ending_139
+  - first:
+      213: -3412768762857842225
+    second: Handbook_ending_140
+  - first:
+      213: 4274026579517416267
+    second: Handbook_ending_141
+  - first:
+      213: 3535917789581774663
+    second: Handbook_ending_142
+  - first:
+      213: 3814944774838652532
+    second: Handbook_ending_143
+  - first:
+      213: -8790372786448954509
+    second: Handbook_ending_144
+  - first:
+      213: 6587432871596035786
+    second: Handbook_ending_145
+  - first:
+      213: -206653669835646859
+    second: Handbook_ending_146
+  - first:
+      213: -7683897995607260021
+    second: Handbook_ending_147
+  - first:
+      213: -8468971386542028158
+    second: Handbook_ending_148
+  - first:
+      213: 5466137264782311915
+    second: Handbook_ending_149
+  - first:
+      213: -807700108927203579
+    second: Handbook_ending_150
+  - first:
+      213: -9087389383652576406
+    second: Handbook_ending_151
+  - first:
+      213: 4317873716154035995
+    second: Handbook_ending_152
+  - first:
+      213: 3150034589975431053
+    second: Handbook_ending_153
+  - first:
+      213: -5395303126420727190
+    second: Handbook_ending_154
+  - first:
+      213: 4427117468148939645
+    second: Handbook_ending_155
+  - first:
+      213: 1072735616639217497
+    second: Handbook_ending_156
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Handbook_ending_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 674
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b3b255d40006c30800000000000000
+      internalID: 4350477572181277511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 670
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bdd5346b1cd89d40800000000000000
+      internalID: 5591460947583950262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 675
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d263cad562e02dc0800000000000000
+      internalID: -3665681169589771563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_3
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 682
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2fedb0fe896a840800000000000000
+      internalID: 5235039769328546525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_4
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 682
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ecf012e3c3324d0800000000000000
+      internalID: -3160616275943633392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 685
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e850af8d99749d10800000000000000
+      internalID: 2131462241279564001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_6
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 684
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd57813a8b6ce8490800000000000000
+      internalID: -7742032213090732581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 686
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d020cd2b724a7f0800000000000000
+      internalID: -602312801012019912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_8
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 689
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022b294a72236bf90800000000000000
+      internalID: -6938303030071479776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_9
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 690
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ebb4457acb368de0800000000000000
+      internalID: -1331310899104531481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_10
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 693
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea027611e4bcc8cb0800000000000000
+      internalID: -4860286361679748946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 697
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defda30910521f4f0800000000000000
+      internalID: -796814970422894611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_12
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 702
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b9ddb3e2eadebf0800000000000000
+      internalID: -293386887113106574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_13
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 705
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a9d89721498bff0800000000000000
+      internalID: -20103391253521845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_14
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 699
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee94d7cef13082b0800000000000000
+      internalID: -5584408567595360542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_15
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 702
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8762ee83aae164f60800000000000000
+      internalID: 8018129903028151928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_16
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 702
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fb642481a268d20800000000000000
+      internalID: 3280355662265499501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_17
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 695
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97798e26e5715dc30800000000000000
+      internalID: 4383435506468820857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 675
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2170a8df49097a30800000000000000
+      internalID: 4213409164923269419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 670
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e22abb301b4b6d5c0800000000000000
+      internalID: -4190963730856828370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 647
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ce7adf89886ad50800000000000000
+      internalID: 6748231282333314137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_21
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 673
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a95e10ba237ac40800000000000000
+      internalID: 5523439178045823502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_22
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 673
+        width: 48
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f7222666a2a4260800000000000000
+      internalID: 7082519983214985002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_23
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 676
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f98a8cd168d672c0800000000000000
+      internalID: -4434118868276180493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_24
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 667
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f3dc744f7728920800000000000000
+      internalID: 2991084993587789617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 674
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37b7d941a51ac1c0800000000000000
+      internalID: -4482746696621115588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_26
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 674
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edf863b6b49dc710800000000000000
+      internalID: 1715190545512988129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_27
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 674
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74d51d5cdac9ac40800000000000000
+      internalID: 5524169465749951611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 675
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c004013f6e8b4a90800000000000000
+      internalID: -7328607360400490297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_29
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 673
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d232ae1b3461a7910800000000000000
+      internalID: 1835804278110429997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_30
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 656
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4785d90fa9e9c7ae0800000000000000
+      internalID: -1550189783423297420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_31
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 650
+        width: 12
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db072cfa916f09a0800000000000000
+      internalID: -6264681238365795370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 617
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca44cf0db6b69b90800000000000000
+      internalID: -7235394828194526515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 616
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c818de2c77e4d48a0800000000000000
+      internalID: -6319308425852518004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_34
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 615
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e36bae7889ee1e80800000000000000
+      internalID: -8205864698572479512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_35
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 616
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f77b135ec9bfb5a0800000000000000
+      internalID: -6503275041090996233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_36
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 616
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2184706b0f67650800000000000000
+      internalID: 6230431799110537920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 616
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e020bdefcbadb2930800000000000000
+      internalID: 4119626789424923150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_38
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 617
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7330dd8d9043e230800000000000000
+      internalID: 3666845567042990970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_39
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 634
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f83262616e01a10800000000000000
+      internalID: 1878254027417030495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_40
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 616
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c282028589d282e00800000000000000
+      internalID: 1020115447936198700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 617
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92742f074073c7c00800000000000000
+      internalID: 899654517781579561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_42
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 618
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e09a5872f67a130800000000000000
+      internalID: 3577950644506005006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_43
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 617
+        width: 58
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af22a842dc691b60800000000000000
+      internalID: 7717319086893576100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_44
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 616
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96eb50bd085f63dc0800000000000000
+      internalID: -3659467713412743575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 601
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb76c979ebd68150800000000000000
+      internalID: 5874624559768304611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 619
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7302161285efb1a50800000000000000
+      internalID: 6493062942255292471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_47
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 619
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223561a1b78a8e110800000000000000
+      internalID: 1290466539913761570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_48
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 618
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0b0015a53493c10800000000000000
+      internalID: 2033730761919607024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_49
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 618
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb744145ff455220800000000000000
+      internalID: 2473971485090544582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_50
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 619
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f01568f91a863e50800000000000000
+      internalID: 6788765332453789940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_51
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 618
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abec9bbac0a6aa3a0800000000000000
+      internalID: -6653388896833253702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_52
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 258
+        width: 445
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fbd473fbe090750800000000000000
+      internalID: 6271560170519510838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_53
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 616
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d9474f0a577e960800000000000000
+      internalID: 7631197427759095086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_54
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 541
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a417532a3071490800000000000000
+      internalID: -7775742236415669760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_55
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 580
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca4f04011d941720800000000000000
+      internalID: 2816048363421518535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_56
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 560
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedfdbb03a4d7e4d0800000000000000
+      internalID: -3105279621306909205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_57
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 562
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 321bbb192778ddc70800000000000000
+      internalID: 8997496556697137443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_58
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 563
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933605bbf80b062d0800000000000000
+      internalID: -3287433596611042503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_59
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 566
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261237cb294c98150800000000000000
+      internalID: 5875443323387453794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_60
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 563
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18623f6f35eaca90800000000000000
+      internalID: -7292764585961822181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_61
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 564
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95283b66d08481680800000000000000
+      internalID: -8784191850791337383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_62
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 560
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ba31d77e40edb90800000000000000
+      internalID: -7215324160718558323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_63
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 561
+        width: 41
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24324845fce2a6660800000000000000
+      internalID: 7379762407411032898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_64
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 548
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf8e16f274b39d00800000000000000
+      internalID: 978323949917999069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_65
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 562
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05ef810ef7c80420800000000000000
+      internalID: 2596545078940919055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_66
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 560
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa6d8eec0f65e240800000000000000
+      internalID: 4820381077502519969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_67
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 561
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751596734c30ea810800000000000000
+      internalID: 1778363044136046935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_68
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 563
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6f1e8a6fd0919a0800000000000000
+      internalID: -6261958453835467048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_69
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 564
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de11453f27243b4d0800000000000000
+      internalID: -3120077055361543699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_70
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 560
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a40f6ab8bb079cf0800000000000000
+      internalID: -245714766638676824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 541
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7352f013fec7d160800000000000000
+      internalID: 7050331285028492158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_72
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 497
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902304e6830f8e4d0800000000000000
+      internalID: -3104967817913421303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_73
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 504
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3435c1e5a504cdef0800000000000000
+      internalID: -82119936329362621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_74
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 504
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373aa3b1f649f7bb0800000000000000
+      internalID: -4936063461655665805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_75
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 502
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967ab5af5fa4b3c90800000000000000
+      internalID: -7189069959839111319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_76
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 505
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bd94d9239f2f470800000000000000
+      internalID: 8427071848546163534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_77
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 521
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d59d696f26098b70800000000000000
+      internalID: 8901652939176515026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_78
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 506
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaba8ec1951df6ba0800000000000000
+      internalID: -6093421590141686870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_79
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 504
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4624557eb06cf4c0800000000000000
+      internalID: -4252417577016089012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_80
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 493
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c310a00a6c93fd5c0800000000000000
+      internalID: -4188565603179953860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_81
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 503
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33d0ee9ff5bc3900800000000000000
+      internalID: 665606954430812986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_82
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 502
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb1e19c12f87add0800000000000000
+      internalID: -2474852094945911843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_83
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 502
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d7d2f001fff34c0800000000000000
+      internalID: -4305442274303705856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_84
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 509
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e5bb7ee77884180800000000000000
+      internalID: -9130899265370235299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 508
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97cbf907790e4390800000000000000
+      internalID: -7832312295077460070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_86
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 508
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1e09a1e05509c80800000000000000
+      internalID: -8318054992689700366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_87
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 508
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d8bbe8e68f91840800000000000000
+      internalID: 5195456798873324810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_88
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 502
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d9f1a6a70005c20800000000000000
+      internalID: 3193052661572148581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_89
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 501
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af69bd4061c7d27f0800000000000000
+      internalID: -635715538376747270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_90
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 502
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c240b2553982f8d50800000000000000
+      internalID: 6741651780451107884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_91
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 486
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211caf170ea5c6d60800000000000000
+      internalID: 7884776967650328850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_92
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 507
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c352a27d8558c600800000000000000
+      internalID: 488734625571689417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_93
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 440
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab51b34b2789a4c0800000000000000
+      internalID: -4275737751322535002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_94
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 462
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32db03ae275d89a30800000000000000
+      internalID: 4222359340191890723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 443
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e04cedfcc2944c0800000000000000
+      internalID: -4302858697668555115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_96
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 457
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90478b1d2e8a0e5a0800000000000000
+      internalID: -6494004970533653495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_97
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 440
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4f674074e28c000800000000000000
+      internalID: 56345877894591695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_98
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 441
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50eaa414c0da2e100800000000000000
+      internalID: 135861206921162245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_99
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 443
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6dd0622c19567ec0800000000000000
+      internalID: -3569567677273809554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_100
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 458
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9af5b5f80e54f50800000000000000
+      internalID: 6865140113314130403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_101
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 442
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02ef8270b825f490800000000000000
+      internalID: -7713214048500719089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_102
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 439
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508249e4433faa210800000000000000
+      internalID: 1345154844705695749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_103
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 428
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f872a000df49ae80800000000000000
+      internalID: -8166908694477244170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_104
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 443
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b38752c9dc039f0800000000000000
+      internalID: -490666288856155295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_105
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 441
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ea3b0bdd2cb6560800000000000000
+      internalID: 7308149077746888324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_106
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 440
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d966329a16b58ef0800000000000000
+      internalID: -106478790934894127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_107
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 428
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee3cb7f15496b1c0800000000000000
+      internalID: -4488236898858549528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_108
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 431
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191206a1a3b032e90800000000000000
+      internalID: -7051780247353548399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_109
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 441
+        width: 38
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6134d244cf1163d90800000000000000
+      internalID: -7118482385839242474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_110
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 441
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae5a632cae107b60800000000000000
+      internalID: 7741721484127264426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_111
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 442
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99255516b49555b70800000000000000
+      internalID: 8887107619975942809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_112
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 444
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fda0ee5435bd5650800000000000000
+      internalID: 6223329496630603250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_113
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 443
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229faa618ee7c0bd0800000000000000
+      internalID: -2662613744404989662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_114
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 442
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58cdc69542495080800000000000000
+      internalID: -9198247897277282211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_115
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 425
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4136e054b7e016f0800000000000000
+      internalID: -715817579114516145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_116
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 371
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01708e6dec0ee77f0800000000000000
+      internalID: -612805320302393584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_117
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 392
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9becef8492f856e0800000000000000
+      internalID: -1848460927151838310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_118
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 373
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df0d20048accf210800000000000000
+      internalID: 1368191055101235155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_119
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 395
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c0518ecebd22460800000000000000
+      internalID: 7215571363553414175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_120
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 373
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027044e24437f5680800000000000000
+      internalID: -8764159613168515296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_121
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 376
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871d416d2347d0450800000000000000
+      internalID: 6056624835572060536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_122
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 376
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e51285335fa0f8d0800000000000000
+      internalID: -2814556995191695904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_123
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 377
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7ee5ea8855b0720800000000000000
+      internalID: 2813436437752375248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_124
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 377
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe31893ac6927da0800000000000000
+      internalID: -5948526362510672136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_125
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 396
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb60f9d2cbed11e0800000000000000
+      internalID: -2225363418738562064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_126
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 378
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f154da1275bda86c0800000000000000
+      internalID: -4140255740140108513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_127
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 358
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e341076d985a45c0800000000000000
+      internalID: -4230471466899913757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_128
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 376
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6af82630cc6d1dd0800000000000000
+      internalID: -2513733444204692884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_129
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 372
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9e9e1f524d4b4f0800000000000000
+      internalID: -813792373209699880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_130
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 372
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c8856a07a7f41d0800000000000000
+      internalID: -3364335772376724321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_131
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 373
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a03fcd86ea07e7f0800000000000000
+      internalID: -583485641383268191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_132
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 364
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b789fb63fc64e10800000000000000
+      internalID: 2181658903557208964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_133
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 352
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8301119057e3e9910800000000000000
+      internalID: 1845981569652691000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_134
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 372
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6a3d0a5d1f3d120800000000000000
+      internalID: 2437557723166123748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_135
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 375
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5963156d754727070800000000000000
+      internalID: 8102666600199566997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_136
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 375
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d8b6c9534c21010800000000000000
+      internalID: 1158203788724243783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_137
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 376
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f8a89090a6a1770800000000000000
+      internalID: 8582288626955226996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_138
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 378
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fe24baf7b4d1f80800000000000000
+      internalID: -8134262340255027451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_139
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 358
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f334076c98365760800000000000000
+      internalID: 7446201278298076147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_140
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 336
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc91f4d44e863a0d0800000000000000
+      internalID: -3412768762857842225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_141
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 320
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43a6b08784605b30800000000000000
+      internalID: 4274026579517416267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_142
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 334
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f810bde7a121130800000000000000
+      internalID: 3535917789581774663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_143
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 340
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e8dfd6f0861f430800000000000000
+      internalID: 3814944774838652532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_144
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 322
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b037c2682520680800000000000000
+      internalID: -8790372786448954509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_145
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 320
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace86358b434b6b50800000000000000
+      internalID: 6587432871596035786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_146
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 320
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5785ae90591d12df0800000000000000
+      internalID: -206653669835646859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_147
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 296
+        width: 52
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b844e79eb7f4d5590800000000000000
+      internalID: -7683897995607260021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_148
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 318
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a073cf46b287a80800000000000000
+      internalID: -8468971386542028158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_149
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 319
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be100e8a1ee9bdb40800000000000000
+      internalID: 5466137264782311915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_150
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 321
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5078952c7097ac4f0800000000000000
+      internalID: -807700108927203579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_151
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 299
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a637bbba08b13e180800000000000000
+      internalID: -9087389383652576406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_152
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 304
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f6b5c844b2ceb30800000000000000
+      internalID: 4317873716154035995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_153
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 318
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87cdad15cb27bb20800000000000000
+      internalID: 3150034589975431053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_154
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 320
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a532e54680025b0800000000000000
+      internalID: -5395303126420727190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_155
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 317
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bb1f3a1e7407d30800000000000000
+      internalID: 4427117468148939645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Handbook_ending_156
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 318
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fa0b71c5f13ee00800000000000000
+      internalID: 1072735616639217497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Handbook_ending_0: 4350477572181277511
+      Handbook_ending_1: 5591460947583950262
+      Handbook_ending_10: -4860286361679748946
+      Handbook_ending_100: 6865140113314130403
+      Handbook_ending_101: -7713214048500719089
+      Handbook_ending_102: 1345154844705695749
+      Handbook_ending_103: -8166908694477244170
+      Handbook_ending_104: -490666288856155295
+      Handbook_ending_105: 7308149077746888324
+      Handbook_ending_106: -106478790934894127
+      Handbook_ending_107: -4488236898858549528
+      Handbook_ending_108: -7051780247353548399
+      Handbook_ending_109: -7118482385839242474
+      Handbook_ending_11: -796814970422894611
+      Handbook_ending_110: 7741721484127264426
+      Handbook_ending_111: 8887107619975942809
+      Handbook_ending_112: 6223329496630603250
+      Handbook_ending_113: -2662613744404989662
+      Handbook_ending_114: -9198247897277282211
+      Handbook_ending_115: -715817579114516145
+      Handbook_ending_116: -612805320302393584
+      Handbook_ending_117: -1848460927151838310
+      Handbook_ending_118: 1368191055101235155
+      Handbook_ending_119: 7215571363553414175
+      Handbook_ending_12: -293386887113106574
+      Handbook_ending_120: -8764159613168515296
+      Handbook_ending_121: 6056624835572060536
+      Handbook_ending_122: -2814556995191695904
+      Handbook_ending_123: 2813436437752375248
+      Handbook_ending_124: -5948526362510672136
+      Handbook_ending_125: -2225363418738562064
+      Handbook_ending_126: -4140255740140108513
+      Handbook_ending_127: -4230471466899913757
+      Handbook_ending_128: -2513733444204692884
+      Handbook_ending_129: -813792373209699880
+      Handbook_ending_13: -20103391253521845
+      Handbook_ending_130: -3364335772376724321
+      Handbook_ending_131: -583485641383268191
+      Handbook_ending_132: 2181658903557208964
+      Handbook_ending_133: 1845981569652691000
+      Handbook_ending_134: 2437557723166123748
+      Handbook_ending_135: 8102666600199566997
+      Handbook_ending_136: 1158203788724243783
+      Handbook_ending_137: 8582288626955226996
+      Handbook_ending_138: -8134262340255027451
+      Handbook_ending_139: 7446201278298076147
+      Handbook_ending_14: -5584408567595360542
+      Handbook_ending_140: -3412768762857842225
+      Handbook_ending_141: 4274026579517416267
+      Handbook_ending_142: 3535917789581774663
+      Handbook_ending_143: 3814944774838652532
+      Handbook_ending_144: -8790372786448954509
+      Handbook_ending_145: 6587432871596035786
+      Handbook_ending_146: -206653669835646859
+      Handbook_ending_147: -7683897995607260021
+      Handbook_ending_148: -8468971386542028158
+      Handbook_ending_149: 5466137264782311915
+      Handbook_ending_15: 8018129903028151928
+      Handbook_ending_150: -807700108927203579
+      Handbook_ending_151: -9087389383652576406
+      Handbook_ending_152: 4317873716154035995
+      Handbook_ending_153: 3150034589975431053
+      Handbook_ending_154: -5395303126420727190
+      Handbook_ending_155: 4427117468148939645
+      Handbook_ending_156: 1072735616639217497
+      Handbook_ending_16: 3280355662265499501
+      Handbook_ending_17: 4383435506468820857
+      Handbook_ending_18: 4213409164923269419
+      Handbook_ending_19: -4190963730856828370
+      Handbook_ending_2: -3665681169589771563
+      Handbook_ending_20: 6748231282333314137
+      Handbook_ending_21: 5523439178045823502
+      Handbook_ending_22: 7082519983214985002
+      Handbook_ending_23: -4434118868276180493
+      Handbook_ending_24: 2991084993587789617
+      Handbook_ending_25: -4482746696621115588
+      Handbook_ending_26: 1715190545512988129
+      Handbook_ending_27: 5524169465749951611
+      Handbook_ending_28: -7328607360400490297
+      Handbook_ending_29: 1835804278110429997
+      Handbook_ending_3: 5235039769328546525
+      Handbook_ending_30: -1550189783423297420
+      Handbook_ending_31: -6264681238365795370
+      Handbook_ending_32: -7235394828194526515
+      Handbook_ending_33: -6319308425852518004
+      Handbook_ending_34: -8205864698572479512
+      Handbook_ending_35: -6503275041090996233
+      Handbook_ending_36: 6230431799110537920
+      Handbook_ending_37: 4119626789424923150
+      Handbook_ending_38: 3666845567042990970
+      Handbook_ending_39: 1878254027417030495
+      Handbook_ending_4: -3160616275943633392
+      Handbook_ending_40: 1020115447936198700
+      Handbook_ending_41: 899654517781579561
+      Handbook_ending_42: 3577950644506005006
+      Handbook_ending_43: 7717319086893576100
+      Handbook_ending_44: -3659467713412743575
+      Handbook_ending_45: 5874624559768304611
+      Handbook_ending_46: 6493062942255292471
+      Handbook_ending_47: 1290466539913761570
+      Handbook_ending_48: 2033730761919607024
+      Handbook_ending_49: 2473971485090544582
+      Handbook_ending_5: 2131462241279564001
+      Handbook_ending_50: 6788765332453789940
+      Handbook_ending_51: -6653388896833253702
+      Handbook_ending_52: 6271560170519510838
+      Handbook_ending_53: 7631197427759095086
+      Handbook_ending_54: -7775742236415669760
+      Handbook_ending_55: 2816048363421518535
+      Handbook_ending_56: -3105279621306909205
+      Handbook_ending_57: 8997496556697137443
+      Handbook_ending_58: -3287433596611042503
+      Handbook_ending_59: 5875443323387453794
+      Handbook_ending_6: -7742032213090732581
+      Handbook_ending_60: -7292764585961822181
+      Handbook_ending_61: -8784191850791337383
+      Handbook_ending_62: -7215324160718558323
+      Handbook_ending_63: 7379762407411032898
+      Handbook_ending_64: 978323949917999069
+      Handbook_ending_65: 2596545078940919055
+      Handbook_ending_66: 4820381077502519969
+      Handbook_ending_67: 1778363044136046935
+      Handbook_ending_68: -6261958453835467048
+      Handbook_ending_69: -3120077055361543699
+      Handbook_ending_7: -602312801012019912
+      Handbook_ending_70: -245714766638676824
+      Handbook_ending_71: 7050331285028492158
+      Handbook_ending_72: -3104967817913421303
+      Handbook_ending_73: -82119936329362621
+      Handbook_ending_74: -4936063461655665805
+      Handbook_ending_75: -7189069959839111319
+      Handbook_ending_76: 8427071848546163534
+      Handbook_ending_77: 8901652939176515026
+      Handbook_ending_78: -6093421590141686870
+      Handbook_ending_79: -4252417577016089012
+      Handbook_ending_8: -6938303030071479776
+      Handbook_ending_80: -4188565603179953860
+      Handbook_ending_81: 665606954430812986
+      Handbook_ending_82: -2474852094945911843
+      Handbook_ending_83: -4305442274303705856
+      Handbook_ending_84: -9130899265370235299
+      Handbook_ending_85: -7832312295077460070
+      Handbook_ending_86: -8318054992689700366
+      Handbook_ending_87: 5195456798873324810
+      Handbook_ending_88: 3193052661572148581
+      Handbook_ending_89: -635715538376747270
+      Handbook_ending_9: -1331310899104531481
+      Handbook_ending_90: 6741651780451107884
+      Handbook_ending_91: 7884776967650328850
+      Handbook_ending_92: 488734625571689417
+      Handbook_ending_93: -4275737751322535002
+      Handbook_ending_94: 4222359340191890723
+      Handbook_ending_95: -4302858697668555115
+      Handbook_ending_96: -6494004970533653495
+      Handbook_ending_97: 56345877894591695
+      Handbook_ending_98: 135861206921162245
+      Handbook_ending_99: -3569567677273809554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

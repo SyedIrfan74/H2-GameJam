@@ -82,6 +82,7 @@ public class Chapteh : MonoBehaviour
 
         transform.localPosition = new Vector3(0, startingY, 0);
 
+        chaptehSpeed = 10f;
         score = 0;
     }
 }
