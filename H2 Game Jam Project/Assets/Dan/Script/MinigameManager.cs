@@ -128,7 +128,7 @@ public class MinigameManager : MonoBehaviour
     {
         chaptehDifficulty = i;
 
-        chapteh.targetScore = chaptehDifficulty == 1 ? 10 : 30;
+        chapteh.targetScore = chaptehDifficulty == 1 ? 10 : 20;
 
         ResetChapteh();
     }
@@ -138,6 +138,9 @@ public class MinigameManager : MonoBehaviour
         chapteh.gameObject.SetActive(true);
         chapteh.ResetChapteh();
         chaptehFoot.ResetFoot();
+
+        AudioManager.instance.PlayAudio(bgmAudio);
+
     }
 
     public void EndChapteh()
@@ -558,6 +561,7 @@ public class MinigameManager : MonoBehaviour
     public int difficulty = 1;
 
     public AudioData chopstickAudio;
+    public AudioData clapAudio;
 
     public Image chopstickWinImage;
 
@@ -678,7 +682,7 @@ public class MinigameManager : MonoBehaviour
             enemyLeftHand = Mathf.Clamp(enemyLeftHand, 1, 5);
             enemyRightHand = Mathf.Clamp(enemyRightHand, 1, 5);
 
-            AudioManager.instance.PlayAudio(chopstickAudio);
+            AudioManager.instance.PlayAudio(chopstickAudio, 0.7f, 1.2f);
 
             isPlayerTurn = false;
             isAttacking = false;
@@ -709,6 +713,8 @@ public class MinigameManager : MonoBehaviour
                     isPlayerTurn = false;
                     isAttacking = false;
 
+                    AudioManager.instance.PlayAudio(clapAudio, 0.8f, 1.2f);
+
                     ChopsticksEndOfTurn();
                 }
 
@@ -721,6 +727,8 @@ public class MinigameManager : MonoBehaviour
 
                     isPlayerTurn = false;
                     isAttacking = false;
+
+                    AudioManager.instance.PlayAudio(clapAudio, 0.8f, 1.2f);
 
                     ChopsticksEndOfTurn();
                 }
@@ -923,7 +931,7 @@ public class MinigameManager : MonoBehaviour
                 break;
         }
 
-        AudioManager.instance.PlayAudio(chopstickAudio);
+        AudioManager.instance.PlayAudio(chopstickAudio, 0.7f, 1.2f);
         ChopsticksEndOfTurn();
 
         isEnemyAttacking = false;
@@ -964,7 +972,7 @@ public class MinigameManager : MonoBehaviour
                     isEnemyAttacking = false;
 
                     StartCoroutine(ClapAnimation(false));
-
+                    AudioManager.instance.PlayAudio(clapAudio, 0.7f, 1.2f);
                     ChopsticksEndOfTurn();
                 }
             }

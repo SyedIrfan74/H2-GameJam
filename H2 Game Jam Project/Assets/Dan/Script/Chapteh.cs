@@ -25,7 +25,11 @@ public class Chapteh : MonoBehaviour
     public Sprite chaptehWinSprite;
     public Sprite chaptehLoseSprite;
 
+    // audio
     public AudioData chaptehHitAudio;
+    public float minPitch, maxPitch;
+
+    public GameObject tapGO;
 
     private void Start()
     {
@@ -50,7 +54,10 @@ public class Chapteh : MonoBehaviour
             chaptehSpeed += 0.5f;
             rb.AddForce(new Vector2(Random.Range(minX, maxX), chaptehSpeed), ForceMode2D.Impulse);
 
-            AudioManager.instance.PlayAudio(chaptehHitAudio);
+            AudioManager.instance.PlayAudio(chaptehHitAudio, 1f, 1.2f);
+
+            GameObject temp = Instantiate(tapGO, collision.transform.position, Quaternion.identity);
+            Destroy(temp, .2f);
 
             score++;
             minX -= 0.2f;

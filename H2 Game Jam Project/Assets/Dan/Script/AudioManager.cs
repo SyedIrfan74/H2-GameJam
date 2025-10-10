@@ -51,11 +51,39 @@ public class AudioManager : MonoBehaviour
             audioSource.loop = audioData.loop;
             audioSource.volume = audioData.volume;
             audioSource.outputAudioMixerGroup = audioData.mixergroup;
+            audioSource.pitch = audioData.pitch;
             audioSource.Play();
         }
         //Debug.Log($"Playing audio: {audioData.name}");
 
     }
+
+    public void PlayAudio(AudioData audioData, float minPitch, float maxPitch) // the functions to actually play the audio data, called by the buttons
+    {
+        if (audioData == null || audioData.clip == null)
+        {
+            Debug.LogWarning("AudioData or AudioClip is null.");
+            return;
+        }
+
+        AudioSource audioSource = GetAudioSource(audioData); // tries to get an audio source for the audio data to play the audio from
+        if (audioSource != null) // sets all the info for the audio source in here
+        {
+            audioSource.clip = audioData.clip;
+            audioSource.loop = audioData.loop;
+            audioSource.volume = audioData.volume;
+            audioSource.outputAudioMixerGroup = audioData.mixergroup;
+
+            audioSource.pitch = Random.Range(minPitch, maxPitch);
+
+            audioSource.Play();
+        }
+        //Debug.Log($"Playing audio: {audioData.name}");
+
+    }
+
+
+
     public void StopAudio(AudioData audioData) // stops a specific audio by the audio data scriptable object
     {
         if (audioData == null || audioData.clip == null)
