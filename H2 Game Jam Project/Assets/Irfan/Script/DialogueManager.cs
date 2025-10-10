@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
     public InputAction clickAction;
     public InputAction touchAction;
 
-    private float clickAmt;
+    private AudioData currPlaying;
 
     [Header("Misc Variables")]
     private int currentDialogue;
@@ -58,7 +58,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartManager()
     {
-        //inputActionAsset.FindActionMap("WebPC").Enable();
         clickAction = inputActionAsset.FindAction("Click");
         touchAction = inputActionAsset.FindAction("Touch");
         clickAction.Enable();
@@ -74,7 +73,6 @@ public class DialogueManager : MonoBehaviour
 
         if (characterSelection != null) characterSelection.SetActive(false);
         if (nameInput != null) nameInput.SetActive(false);
-        //if (journal != null) journal.SetActive(false);
 
         foreach (DialogueSO SO in dialogueSOs)
         {
@@ -87,8 +85,6 @@ public class DialogueManager : MonoBehaviour
         if (pickingCharacter || pickingName) return;
 
         dialogueGO.SetActive(true);
-        clickAmt = clickAction.ReadValue<float>();
-        //Debug.Log(clickAmt);
 
         //if running == true, dialogue is currently being written on the screen
         if (running)
@@ -156,6 +152,7 @@ public class DialogueManager : MonoBehaviour
                 if (dialogueSOs[currentDialogue - 1].nextState == StateManager.GAMESTATE.GAME)
                 {
                     waiting = false;
+                    AudioManager.instance.StopAudio(currPlaying);
                     MinigameManager.instance.StartMinigame2(dialogueSOs[currentDialogue - 1].nextScreen);
                     StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
                     ScreenManager.instance.FindScreen(MinigameManager.instance.currentMinigame);
@@ -226,18 +223,21 @@ public class DialogueManager : MonoBehaviour
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayOne = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne = false;
+            AudioManager.instance.StopAudio(currPlaying);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayTwo = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo = false;
+            AudioManager.instance.StopAudio(currPlaying);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayThree)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayThree = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayThree = false;
+            AudioManager.instance.StopAudio(currPlaying);
         }
     }
 
@@ -345,6 +345,13 @@ public class DialogueManager : MonoBehaviour
         if (so.characterName == MCNAME) nameText.text = playerName;
         else if (so.characterName == "") nameText.text = "";
         else nameText.text = so.characterName;
+
+        if ((so.audio != null && so.audio != currPlaying) || so.audio == currPlaying) 
+        { 
+            AudioManager.instance.StopAudio(currPlaying);
+            AudioManager.instance.PlayAudio(so.audio); 
+            currPlaying = so.audio;  
+        }
 
         if (so.characterSprite != null)
         {

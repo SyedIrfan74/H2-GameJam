@@ -24,6 +24,8 @@ public class MinigameManager : MonoBehaviour
 
     public AudioData bgmAudio;
 
+    public AudioData loseAudio;
+    public AudioData winAudio;
     public void StartManager()
     {
         
@@ -144,11 +146,16 @@ public class MinigameManager : MonoBehaviour
         {
             chapteh.chaptehWinImage.gameObject.SetActive(true);
             chapteh.chaptehWinImage.sprite = chapteh.chaptehWinSprite;
+            AudioManager.instance.PlayAudio(winAudio);
+            AudioManager.instance.StopAudio(bgmAudio);
         }
         else
         {
             chapteh.chaptehWinImage.gameObject.SetActive(true);
             chapteh.chaptehWinImage.sprite = chapteh.chaptehLoseSprite;
+            AudioManager.instance.PlayAudio(loseAudio);
+            AudioManager.instance.StopAudio(bgmAudio);
+
         }
     }
 
@@ -511,12 +518,15 @@ public class MinigameManager : MonoBehaviour
             chaWinImage.sprite = chapteh.chaptehWinSprite;
             chaWinImage.gameObject.SetActive(true);
             AudioManager.instance.StopAudio(bgmAudio);
+            AudioManager.instance.PlayAudio(winAudio);
         }
         else if (currChaState == ChaGameStates.PlayerLose)
         {
             chaWinImage.sprite = chapteh.chaptehLoseSprite;
             chaWinImage.gameObject.SetActive(true);
             AudioManager.instance.StopAudio(bgmAudio);
+            AudioManager.instance.PlayAudio(loseAudio);
+
         }
         else
         {
@@ -1009,6 +1019,7 @@ public class MinigameManager : MonoBehaviour
 
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
+            AudioManager.instance.PlayAudio(loseAudio);
 
             return;
         }
@@ -1020,6 +1031,7 @@ public class MinigameManager : MonoBehaviour
             chopstickWinImage.sprite = chapteh.chaptehWinSprite;
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
+            AudioManager.instance.PlayAudio(winAudio);
 
             return;
         }

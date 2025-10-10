@@ -526,6 +526,8 @@ MonoBehaviour:
   - {fileID: 572275265}
   currentMinigame: Chopsticks
   bgmAudio: {fileID: 11400000, guid: a96ea02f25eb20841b3853820b0f669c, type: 2}
+  loseAudio: {fileID: 11400000, guid: a4b37d5c61df7ce4198b0a5c0780b3b2, type: 2}
+  winAudio: {fileID: 11400000, guid: 6a8544a655d4e9d4aa7762512a57e406, type: 2}
   chapteh: {fileID: 5700407723733070278}
   chaptehFoot: {fileID: 186346637199396580}
   chaptehDifficulty: 0
@@ -5735,7 +5737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bd4ba71a3ab98de4ca095b7da226a5fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0938bed49063854587eb7807af881df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6661,6 +6663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playBar: {fileID: 2054544671}
+  audioIntro: {fileID: 11400000, guid: 84442b13a73ae294297c35f61c5a23c2, type: 2}
 --- !u!1 &1412939278
 GameObject:
   m_ObjectHideFlags: 0

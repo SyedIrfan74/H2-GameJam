@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c81f826cd099e74495b4dc107b260f0, type: 3}
-  m_Name: bgmConvo
+  m_Name: sfxLose
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: d741401cdf154914490d198b2f7d33a1, type: 3}
+  clip: {fileID: 8300000, guid: 87a2044c54745cd4ca9acecaa53f489a, type: 3}
   mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
-  volume: 0.7
+  volume: 1
   pitch: 1
-  loop: 1
+  loop: 0

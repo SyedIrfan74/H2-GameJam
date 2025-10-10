@@ -30,9 +30,20 @@ MonoBehaviour:
     resetScribbleJournal: 0
     countryEraser: 0
     resetCountryEraser: 0
+    chopsticksTutorial: 0
+    resetChopsticksTutorial: 0
+    stamp: 0
+    resetStamp: 0
+    chaTutorial: 0
+    resetChaTutorial: 0
+    sticker: 0
+    resetSticker: 0
     endDayOne: 0
     resetEndDayOne: 0
     endDayTwo: 0
     resetEndDayTwo: 0
+    endDayThree: 0
+    resetEndDayThree: 0
   nextState: 0
   nextScreen: 
+  audio: {fileID: 11400000, guid: cfa21a8078c1d60449e8bfc63271ba93, type: 2}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -316,6 +317,81 @@ public class ScreenManager : MonoBehaviour
         StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
         nextState = StateManager.GAMESTATE.CONVO;
         ScreenManager.instance.FindScreen("Canteen");
+        yield break;
+    }
+    private IEnumerator EndDayThree()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 1);
+
+        //Darken BG
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        dialogueGO.SetActive(false);
+
+        elapsed = 0;
+        initial = bookEndDayThree.color;
+        man = new Color(bookEndDayThree.color.r, bookEndDayThree.color.g, bookEndDayThree.color.b, 1);
+
+        //Reveal Book 
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookEndDayThree.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = bookWritingEndDayThree.color;
+        man = new Color(bookWritingEndDayThree.color.r, bookWritingEndDayThree.color.g, bookWritingEndDayThree.color.b, 1);
+
+        //Reveal writing
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayThree.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1);
+
+        elapsed = 0;
+        initial = bookWritingEndDayThree.color;
+        man = new Color(bookWritingEndDayThree.color.r, bookWritingEndDayThree.color.g, bookWritingEndDayThree.color.b, 0);
+
+        Color initial2 = bookEndDayThree.color;
+        Color man2 = new Color(bookEndDayThree.color.r, bookEndDayThree.color.g, bookEndDayThree.color.b, 0);
+
+        //Reveal writing      
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingEndDayThree.color = Color.Lerp(initial, man, t);
+            bookEndDayThree.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        endDayThree = false;
+        transitioning = false;
+
+        //StartCoroutine(Ending());
         yield break;
     }
     private IEnumerator RevealJournal()
@@ -676,9 +752,9 @@ public class ScreenManager : MonoBehaviour
 
         yield break;
     }
-
     private IEnumerator RevealChopsticks()
     {
+        Debug.Log("Chopsticks COROUTINE");
         transitioning = true;
 
         float elapsed = 0;
@@ -739,7 +815,7 @@ public class ScreenManager : MonoBehaviour
         }
 
         transitioning = false;
-        sticker = false;
+        chopsticksTutorial = false;
 
         StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
         DialogueManager.instance.ManualStart();
@@ -749,6 +825,7 @@ public class ScreenManager : MonoBehaviour
     }
     private IEnumerator RevealCha()
     {
+        Debug.Log("Cha COROUTINE");
         transitioning = true;
 
         float elapsed = 0;
@@ -809,7 +886,7 @@ public class ScreenManager : MonoBehaviour
         }
 
         transitioning = false;
-        sticker = false;
+        chaTutorial = false;
 
         StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
         DialogueManager.instance.ManualStart();

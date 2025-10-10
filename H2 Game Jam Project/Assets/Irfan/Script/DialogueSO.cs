@@ -15,6 +15,8 @@ public class DialogueSO : ScriptableObject
     public StateManager.GAMESTATE nextState;
     public string nextScreen;
 
+    public AudioData audio;
+
     public void ResetVariables()
     {
         if (flags.resetCharacter) flags.selectCharacter = true;

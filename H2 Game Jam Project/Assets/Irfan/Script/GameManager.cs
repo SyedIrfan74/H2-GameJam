@@ -6,12 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public Image playBar;
 
+    public AudioData audioIntro;
+
     private void Start()
     {
         StateManager.instance.StartManager();
         DialogueManager.instance.StartManager();
         ScreenManager.instance.StartManager();
         MinigameManager.instance.StartManager();
+
+        AudioManager.instance.PlayAudio(audioIntro);
 
         StartCoroutine(BarBlink());
     }
@@ -33,6 +37,7 @@ public class GameManager : MonoBehaviour
         }
         else if (StateManager.instance.currState == StateManager.GAMESTATE.TRANSITION)
         {
+            AudioManager.instance.StopAudio(audioIntro);
             ScreenManager.instance.UpdateManager();
         }
         else if (StateManager.instance.currState == StateManager.GAMESTATE.WANDER)

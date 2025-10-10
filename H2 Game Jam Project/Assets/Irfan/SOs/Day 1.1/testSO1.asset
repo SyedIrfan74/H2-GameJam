@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: testSO1
   m_EditorClassIdentifier: 
   characterName: Ms Tan
+  characterSprite: {fileID: 0}
   dialogue: Good morning students!
   delay: 0.05
   flags:
@@ -25,5 +26,23 @@ MonoBehaviour:
     resetName: 0
     getJournal: 0
     scribbleJournal: 0
+    resetScribbleJournal: 0
+    countryEraser: 0
+    resetCountryEraser: 0
+    chopsticksTutorial: 0
+    resetChopsticksTutorial: 0
+    stamp: 0
+    resetStamp: 0
+    chaTutorial: 0
+    resetChaTutorial: 0
+    sticker: 0
+    resetSticker: 0
+    endDayOne: 0
+    resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
+    endDayThree: 0
+    resetEndDayThree: 0
   nextState: 0
   nextScreen: 
+  audio: {fileID: 11400000, guid: 10226e000429c8648856847ce26bdbbf, type: 2}
