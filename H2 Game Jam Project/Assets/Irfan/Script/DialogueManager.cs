@@ -233,6 +233,12 @@ public class DialogueManager : MonoBehaviour
             ScreenManager.instance.endDayTwo = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo = false;
         }
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayThree)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.endDayThree = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayThree = false;
+        }
     }
 
     private IEnumerator PickCharacter()

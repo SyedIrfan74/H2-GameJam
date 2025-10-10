@@ -26,6 +26,7 @@ public class DialogueSO : ScriptableObject
         if (flags.resetSticker) flags.sticker = true;
         if (flags.resetEndDayOne) flags.endDayOne = true;
         if (flags.resetEndDayTwo) flags.endDayTwo = true;
+        if (flags.resetEndDayThree) flags.endDayThree = true;
 
         if (flags.resetChopsticksTutorial) flags.chopsticksTutorial = true;
         if (flags.resetChaTutorial) flags.chaTutorial = true;
@@ -67,4 +68,7 @@ public class Flags
 
     public bool endDayTwo;
     public bool resetEndDayTwo;
+
+    public bool endDayThree;
+    public bool resetEndDayThree;
 }

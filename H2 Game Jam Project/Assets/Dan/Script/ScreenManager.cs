@@ -36,6 +36,7 @@ public class ScreenManager : MonoBehaviour
     public bool sticker;
     public bool endDayOne;
     public bool endDayTwo;
+    public bool endDayThree;
     public bool transitioning;
 
     public bool chopsticksTutorial;
@@ -50,6 +51,9 @@ public class ScreenManager : MonoBehaviour
 
     public Image bookWritingEndDayTwo;
     public Image bookEndDayTwo;
+
+    public Image bookWritingEndDayThree;
+    public Image bookEndDayThree;
 
     public Image countryEraserImage;
     public Image stampImage;
@@ -218,7 +222,7 @@ public class ScreenManager : MonoBehaviour
         Color initial2 = bookEndDayOne.color;
         Color man2 = new Color(bookEndDayOne.color.r, bookEndDayOne.color.g, bookEndDayOne.color.b, 0);
 
-        //Reveal writing      
+        //Fade out      
         while (elapsed < duration)
         {
             float t = elapsed / duration;
@@ -310,9 +314,8 @@ public class ScreenManager : MonoBehaviour
         transitioning = false;
 
         StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
-        DialogueManager.instance.ManualStart();
-        nextState = StateManager.GAMESTATE.NOSTATE;
-
+        nextState = StateManager.GAMESTATE.CONVO;
+        ScreenManager.instance.FindScreen("Canteen");
         yield break;
     }
     private IEnumerator RevealJournal()
