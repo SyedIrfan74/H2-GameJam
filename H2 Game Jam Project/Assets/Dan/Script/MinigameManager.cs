@@ -304,31 +304,95 @@ public class MinigameManager : MonoBehaviour
     {
         Debug.Log("IMATTACKING");
         ChaHandSprites();
+        
+        yield return new WaitForSecondsRealtime(1f);
 
         for (int i = 0; i < enemyHands.Count; i++)
         {
             //comparing the hands
-            int enemyIndex = i == 0 ? 1 : 0;
+            switch (i)
+            {
+                // players left hand
+                case 0:
+                    // enemy right hand alive
+                    if (enemyHands[1] != ChaHandStates.Dead)
+                    {
+                        // player beat enemy
+                        if (DidPlayerWin(playerHands[i], enemyHands[1]) == 1)
+                        {
+                            enemyHands[1] = ChaHandStates.Dead;
+                        }
+                        // enemy beat player
+                        else if (DidPlayerWin(playerHands[i], enemyHands[1]) == 0)
+                        {
+                            playerHands[i] = ChaHandStates.Dead;
+                        }
+                        Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[0]).ToString());
 
-            if (DidPlayerWin(playerHands[i], enemyHands[enemyIndex]) == 1)
-            {
-                enemyHands[enemyIndex] = ChaHandStates.Dead;
+                    }
+                    // enemy right hand dead, left attack enemy left
+                    else
+                    {
+                        // player beat enemy
+                        if (DidPlayerWin(playerHands[i], enemyHands[0]) == 1)
+                        {
+                            enemyHands[0] = ChaHandStates.Dead;
+                        }
+                        // enemy beat player
+                        else if (DidPlayerWin(playerHands[i], enemyHands[0]) == 0)
+                        {
+                            playerHands[i] = ChaHandStates.Dead;
+                        }
+                        Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[1]).ToString());
+
+                    }
+                    break;
+                // player right hand
+                case 1:
+                    // enemy left hand alive
+                    if (enemyHands[0] != ChaHandStates.Dead)
+                    {
+                        // player beat enemy
+                        if (DidPlayerWin(playerHands[i], enemyHands[0]) == 1)
+                        {
+                            enemyHands[0] = ChaHandStates.Dead;
+                        }
+                        // enemy beat player
+                        else if (DidPlayerWin(playerHands[i], enemyHands[0]) == 0)
+                        {
+                            playerHands[i] = ChaHandStates.Dead;
+                        }
+                        Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[0]).ToString());
+
+                    }
+                    // enemy right hand dead, left attack enemy left
+                    else
+                    {
+                        // player beat enemy
+                        if (DidPlayerWin(playerHands[i], enemyHands[1]) == 1)
+                        {
+                            enemyHands[1] = ChaHandStates.Dead;
+                        }
+                        // enemy beat player
+                        else if (DidPlayerWin(playerHands[i], enemyHands[1]) == 0)
+                        {
+                            playerHands[i] = ChaHandStates.Dead;
+                        }
+                        Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[1]).ToString());
+
+                    }
+                    break;
             }
-            else if (DidPlayerWin(playerHands[i], enemyHands[enemyIndex]) == 0)
-            {
-                playerHands[enemyIndex] = ChaHandStates.Dead;
-            }
-            
-            Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[enemyIndex]).ToString());
         }
 
         currChaState = ChaGameStates.Selecting;
 
-        ChaWinStates();
+        ChaHandSprites();
 
         yield return new WaitForSecondsRealtime(3f);
 
-        ChaHandSprites();
+        ChaWinStates();
+
     }
 
     int DidPlayerWin(ChaHandStates player, ChaHandStates enemy)
@@ -398,9 +462,9 @@ public class MinigameManager : MonoBehaviour
             {
                 enemyHandSprites[i].sprite = chaDifficulty == 1 ? bobbyHandSprites[(int)enemyHands[i]] : priyaHandSprites[(int)enemyHands[i]]; 
                 //enemyHandSprites[i].sprite = chaHandSprites[(int)enemyHands[i]];
-                deadHandImageGO[i].SetActive(true);
+                deadHandImageGO[i].SetActive(false);
             }
-            else deadHandImageGO[i].SetActive(false);
+            else deadHandImageGO[i].SetActive(true);
 
 
             if (playerHands[i] != ChaHandStates.Dead)
@@ -432,7 +496,7 @@ public class MinigameManager : MonoBehaviour
         }
 
         ChaHandSprites();
-        ChaWinStates();
+        //ChaWinStates();
     }
 
     void ChaWinStates()
@@ -943,8 +1007,10 @@ public class MinigameManager : MonoBehaviour
         if (!rightHandSprite.enabled && !leftHandSprite.enabled)
         {
             currChopstickState = ChopsticksGameStates.PlayerLose;
+
             chopstickWinImage.gameObject.SetActive(true);
-            chopstickWinImage.sprite = chapteh.chaptehWinSprite;
+            chopstickWinImage.sprite = chapteh.chaptehLoseSprite;
+
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
 
@@ -955,7 +1021,7 @@ public class MinigameManager : MonoBehaviour
         {
             currChopstickState = ChopsticksGameStates.PlayerWin;
             chopstickWinImage.gameObject.SetActive(true);
-            chopstickWinImage.sprite = chapteh.chaptehLoseSprite;
+            chopstickWinImage.sprite = chapteh.chaptehWinSprite;
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
 
