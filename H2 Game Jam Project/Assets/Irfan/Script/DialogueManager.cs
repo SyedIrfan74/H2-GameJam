@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Misc Variables")]
     public InputActionAsset inputActionAsset;
     public InputAction clickAction;
+    public InputAction touchAction;
 
     private float clickAmt;
 
@@ -59,8 +60,10 @@ public class DialogueManager : MonoBehaviour
     public void StartManager()
     {
         //inputActionAsset.FindActionMap("WebPC").Enable();
-        clickAction = inputActionAsset.FindAction("Touch");
+        clickAction = inputActionAsset.FindAction("Click");
+        touchAction = inputActionAsset.FindAction("Touch");
         clickAction.Enable();
+        touchAction.Enable();
 
         currentDialogue = 0;
         pickingCharacter = false;
@@ -93,7 +96,8 @@ public class DialogueManager : MonoBehaviour
         {
             //Interrupts dialogue writing to skip
             //if (!Input.GetMouseButtonDown(0)) return;
-            if (!clickAction.WasPressedThisFrame()) return;
+            //if (!clickAction.WasPressedThisFrame() || !touchAction.WasPressedThisFrame()) return;
+            if (!touchAction.WasPressedThisFrame()) return;
 
             StopAllCoroutines();
             if (dialogueWName == "") dialogueText.text = dialogueSOs[currentDialogue].dialogue;
@@ -114,7 +118,13 @@ public class DialogueManager : MonoBehaviour
             //    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
             //    return;
             //}
-            if ((clickAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+            //if ((clickAction.WasPressedThisFrame() || touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
+            //{
+            //    if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
+            //    StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
+            //    return;
+            //}
+            if ((touchAction.WasPressedThisFrame() || manualStart) && currentDialogue < dialogueSOs.Count)
             {
                 if (dialogueSOs[currentDialogue].dialogue.Contains(MCNAME)) dialogueWName = InsertName(dialogueSOs[currentDialogue].dialogue);
                 StartCoroutine(DisplayText(dialogueSOs[currentDialogue]));
