@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
         //if (Input.GetKeyDown(KeyCode.Alpha2)) MinigameManager.instance.StartMinigame("Cha2");
         //if (Input.GetKeyDown(KeyCode.Alpha3)) MinigameManager.instance.StartMinigame("Chopsticks1");
         //if (Input.GetKeyDown(KeyCode.Alpha4)) MinigameManager.instance.StartMinigame("Chopsticks2");
-        //if (Input.GetKeyDown(KeyCode.Q)) StateManager.instance.ChangeState(StateManager.GAMESTATE.GAME);
 
         if (StateManager.instance.currState == StateManager.GAMESTATE.CONVO)
         {

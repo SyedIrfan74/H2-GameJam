@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class MinigameManager : MonoBehaviour
@@ -54,9 +55,13 @@ public class MinigameManager : MonoBehaviour
                 currentMinigame = "Chopsticks";
                 StartChopsticks(2);
                 break;
-            case "Chapteh":
+            case "Chapteh1":
                 currentMinigame = "Chapteh";
-                StartChapteh();
+                StartChapteh(1);
+                break;
+            case "Chapteh2":
+                currentMinigame = "Chapteh";
+                StartChapteh(2);
                 break;
             case "Bubble Blowing":
                 currentMinigame = "Bubble Blowing";
@@ -92,9 +97,13 @@ public class MinigameManager : MonoBehaviour
                 currentMinigame = "Chopsticks";
                 StartChopsticks(2);
                 break;
-            case "Chapteh":
+            case "Chapteh1":
                 currentMinigame = "Chapteh";
-                StartChapteh();
+                StartChapteh(1);
+                break;
+            case "Chapteh2":
+                currentMinigame = "Chapteh";
+                StartChapteh(2);
                 break;
             case "Bubble Blowing":
                 currentMinigame = "Bubble Blowing";
@@ -111,9 +120,35 @@ public class MinigameManager : MonoBehaviour
 
     public Chapteh chapteh;
 
-    void StartChapteh()
-    {
+    public int chaptehDifficulty;
 
+    void StartChapteh(int i)
+    {
+        chaptehDifficulty = i;
+
+        chapteh.targetScore = chaptehDifficulty == 1 ? 10 : 30;
+
+        ResetChapteh();
+    }
+
+    public void ResetChapteh()
+    {
+        chapteh.gameObject.SetActive(true);
+        chapteh.ResetChapteh();
+    }
+
+    public void EndChapteh()
+    {
+        if (chapteh.score >= chapteh.targetScore)
+        {
+            chapteh.chaptehWinImage.gameObject.SetActive(true);
+            chapteh.chaptehWinImage.sprite = chapteh.chaptehWinSprite;
+        }
+        else
+        {
+            chapteh.chaptehWinImage.gameObject.SetActive(true);
+            chapteh.chaptehWinImage.sprite = chapteh.chaptehLoseSprite;
+        }
     }
 
     #endregion
@@ -145,7 +180,7 @@ public class MinigameManager : MonoBehaviour
 
     public int chaDifficulty;
 
-    public TMP_Text chaWinText;
+    public Image chaWinImage;
 
     public AudioData chaPersonAudio;
     public AudioData chaGunAudio;
@@ -170,6 +205,8 @@ public class MinigameManager : MonoBehaviour
     public List<Sprite> enemyHumanSprites = new List<Sprite>();
     public List<Sprite> bobbyHandSprites = new List<Sprite>();
     public List<Sprite> priyaHandSprites = new List<Sprite>();
+
+    public List<GameObject> deadHandImageGO = new List<GameObject>();
 
     public bool isEnemySelectingCha;
     #endregion
@@ -279,7 +316,7 @@ public class MinigameManager : MonoBehaviour
             }
             else if (DidPlayerWin(playerHands[i], enemyHands[enemyIndex]) == 0)
             {
-                enemyHands[enemyIndex] = ChaHandStates.Dead;
+                playerHands[enemyIndex] = ChaHandStates.Dead;
             }
             
             Debug.Log(i + " : " + DidPlayerWin(playerHands[i], enemyHands[enemyIndex]).ToString());
@@ -287,9 +324,10 @@ public class MinigameManager : MonoBehaviour
 
         currChaState = ChaGameStates.Selecting;
 
-        yield return new WaitForSecondsRealtime(1f);
-
         ChaWinStates();
+
+        yield return new WaitForSecondsRealtime(3f);
+
         ChaHandSprites();
     }
 
@@ -360,9 +398,10 @@ public class MinigameManager : MonoBehaviour
             {
                 enemyHandSprites[i].sprite = chaDifficulty == 1 ? bobbyHandSprites[(int)enemyHands[i]] : priyaHandSprites[(int)enemyHands[i]]; 
                 //enemyHandSprites[i].sprite = chaHandSprites[(int)enemyHands[i]];
-                enemyHandSprites[i].enabled = true;
+                deadHandImageGO[i].SetActive(true);
             }
-            else enemyHandSprites[i].enabled = false;
+            else deadHandImageGO[i].SetActive(false);
+
 
             if (playerHands[i] != ChaHandStates.Dead)
             {
@@ -403,19 +442,19 @@ public class MinigameManager : MonoBehaviour
 
         if (currChaState == ChaGameStates.PlayerWin)
         {
-            chaWinText.text = "You Win!";
-            chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+            chaWinImage.sprite = chapteh.chaptehWinSprite;
+            chaWinImage.gameObject.SetActive(true);
             AudioManager.instance.StopAudio(bgmAudio);
         }
         else if (currChaState == ChaGameStates.PlayerLose)
         {
-            chaWinText.text = "You Lose!";
-            chaWinText.gameObject.transform.parent.gameObject.SetActive(true);
+            chaWinImage.sprite = chapteh.chaptehWinSprite;
+            chaWinImage.gameObject.SetActive(true);
             AudioManager.instance.StopAudio(bgmAudio);
         }
         else
         {
-            chaWinText.gameObject.transform.parent.gameObject.SetActive(false);
+            chaWinImage.gameObject.SetActive(false);
         }
     }
     #endregion
@@ -438,12 +477,13 @@ public class MinigameManager : MonoBehaviour
 
     public int turnCounter = 1;
 
-    public TMP_Text winStateText;
     public TMP_Text turnCounterText;
 
     public int difficulty = 1;
 
     public AudioData chopstickAudio;
+
+    public Image chopstickWinImage;
 
     [Header("Chopsticks Player")]
     public bool isAttacking;
@@ -903,8 +943,8 @@ public class MinigameManager : MonoBehaviour
         if (!rightHandSprite.enabled && !leftHandSprite.enabled)
         {
             currChopstickState = ChopsticksGameStates.PlayerLose;
-            winStateText.text = "YOU LOSE!";
-            winStateText.gameObject.transform.parent.gameObject.SetActive(true);
+            chopstickWinImage.gameObject.SetActive(true);
+            chopstickWinImage.sprite = chapteh.chaptehWinSprite;
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
 
@@ -914,8 +954,8 @@ public class MinigameManager : MonoBehaviour
         if (!enemyRightHandSprite.enabled && !enemyLeftHandSprite.enabled)
         {
             currChopstickState = ChopsticksGameStates.PlayerWin;
-            winStateText.text = "YOU WIN!";
-            winStateText.gameObject.transform.parent.gameObject.SetActive(true);
+            chopstickWinImage.gameObject.SetActive(true);
+            chopstickWinImage.sprite = chapteh.chaptehLoseSprite;
             StopCoroutine(ChopsticksEnemyTurn());
             AudioManager.instance.StopAudio(bgmAudio);
 
@@ -936,7 +976,7 @@ public class MinigameManager : MonoBehaviour
 
         isPlayerTurn = true;
 
-        winStateText.gameObject.transform.parent.gameObject.SetActive(false);
+        chopstickWinImage.gameObject.SetActive(false);
 
         ChopsticksEndOfTurn();
     }
@@ -945,5 +985,6 @@ public class MinigameManager : MonoBehaviour
 
     #region Bubble Blowing
     #endregion
+
 }
 

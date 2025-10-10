@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class ChaptehFoot : MonoBehaviour
 {
-    public GameObject posTransfer;
     public Slider foot;
 
     public float minX;
@@ -21,5 +20,10 @@ public class ChaptehFoot : MonoBehaviour
         transform.localPosition = new Vector3(foot.value,
                                               transform.localPosition.y,
                                               0);
+    }
+
+    public void ResetFoot()
+    {
+        foot.value = 0;
     }
 }
