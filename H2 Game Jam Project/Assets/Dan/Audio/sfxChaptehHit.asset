@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c81f826cd099e74495b4dc107b260f0, type: 3}
-  m_Name: bgmMinigame
+  m_Name: sfxChaptehHit
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 2b3e84684e8c5b04089512ed9ad374a1, type: 3}
+  clip: {fileID: 8300000, guid: ea6e1e05386186b46908c18207035abe, type: 3}
   mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
-  volume: 0.5
+  volume: 1
   pitch: 1
-  loop: 1
+  loop: 0

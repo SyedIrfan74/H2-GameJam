@@ -47,20 +47,26 @@ public class Chapteh : MonoBehaviour
         if (collision.gameObject.name.Contains("Chapteh Foot"))
         {
             Debug.Log("Chapteh Hit");
-            chaptehSpeed += 0.2f;
+            chaptehSpeed += 0.5f;
             rb.AddForce(new Vector2(Random.Range(minX, maxX), chaptehSpeed), ForceMode2D.Impulse);
 
-//            AudioManager.instance.PlayAudio(chaptehHitAudio);
+            AudioManager.instance.PlayAudio(chaptehHitAudio);
 
             score++;
             minX -= 0.2f;
             maxX += 0.2f;
         }
-        if (collision.gameObject.name.Contains("Floor"))
+        else if (collision.gameObject.name.Contains("Floor"))
         {
             gameObject.SetActive(false);
             MinigameManager.instance.EndChapteh();
         }
+        else if (collision.gameObject.name.Contains("Square"))
+        {
+            rb.AddForce(new Vector2(chaptehSpeed, Random.Range(minX, maxX)), ForceMode2D.Impulse);
+
+        }
+
     }
 
     public void ResetChapteh()

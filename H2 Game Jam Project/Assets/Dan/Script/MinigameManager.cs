@@ -63,10 +63,7 @@ public class MinigameManager : MonoBehaviour
                 currentMinigame = "Chapteh";
                 StartChapteh(2);
                 break;
-            case "Bubble Blowing":
-                currentMinigame = "Bubble Blowing";
-                //StartBB();
-                break;
+
             default:
                 Debug.Log("Jialat.");
                 break;
@@ -113,12 +110,15 @@ public class MinigameManager : MonoBehaviour
                 Debug.Log("Jialat.");
                 break;
         }
+
+        AudioManager.instance.PlayAudio(bgmAudio);
     }
 
     #region Chapteh
     [Header("Chapteh")]
 
     public Chapteh chapteh;
+    public ChaptehFoot chaptehFoot;
 
     public int chaptehDifficulty;
 
@@ -135,6 +135,7 @@ public class MinigameManager : MonoBehaviour
     {
         chapteh.gameObject.SetActive(true);
         chapteh.ResetChapteh();
+        chaptehFoot.ResetFoot();
     }
 
     public void EndChapteh()
@@ -216,6 +217,7 @@ public class MinigameManager : MonoBehaviour
         chaDifficulty = i;
 
         enemyHumanSprite.sprite = enemyHumanSprites[i - 1];
+
         ChaHandSprites();
         ResetCha();
     }
@@ -496,7 +498,7 @@ public class MinigameManager : MonoBehaviour
         }
 
         ChaHandSprites();
-        //ChaWinStates();
+        ChaWinStates();
     }
 
     void ChaWinStates()
@@ -512,7 +514,7 @@ public class MinigameManager : MonoBehaviour
         }
         else if (currChaState == ChaGameStates.PlayerLose)
         {
-            chaWinImage.sprite = chapteh.chaptehWinSprite;
+            chaWinImage.sprite = chapteh.chaptehLoseSprite;
             chaWinImage.gameObject.SetActive(true);
             AudioManager.instance.StopAudio(bgmAudio);
         }
@@ -666,6 +668,7 @@ public class MinigameManager : MonoBehaviour
             enemyLeftHand = Mathf.Clamp(enemyLeftHand, 1, 5);
             enemyRightHand = Mathf.Clamp(enemyRightHand, 1, 5);
 
+            AudioManager.instance.PlayAudio(chopstickAudio);
 
             isPlayerTurn = false;
             isAttacking = false;
@@ -793,13 +796,6 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
-    void ChopsticksDebug()
-    {
-        //chopsticksDebugText.text = isPlayerTurn.ToString() + " : " + isAttacking.ToString() + "\n" +
-        //                 enemyRightHand.ToString() + " : " + enemyLeftHand.ToString() + "\n" +
-        //                 leftHand.ToString() + " : " + rightHand.ToString();
-    }
-
     IEnumerator ChopsticksEnemyTurn()
     {
         Debug.Log("Enemy turn now");
@@ -917,6 +913,7 @@ public class MinigameManager : MonoBehaviour
                 break;
         }
 
+        AudioManager.instance.PlayAudio(chopstickAudio);
         ChopsticksEndOfTurn();
 
         isEnemyAttacking = false;
@@ -970,7 +967,6 @@ public class MinigameManager : MonoBehaviour
 
     void ChopsticksEndOfTurn()
     {
-        ChopsticksDebug();
         ChopsticksHandStates();
         ChopsticksWinStates();
         ChopsticksUpdateTurnCounter();

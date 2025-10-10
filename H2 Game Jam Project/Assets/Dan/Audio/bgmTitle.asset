@@ -16,4 +16,4 @@ MonoBehaviour:
   mixergroup: {fileID: 24300002, guid: ae686919233c7b241a687782e992f511, type: 2}
   volume: 1
   pitch: 1
-  loop: 0
+  loop: 1
