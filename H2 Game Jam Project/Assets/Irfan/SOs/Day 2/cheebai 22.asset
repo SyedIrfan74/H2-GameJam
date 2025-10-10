@@ -18,7 +18,7 @@ MonoBehaviour:
     a while since someone beat me at Cha."
   delay: 0.05
   flags:
-    reset: 0
+    reset: 1
     changeScreen: 0
     changeState: 0
     selectCharacter: 0
@@ -30,6 +30,14 @@ MonoBehaviour:
     resetScribbleJournal: 0
     countryEraser: 0
     resetCountryEraser: 0
+    chopsticksTutorial: 0
+    resetChopsticksTutorial: 0
+    stamp: 0
+    resetStamp: 0
+    chaTutorial: 0
+    resetChaTutorial: 0
+    sticker: 1
+    resetSticker: 1
     endDayOne: 0
     resetEndDayOne: 0
     endDayTwo: 0

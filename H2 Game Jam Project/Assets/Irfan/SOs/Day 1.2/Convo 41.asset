@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a366cedceb66f64ba33d4eb871de5cd, type: 3}
+  m_Name: Convo 41
+  m_EditorClassIdentifier: 
+  characterName: Yi Zhen
+  characterSprite: {fileID: 21300000, guid: eea27682555830a42a870b8c8498756e, type: 3}
+  dialogue: I have the prize in my bag, here!
+  delay: 0.05
+  flags:
+    reset: 1
+    changeScreen: 0
+    changeState: 0
+    selectCharacter: 0
+    resetCharacter: 0
+    inputName: 0
+    resetName: 0
+    getJournal: 0
+    scribbleJournal: 0
+    resetScribbleJournal: 0
+    countryEraser: 0
+    resetCountryEraser: 0
+    stamp: 1
+    resetStamp: 1
+    sticker: 0
+    resetSticker: 0
+    endDayOne: 0
+    resetEndDayOne: 0
+    endDayTwo: 0
+    resetEndDayTwo: 0
+  nextState: 0
+  nextScreen: 

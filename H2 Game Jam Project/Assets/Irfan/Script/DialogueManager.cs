@@ -185,27 +185,54 @@ public class DialogueManager : MonoBehaviour
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.journal = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.scribbleJournal = false;
-            //dialogueGO.SetActive(false);
         }
+
+        //COLLECTABLES
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.countryEraser = true;
-            //dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser = false;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.countryEraser = false;
         }
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.stamp)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.stamp = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.stamp = false;
+        }
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.sticker)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.sticker = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.sticker = false;
+        }
+
+        //TUTORIAL SCREENS
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.chopsticksTutorial)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.chopsticksTutorial = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.chopsticksTutorial = false;
+        }
+        else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.chaTutorial)
+        {
+            StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
+            ScreenManager.instance.chaTutorial = true;
+            dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.chaTutorial = false;
+        }
+
+        //END OF DAY
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayOne = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayOne = false;
-            //dialogueGO.SetActive(false);
         }
         else if (dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo)
         {
             StateManager.instance.ChangeState(StateManager.GAMESTATE.TRANSITION);
             ScreenManager.instance.endDayTwo = true;
             dialogueSOs[Mathf.Clamp(currentDialogue - 1, 0, dialogueSOs.Count)].flags.endDayTwo = false;
-            //dialogueGO.SetActive(false);
         }
     }
 
