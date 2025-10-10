@@ -7,13 +7,22 @@
             "id": "a910ec14-469d-4622-901a-006114bfbb8f",
             "actions": [
                 {
-                    "name": "Touch",
+                    "name": "Click",
                     "type": "Value",
                     "id": "ef44c962-22aa-4ff5-a91d-752ab68d9660",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Touch",
+                    "type": "Button",
+                    "id": "d8e5010e-22f7-4836-b29d-709c07c57c9f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -21,6 +30,17 @@
                     "name": "",
                     "id": "2b5d12dd-9984-4de8-98ff-efbb7ec2c0e7",
                     "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ebf4970-64fa-42a1-a983-6843501dee5d",
+                    "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

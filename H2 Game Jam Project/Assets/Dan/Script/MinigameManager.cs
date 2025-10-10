@@ -173,7 +173,7 @@ public class MinigameManager : MonoBehaviour
 
     void UpdateCha()
     {
-        if (Input.GetKeyDown(KeyCode.P)) { ChaHandSprites(); }
+        //if (Input.GetKeyDown(KeyCode.P)) { ChaHandSprites(); }
     }
 
     /// <summary>

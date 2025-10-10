@@ -1238,6 +1238,15 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+  touchAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 004d0946-20fa-46ba-8447-7bbd68a0aa56
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!82 &360118865 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6662198761368439150, guid: 27823fc2333f2104a9007f09d70f84a9, type: 3}
@@ -2000,6 +2009,7 @@ GameObject:
   - component: {fileID: 536819698}
   - component: {fileID: 536819697}
   - component: {fileID: 536819696}
+  - component: {fileID: 536819699}
   m_Layer: 0
   m_Name: PLAY!
   m_TagString: Untagged
@@ -2145,6 +2155,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536819694}
   m_CullTransparentMesh: 1
+--- !u!114 &536819699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536819694}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Mouse>/leftButton
 --- !u!1 &572275263
 GameObject:
   m_ObjectHideFlags: 0
