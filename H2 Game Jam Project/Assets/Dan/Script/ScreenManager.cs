@@ -56,6 +56,13 @@ public class ScreenManager : MonoBehaviour
     public Image bookWritingEndDayThree;
     public Image bookEndDayThree;
 
+    public Image bookWritingLast;
+    public Image fireworks;
+    public Image absoluteMajula;
+
+    public Transform creditsEnd;
+    public Transform credits;
+
     public Image countryEraserImage;
     public Image stampImage;
     public Image stickerImage;
@@ -390,9 +397,119 @@ public class ScreenManager : MonoBehaviour
         }
 
         endDayThree = false;
-        transitioning = false;
+        //transitioning = false;
 
-        //StartCoroutine(Ending());
+        StartCoroutine(Ending());
+        yield break;
+    }
+    private IEnumerator Ending()
+    {
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = bookWritingLast.color;
+        Color man = new Color(bookWritingLast.color.r, bookWritingLast.color.g, bookWritingLast.color.b, 1);
+
+        //reveal last page
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingLast.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        initial = bookWritingLast.color;
+        man = new Color(bookWritingLast.color.r, bookWritingLast.color.g, bookWritingLast.color.b, 0);
+
+        Color initial2 = bookEndDayThree.color;
+        Color man2 = new Color(bookEndDayThree.color.r, bookEndDayThree.color.g, bookEndDayThree.color.b, 0);
+
+        //hide book and writing
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            bookWritingLast.color = Color.Lerp(initial, man, t);
+            bookEndDayThree.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        initial = fireworks.color;
+        man = new Color(fireworks.color.r, fireworks.color.g, fireworks.color.b, 1);
+
+        //reveal fireworks
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            fireworks.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+
+        StartCoroutine(Credits());
+        yield break;
+    }
+    private IEnumerator Credits()
+    {
+        float elapsed = 0;
+        float duration = 2;
+        Transform initial = credits;
+        Transform man = creditsEnd;
+
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            credits.position = Vector3.Lerp(initial.position, man.position, t);
+            yield return null;
+        }
+
+        Color initial2 = fireworks.color;
+        Color man2 = new Color(fireworks.color.r, fireworks.color.g, fireworks.color.b, 0);
+
+        //hide fireworks
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            fireworks.color = Color.Lerp(initial2, man2, t);
+            yield return null;
+        }
+
+        initial2 = absoluteMajula.color;
+        man2 = new Color(absoluteMajula.color.r, absoluteMajula.color.g, absoluteMajula.color.b, 1);
+
+        //absolute majula in
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            absoluteMajula.color = Color.Lerp(initial2, man2, t);
+            yield return null;
+        }
+
+        initial2 = absoluteMajula.color;
+        man2 = new Color(absoluteMajula.color.r, absoluteMajula.color.g, absoluteMajula.color.b, 0);
+
+        //absolute majula out
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            absoluteMajula.color = Color.Lerp(initial2, man2, t);
+            yield return null;
+        }
+
+        GameManager.instance.RestartGame();
+
         yield break;
     }
     private IEnumerator RevealJournal()

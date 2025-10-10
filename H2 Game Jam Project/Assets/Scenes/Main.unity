@@ -6607,6 +6607,11 @@ MonoBehaviour:
   bookEndDayTwo: {fileID: 1573906517}
   bookWritingEndDayThree: {fileID: 824883363}
   bookEndDayThree: {fileID: 1659799241}
+  bookWritingLast: {fileID: 0}
+  fireworks: {fileID: 0}
+  absoluteMajula: {fileID: 0}
+  creditsEnd: {fileID: 0}
+  credits: {fileID: 0}
   countryEraserImage: {fileID: 1562782571}
   stampImage: {fileID: 1014582996}
   stickerImage: {fileID: 248184284}

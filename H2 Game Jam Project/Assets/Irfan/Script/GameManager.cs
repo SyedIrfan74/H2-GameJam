@@ -4,6 +4,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton
+    public static GameManager instance;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this) Destroy(instance);
+        else instance = this;
+    }
+    #endregion
+
     public Image playBar;
 
     public AudioData audioIntro;
@@ -81,5 +91,8 @@ public class GameManager : MonoBehaviour
         yield break;
     }
 
-
+    public void RestartGame()
+    {
+        Start();
+    }
 }
