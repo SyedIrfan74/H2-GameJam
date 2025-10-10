@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.Device;
 using UnityEngine.UI;
 
 public class ScreenManager : MonoBehaviour
