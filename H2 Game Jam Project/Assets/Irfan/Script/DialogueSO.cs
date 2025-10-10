@@ -19,10 +19,16 @@ public class DialogueSO : ScriptableObject
     {
         if (flags.resetCharacter) flags.selectCharacter = true;
         if (flags.resetName) flags.inputName = true;
+
         if (flags.resetScribbleJournal) flags.scribbleJournal = true;
         if (flags.resetCountryEraser) flags.countryEraser = true;
+        if (flags.resetStamp) flags.stamp = true;
+        if (flags.resetSticker) flags.sticker = true;
         if (flags.resetEndDayOne) flags.endDayOne = true;
         if (flags.resetEndDayTwo) flags.endDayTwo = true;
+
+        if (flags.resetChopsticksTutorial) flags.chopsticksTutorial = true;
+        if (flags.resetChaTutorial) flags.chaTutorial = true;
     }
 }
 
@@ -37,12 +43,28 @@ public class Flags
     public bool inputName;
     public bool resetName;
     public bool getJournal;
+
     public bool scribbleJournal;
     public bool resetScribbleJournal;
+
     public bool countryEraser;
     public bool resetCountryEraser;
+
+    public bool chopsticksTutorial;
+    public bool resetChopsticksTutorial;
+
+    public bool stamp;
+    public bool resetStamp;
+
+    public bool chaTutorial;
+    public bool resetChaTutorial;
+
+    public bool sticker;
+    public bool resetSticker;
+
     public bool endDayOne;
     public bool resetEndDayOne;
+
     public bool endDayTwo;
     public bool resetEndDayTwo;
 }

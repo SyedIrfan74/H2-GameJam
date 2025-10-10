@@ -29,19 +29,35 @@ public class ScreenManager : MonoBehaviour
     public float transitionPause = 2;
     public float transition1Speed = 2;
     public float transition2Speed = 2;
+
     public bool journal;
     public bool countryEraser;
+    public bool stamp;
+    public bool sticker;
     public bool endDayOne;
     public bool endDayTwo;
     public bool transitioning;
+
+    public bool chopsticksTutorial;
+    public bool chaTutorial;
+
     public Image bookClosed;
     public Image bookOpened;
     public Image bookWriting;
+
     public Image bookWritingEndDayOne;
     public Image bookEndDayOne;
+
     public Image bookWritingEndDayTwo;
     public Image bookEndDayTwo;
+
     public Image countryEraserImage;
+    public Image stampImage;
+    public Image stickerImage;
+
+    public Image chopsticksTutorialImage;
+    public Image chaTutorialImage;
+
     public GameObject dialogueGO;
 
     //Edits by: Irfan
@@ -74,8 +90,14 @@ public class ScreenManager : MonoBehaviour
 
         if (journal && !transitioning) StartCoroutine(RevealJournal());
         if (countryEraser && !transitioning) StartCoroutine(RevealCountryEraser());
+        if (stamp && !transitioning) StartCoroutine(RevealStamp());
+        if (sticker && !transitioning) StartCoroutine(RevealSticker());
+
         if (endDayOne && !transitioning) StartCoroutine(EndDayOne());
         if (endDayTwo && !transitioning) StartCoroutine(EndDayTwo());
+
+        if (chopsticksTutorial && !transitioning) StartCoroutine(RevealChopsticks());
+        if (chaTutorial && !transitioning) StartCoroutine(RevealCha());
     }
 
     /// <summary>
@@ -503,6 +525,287 @@ public class ScreenManager : MonoBehaviour
 
         transitioning = false;
         countryEraser = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+
+        yield break;
+    }
+    private IEnumerator RevealStamp()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = stampImage.color;
+        man = new Color(stampImage.color.r, stampImage.color.g, stampImage.color.b, 1);
+
+        //Reveal Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            stampImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = stampImage.color;
+        man = new Color(stampImage.color.r, stampImage.color.g, stampImage.color.b, 0);
+
+        //Hide Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            stampImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
+
+        //Brighten Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        transitioning = false;
+        stamp = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+
+        yield break;
+    }
+    private IEnumerator RevealSticker()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = stickerImage.color;
+        man = new Color(stickerImage.color.r, stickerImage.color.g, stickerImage.color.b, 1);
+
+        //Reveal Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            stickerImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = stickerImage.color;
+        man = new Color(stickerImage.color.r, stickerImage.color.g, stickerImage.color.b, 0);
+
+        //Hide Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            stickerImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
+
+        //Brighten Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        transitioning = false;
+        sticker = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+
+        yield break;
+    }
+
+    private IEnumerator RevealChopsticks()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = chopsticksTutorialImage.color;
+        man = new Color(chopsticksTutorialImage.color.r, chopsticksTutorialImage.color.g, chopsticksTutorialImage.color.b, 1);
+
+        //Reveal Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            chopsticksTutorialImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = chopsticksTutorialImage.color;
+        man = new Color(chopsticksTutorialImage.color.r, chopsticksTutorialImage.color.g, chopsticksTutorialImage.color.b, 0);
+
+        //Hide Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            chopsticksTutorialImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
+
+        //Brighten Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        transitioning = false;
+        sticker = false;
+
+        StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
+        DialogueManager.instance.ManualStart();
+        nextState = StateManager.GAMESTATE.NOSTATE;
+
+        yield break;
+    }
+    private IEnumerator RevealCha()
+    {
+        transitioning = true;
+
+        float elapsed = 0;
+        float duration = 2;
+        Color initial = currScreen.fadeBlack.color;
+        Color man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, .9f);
+
+        //Darken Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = chaTutorialImage.color;
+        man = new Color(chaTutorialImage.color.r, chaTutorialImage.color.g, chaTutorialImage.color.b, 1);
+
+        //Reveal Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            chaTutorialImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = chaTutorialImage.color;
+        man = new Color(chaTutorialImage.color.r, chaTutorialImage.color.g, chaTutorialImage.color.b, 0);
+
+        //Hide Country Eraser
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            chaTutorialImage.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        elapsed = 0;
+        initial = currScreen.fadeBlack.color;
+        man = new Color(currScreen.fadeBlack.color.r, currScreen.fadeBlack.color.g, currScreen.fadeBlack.color.b, 0);
+
+        //Brighten Background
+        while (elapsed < duration)
+        {
+            float t = elapsed / duration;
+            elapsed += Time.deltaTime;
+            t = t * t;
+            currScreen.fadeBlack.color = Color.Lerp(initial, man, t);
+            yield return null;
+        }
+
+        transitioning = false;
+        sticker = false;
 
         StateManager.instance.ChangeState(StateManager.GAMESTATE.CONVO);
         DialogueManager.instance.ManualStart();
